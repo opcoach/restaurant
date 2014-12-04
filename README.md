@@ -1,0 +1,4 @@
+restaurant
+==========
+
+A restaurant sample
