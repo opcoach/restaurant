@@ -9,4 +9,11 @@
 	<natures>
 		<nature>org.eclipse.sirius.nature.modelingproject</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>Sample.restaurant</name>
+			<type>1</type>
+			<location>C:/Projects/git.repo/restaurant/SampleRestaurant/Sample.restaurant</location>
+		</link>
+	</linkedResources>
 </projectDescription>

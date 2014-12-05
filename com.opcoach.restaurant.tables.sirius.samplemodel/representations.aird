@@ -1,2 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xmi:id="_UpFTIHxuEeSGXPFV_4hNmA" version="8.1.1"/>
+<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:re="http://www.opcoach.com/restaurant/1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style" xmi:id="_UpFTIHxuEeSGXPFV_4hNmA" selectedViews="_mS6o4Hx0EeSv9M95wIy7xA" version="8.1.1">
+  <models xmi:type="description:Group" href="platform:/resource/com.opcoach.restaurant.tables.sirius/description/restaurantTables.odesign#/"/>
+  <models xmi:type="description:Environment" href="environment:/viewpoint#/"/>
+  <ownedViews xmi:type="viewpoint:DRepresentationContainer" xmi:id="_mS6o4Hx0EeSv9M95wIy7xA" initialized="true">
+    <ownedRepresentations xmi:type="diagram:DSemanticDiagram" xmi:id="_p_b98Hx0EeSv9M95wIy7xA" name="Restaurant Tables Diagram">
+      <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_p_6fEHx0EeSv9M95wIy7xA" source="GMF_DIAGRAMS">
+        <data xmi:type="notation:Diagram" xmi:id="_p_6fEXx0EeSv9M95wIy7xA" type="Sirius" element="_p_b98Hx0EeSv9M95wIy7xA" measurementUnit="Pixel">
+          <children xmi:type="notation:Node" xmi:id="_qAGsUHx0EeSv9M95wIy7xA" type="2001" element="_p_b98Xx0EeSv9M95wIy7xA">
+            <children xmi:type="notation:Node" xmi:id="_qAfG0Hx0EeSv9M95wIy7xA" type="5002">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_qAfG0Xx0EeSv9M95wIy7xA" x="31"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_qA3hV3x0EeSv9M95wIy7xA" type="3003" element="_p_b98nx0EeSv9M95wIy7xA">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_qA3hWHx0EeSv9M95wIy7xA" fontName="Segoe UI"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qA3hWXx0EeSv9M95wIy7xA"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_qAGsUXx0EeSv9M95wIy7xA" fontName="Segoe UI" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qAGsUnx0EeSv9M95wIy7xA" x="75" y="180" width="40" height="40"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_qAxasHx0EeSv9M95wIy7xA" type="2001" element="_p_b99nx0EeSv9M95wIy7xA">
+            <children xmi:type="notation:Node" xmi:id="_qA3hUHx0EeSv9M95wIy7xA" type="5002">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_qA3hUXx0EeSv9M95wIy7xA" x="31"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_qA3hWnx0EeSv9M95wIy7xA" type="3003" element="_p_b993x0EeSv9M95wIy7xA">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_qA3hW3x0EeSv9M95wIy7xA" fontName="Segoe UI"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qA3hXHx0EeSv9M95wIy7xA"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_qAxasXx0EeSv9M95wIy7xA" fontName="Segoe UI" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qAxasnx0EeSv9M95wIy7xA" x="335" y="215" width="40" height="40"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_qA3hUnx0EeSv9M95wIy7xA" type="2001" element="_p_b9-3x0EeSv9M95wIy7xA">
+            <children xmi:type="notation:Node" xmi:id="_qA3hVXx0EeSv9M95wIy7xA" type="5002">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_qA3hVnx0EeSv9M95wIy7xA" x="31"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_qA3hXXx0EeSv9M95wIy7xA" type="3003" element="_p_b9_Hx0EeSv9M95wIy7xA">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_qA3hXnx0EeSv9M95wIy7xA" fontName="Segoe UI"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qA3hX3x0EeSv9M95wIy7xA"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_qA3hU3x0EeSv9M95wIy7xA" fontName="Segoe UI" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qA3hVHx0EeSv9M95wIy7xA" x="260" y="45" width="60" height="60"/>
+          </children>
+          <styles xmi:type="notation:DiagramStyle" xmi:id="_p_6fEnx0EeSv9M95wIy7xA"/>
+        </data>
+      </ownedAnnotationEntries>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_p_b98Xx0EeSv9M95wIy7xA" name="Invalid feature as name" width="4" height="4" resizeKind="NSEW">
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:Square" xmi:id="_p_b98nx0EeSv9M95wIy7xA">
+          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_p_b983x0EeSv9M95wIy7xA"/>
+          <description xmi:type="style:SquareDescription" href="platform:/resource/com.opcoach.restaurant.tables.sirius/description/restaurantTables.odesign#//@ownedViewpoints[name='restaurantTablesMainViewpoint']/@ownedRepresentations[name='RestaurantTablesDiagram']/@defaultLayer/@nodeMappings[name='TablesNode']/@style"/>
+          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_p_b99Hx0EeSv9M95wIy7xA"/>
+          <color xmi:type="viewpoint:RGBValues" xmi:id="_p_b99Xx0EeSv9M95wIy7xA" red="136" green="136" blue="136"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/com.opcoach.restaurant.tables.sirius/description/restaurantTables.odesign#//@ownedViewpoints[name='restaurantTablesMainViewpoint']/@ownedRepresentations[name='RestaurantTablesDiagram']/@defaultLayer/@nodeMappings[name='TablesNode']"/>
+        <target xmi:type="re:Table" href="Sample.restaurant#//@tables.0"/>
+        <semanticElements xmi:type="re:Table" href="Sample.restaurant#//@tables.0"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_p_b99nx0EeSv9M95wIy7xA" name="Invalid feature as name" width="4" height="4" resizeKind="NSEW">
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:Square" xmi:id="_p_b993x0EeSv9M95wIy7xA">
+          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_p_b9-Hx0EeSv9M95wIy7xA"/>
+          <description xmi:type="style:SquareDescription" href="platform:/resource/com.opcoach.restaurant.tables.sirius/description/restaurantTables.odesign#//@ownedViewpoints[name='restaurantTablesMainViewpoint']/@ownedRepresentations[name='RestaurantTablesDiagram']/@defaultLayer/@nodeMappings[name='TablesNode']/@style"/>
+          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_p_b9-Xx0EeSv9M95wIy7xA"/>
+          <color xmi:type="viewpoint:RGBValues" xmi:id="_p_b9-nx0EeSv9M95wIy7xA" red="136" green="136" blue="136"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/com.opcoach.restaurant.tables.sirius/description/restaurantTables.odesign#//@ownedViewpoints[name='restaurantTablesMainViewpoint']/@ownedRepresentations[name='RestaurantTablesDiagram']/@defaultLayer/@nodeMappings[name='TablesNode']"/>
+        <semanticElements xmi:type="re:Table" href="Sample.restaurant#//@tables.1"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_p_b9-3x0EeSv9M95wIy7xA" name="Invalid feature as name" width="6" height="6" resizeKind="NSEW">
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:Square" xmi:id="_p_b9_Hx0EeSv9M95wIy7xA">
+          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_p_b9_Xx0EeSv9M95wIy7xA"/>
+          <description xmi:type="style:SquareDescription" href="platform:/resource/com.opcoach.restaurant.tables.sirius/description/restaurantTables.odesign#//@ownedViewpoints[name='restaurantTablesMainViewpoint']/@ownedRepresentations[name='RestaurantTablesDiagram']/@defaultLayer/@nodeMappings[name='TablesNode']/@style"/>
+          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_p_b9_nx0EeSv9M95wIy7xA"/>
+          <color xmi:type="viewpoint:RGBValues" xmi:id="_p_b9_3x0EeSv9M95wIy7xA" red="136" green="136" blue="136"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/com.opcoach.restaurant.tables.sirius/description/restaurantTables.odesign#//@ownedViewpoints[name='restaurantTablesMainViewpoint']/@ownedRepresentations[name='RestaurantTablesDiagram']/@defaultLayer/@nodeMappings[name='TablesNode']"/>
+        <semanticElements xmi:type="re:Table" href="Sample.restaurant#//@tables.2"/>
+      </ownedDiagramElements>
+      <description xmi:type="description_1:DiagramDescription" href="platform:/resource/com.opcoach.restaurant.tables.sirius/description/restaurantTables.odesign#//@ownedViewpoints[name='restaurantTablesMainViewpoint']/@ownedRepresentations[name='RestaurantTablesDiagram']"/>
+      <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_p_b-AHx0EeSv9M95wIy7xA"/>
+      <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/com.opcoach.restaurant.tables.sirius/description/restaurantTables.odesign#//@ownedViewpoints[name='restaurantTablesMainViewpoint']/@ownedRepresentations[name='RestaurantTablesDiagram']/@defaultLayer"/>
+      <target xmi:type="re:Restaurant" href="Sample.restaurant#/"/>
+    </ownedRepresentations>
+    <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/com.opcoach.restaurant.tables.sirius/description/restaurantTables.odesign#//@ownedViewpoints[name='restaurantTablesMainViewpoint']"/>
+  </ownedViews>
+  <models xmi:type="re:Restaurant" href="Sample.restaurant#/"/>
+</viewpoint:DAnalysis>
