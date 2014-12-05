@@ -26,35 +26,12 @@ public class MenuDslFormatter extends AbstractDeclarativeFormatter {
 			c.setNoSpace().before(comma)
 			c.setLinewrap().after(comma)
 		}
-		var firstRule = true
-		for(group:findRuleCalls(groupAccess.rule)){
-			if(firstRule==true) {
-				c.setIndentationIncrement.before(group)
-				c.setLinewrap(1).before(group)
-				firstRule = false
-			}
-			c.setLinewrap(1).after(group)
-			if(group==findRuleCalls(recipeAccess.rule).last) {
-				c.setIndentationDecrement.after(group)
-			}
-		}
+		c.setIndentationIncrement.before(groupAccess.groupKeyword_1)
+		c.setLinewrap(1).before(groupAccess.groupKeyword_1)
+		c.setIndentationDecrement.after(groupAccess.rule)
 		
-		firstRule = true
-		for(group:findRuleCalls(recipeAccess.rule)){
-			if(firstRule==true) {
-				c.setIndentationIncrement.before(group)
-				c.setLinewrap(1).before(group)
-				firstRule = false
-			}
-			c.setLinewrap(1).after(group)
-			if(group==findRuleCalls(recipeAccess.rule).last) {
-				c.setIndentationDecrement.after(group)
-			}
-		}
-//		c.setIndentationIncrement.before(groupAccess.rule)
-//		c.setIndentationDecrement.after(groupAccess.)
-//		c.setLinewrap(0, 1, 2).before(SL_COMMENTRule)
-//		c.setLinewrap(0, 1, 2).before(ML_COMMENTRule)
-//		c.setLinewrap(0, 1, 1).after(ML_COMMENTRule)
+		c.setIndentationIncrement.before(recipeAccess.recipeKeyword_1)
+		c.setLinewrap(1).before(recipeAccess.recipeKeyword_1)
+		c.setIndentationDecrement.after(recipeAccess.rule)
 	}
 }
