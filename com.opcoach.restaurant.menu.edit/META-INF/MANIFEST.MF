@@ -7,7 +7,7 @@ Bundle-ClassPath: .
 Bundle-Activator: com.opcoach.menu.provider.MenuEditPlugin$Implementation
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
-Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Export-Package: menu.provider,
  com.opcoach.menu.provider
 Require-Bundle: org.eclipse.core.runtime,
