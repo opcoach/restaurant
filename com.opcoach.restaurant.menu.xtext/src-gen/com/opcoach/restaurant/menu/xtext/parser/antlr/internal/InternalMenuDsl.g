@@ -45,7 +45,7 @@ import com.opcoach.restaurant.menu.xtext.services.MenuDslGrammarAccess;
     
     @Override
     protected String getFirstRuleName() {
-    	return "Group";	
+    	return "Menu";	
    	}
    	
    	@Override
@@ -60,6 +60,151 @@ import com.opcoach.restaurant.menu.xtext.services.MenuDslGrammarAccess;
         appendSkippedTokens();
     } 
 }
+
+
+
+
+// Entry rule entryRuleMenu
+entryRuleMenu returns [EObject current=null] 
+	:
+	{ newCompositeNode(grammarAccess.getMenuRule()); }
+	 iv_ruleMenu=ruleMenu 
+	 { $current=$iv_ruleMenu.current; } 
+	 EOF 
+;
+
+// Rule Menu
+ruleMenu returns [EObject current=null] 
+    @init { enterRule(); 
+    }
+    @after { leaveRule(); }:
+((
+    {
+        $current = forceCreateModelElement(
+            grammarAccess.getMenuAccess().getMenuAction_0(),
+            $current);
+    }
+)	otherlv_1='Menu' 
+    {
+    	newLeafNode(otherlv_1, grammarAccess.getMenuAccess().getMenuKeyword_1());
+    }
+(
+(
+		{ 
+	        newCompositeNode(grammarAccess.getMenuAccess().getNameEStringParserRuleCall_2_0()); 
+	    }
+		lv_name_2_0=ruleEString		{
+	        if ($current==null) {
+	            $current = createModelElementForParent(grammarAccess.getMenuRule());
+	        }
+       		set(
+       			$current, 
+       			"name",
+        		lv_name_2_0, 
+        		"EString");
+	        afterParserOrEnumRuleCall();
+	    }
+
+)
+)	otherlv_3='{' 
+    {
+    	newLeafNode(otherlv_3, grammarAccess.getMenuAccess().getLeftCurlyBracketKeyword_3());
+    }
+(	otherlv_4='groups' 
+    {
+    	newLeafNode(otherlv_4, grammarAccess.getMenuAccess().getGroupsKeyword_4_0());
+    }
+	otherlv_5='{' 
+    {
+    	newLeafNode(otherlv_5, grammarAccess.getMenuAccess().getLeftCurlyBracketKeyword_4_1());
+    }
+(
+(
+		{ 
+	        newCompositeNode(grammarAccess.getMenuAccess().getGroupsGroupParserRuleCall_4_2_0()); 
+	    }
+		lv_groups_6_0=ruleGroup		{
+	        if ($current==null) {
+	            $current = createModelElementForParent(grammarAccess.getMenuRule());
+	        }
+       		add(
+       			$current, 
+       			"groups",
+        		lv_groups_6_0, 
+        		"Group");
+	        afterParserOrEnumRuleCall();
+	    }
+
+)
+)(	otherlv_7=',' 
+    {
+    	newLeafNode(otherlv_7, grammarAccess.getMenuAccess().getCommaKeyword_4_3_0());
+    }
+(
+(
+		{ 
+	        newCompositeNode(grammarAccess.getMenuAccess().getGroupsGroupParserRuleCall_4_3_1_0()); 
+	    }
+		lv_groups_8_0=ruleGroup		{
+	        if ($current==null) {
+	            $current = createModelElementForParent(grammarAccess.getMenuRule());
+	        }
+       		add(
+       			$current, 
+       			"groups",
+        		lv_groups_8_0, 
+        		"Group");
+	        afterParserOrEnumRuleCall();
+	    }
+
+)
+))*	otherlv_9='}' 
+    {
+    	newLeafNode(otherlv_9, grammarAccess.getMenuAccess().getRightCurlyBracketKeyword_4_4());
+    }
+)?	otherlv_10='}' 
+    {
+    	newLeafNode(otherlv_10, grammarAccess.getMenuAccess().getRightCurlyBracketKeyword_5());
+    }
+)
+;
+
+
+
+
+
+// Entry rule entryRuleEString
+entryRuleEString returns [String current=null] 
+	:
+	{ newCompositeNode(grammarAccess.getEStringRule()); } 
+	 iv_ruleEString=ruleEString 
+	 { $current=$iv_ruleEString.current.getText(); }  
+	 EOF 
+;
+
+// Rule EString
+ruleEString returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] 
+    @init { enterRule(); 
+    }
+    @after { leaveRule(); }:
+(    this_STRING_0=RULE_STRING    {
+		$current.merge(this_STRING_0);
+    }
+
+    { 
+    newLeafNode(this_STRING_0, grammarAccess.getEStringAccess().getSTRINGTerminalRuleCall_0()); 
+    }
+
+    |    this_ID_1=RULE_ID    {
+		$current.merge(this_ID_1);
+    }
+
+    { 
+    newLeafNode(this_ID_1, grammarAccess.getEStringAccess().getIDTerminalRuleCall_1()); 
+    }
+)
+    ;
+
 
 
 
@@ -190,42 +335,6 @@ ruleGroup returns [EObject current=null]
     }
 )
 ;
-
-
-
-
-
-// Entry rule entryRuleEString
-entryRuleEString returns [String current=null] 
-	:
-	{ newCompositeNode(grammarAccess.getEStringRule()); } 
-	 iv_ruleEString=ruleEString 
-	 { $current=$iv_ruleEString.current.getText(); }  
-	 EOF 
-;
-
-// Rule EString
-ruleEString returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] 
-    @init { enterRule(); 
-    }
-    @after { leaveRule(); }:
-(    this_STRING_0=RULE_STRING    {
-		$current.merge(this_STRING_0);
-    }
-
-    { 
-    newLeafNode(this_STRING_0, grammarAccess.getEStringAccess().getSTRINGTerminalRuleCall_0()); 
-    }
-
-    |    this_ID_1=RULE_ID    {
-		$current.merge(this_ID_1);
-    }
-
-    { 
-    newLeafNode(this_ID_1, grammarAccess.getEStringAccess().getIDTerminalRuleCall_1()); 
-    }
-)
-    ;
 
 
 

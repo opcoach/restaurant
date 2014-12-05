@@ -4,6 +4,20 @@ grammar com.opcoach.restaurant.menu.xtext.MenuDsl with org.eclipse.xtext.common.
 import "http://www.opcoach.com/restaurant/menu/1.0" 
 import "http://www.eclipse.org/emf/2002/Ecore" as ecore
 
+Menu returns Menu:
+	{Menu}
+	'Menu'
+	name=EString
+	'{'
+		('groups' '{' groups+=Group ( "," groups+=Group)* '}' )?
+	'}';
+
+
+
+
+EString returns ecore::EString:
+	STRING | ID;
+
 Group returns Group:
 	{Group}
 	'Group'
@@ -12,11 +26,6 @@ Group returns Group:
 		('category' category=Category)?
 		('recipes' '{' recipes+=Recipe ( "," recipes+=Recipe)* '}' )?
 	'}';
-
-
-
-EString returns ecore::EString:
-	STRING | ID;
 
 enum Category returns Category:
 				breakfast = 'breakfast' | dinner = 'dinner' | lunch = 'lunch' | supper = 'supper' | dessert = 'dessert';

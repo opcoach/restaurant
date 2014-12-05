@@ -25,7 +25,7 @@ public class MenuDslParser extends org.eclipse.xtext.parser.antlr.AbstractAntlrP
 	
 	@Override 
 	protected String getDefaultRuleName() {
-		return "Group";
+		return "Menu";
 	}
 	
 	public MenuDslGrammarAccess getGrammarAccess() {

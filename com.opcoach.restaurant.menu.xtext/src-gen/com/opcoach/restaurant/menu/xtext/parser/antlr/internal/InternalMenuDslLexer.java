@@ -12,6 +12,7 @@ import java.util.ArrayList;
 
 @SuppressWarnings("all")
 public class InternalMenuDslLexer extends Lexer {
+    public static final int T__40=40;
     public static final int RULE_ID=5;
     public static final int T__29=29;
     public static final int T__28=28;
@@ -45,6 +46,7 @@ public class InternalMenuDslLexer extends Lexer {
     public static final int T__11=11;
     public static final int T__38=38;
     public static final int T__14=14;
+    public static final int T__39=39;
     public static final int T__13=13;
     public static final int RULE_INT=6;
     public static final int RULE_WS=9;
@@ -67,10 +69,10 @@ public class InternalMenuDslLexer extends Lexer {
         try {
             int _type = T__11;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:11:7: ( 'Group' )
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:11:9: 'Group'
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:11:7: ( 'Menu' )
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:11:9: 'Menu'
             {
-            match("Group"); 
+            match("Menu"); 
 
 
             }
@@ -108,10 +110,10 @@ public class InternalMenuDslLexer extends Lexer {
         try {
             int _type = T__13;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:13:7: ( 'category' )
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:13:9: 'category'
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:13:7: ( 'groups' )
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:13:9: 'groups'
             {
-            match("category"); 
+            match("groups"); 
 
 
             }
@@ -129,11 +131,10 @@ public class InternalMenuDslLexer extends Lexer {
         try {
             int _type = T__14;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:14:7: ( 'recipes' )
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:14:9: 'recipes'
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:14:7: ( ',' )
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:14:9: ','
             {
-            match("recipes"); 
-
+            match(','); 
 
             }
 
@@ -150,10 +151,10 @@ public class InternalMenuDslLexer extends Lexer {
         try {
             int _type = T__15;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:15:7: ( ',' )
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:15:9: ','
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:15:7: ( '}' )
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:15:9: '}'
             {
-            match(','); 
+            match('}'); 
 
             }
 
@@ -170,10 +171,11 @@ public class InternalMenuDslLexer extends Lexer {
         try {
             int _type = T__16;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:16:7: ( '}' )
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:16:9: '}'
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:16:7: ( 'Group' )
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:16:9: 'Group'
             {
-            match('}'); 
+            match("Group"); 
+
 
             }
 
@@ -190,10 +192,10 @@ public class InternalMenuDslLexer extends Lexer {
         try {
             int _type = T__17;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:17:7: ( 'Recipe' )
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:17:9: 'Recipe'
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:17:7: ( 'category' )
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:17:9: 'category'
             {
-            match("Recipe"); 
+            match("category"); 
 
 
             }
@@ -211,10 +213,10 @@ public class InternalMenuDslLexer extends Lexer {
         try {
             int _type = T__18;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:18:7: ( 'price' )
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:18:9: 'price'
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:18:7: ( 'recipes' )
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:18:9: 'recipes'
             {
-            match("price"); 
+            match("recipes"); 
 
 
             }
@@ -232,10 +234,10 @@ public class InternalMenuDslLexer extends Lexer {
         try {
             int _type = T__19;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:19:7: ( 'amount' )
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:19:9: 'amount'
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:19:7: ( 'Recipe' )
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:19:9: 'Recipe'
             {
-            match("amount"); 
+            match("Recipe"); 
 
 
             }
@@ -253,10 +255,10 @@ public class InternalMenuDslLexer extends Lexer {
         try {
             int _type = T__20;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:20:7: ( 'amountType' )
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:20:9: 'amountType'
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:20:7: ( 'price' )
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:20:9: 'price'
             {
-            match("amountType"); 
+            match("price"); 
 
 
             }
@@ -274,10 +276,10 @@ public class InternalMenuDslLexer extends Lexer {
         try {
             int _type = T__21;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:21:7: ( 'ingredients' )
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:21:9: 'ingredients'
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:21:7: ( 'amount' )
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:21:9: 'amount'
             {
-            match("ingredients"); 
+            match("amount"); 
 
 
             }
@@ -295,10 +297,11 @@ public class InternalMenuDslLexer extends Lexer {
         try {
             int _type = T__22;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:22:7: ( '.' )
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:22:9: '.'
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:22:7: ( 'amountType' )
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:22:9: 'amountType'
             {
-            match('.'); 
+            match("amountType"); 
+
 
             }
 
@@ -315,10 +318,11 @@ public class InternalMenuDslLexer extends Lexer {
         try {
             int _type = T__23;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:23:7: ( '-' )
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:23:9: '-'
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:23:7: ( 'ingredients' )
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:23:9: 'ingredients'
             {
-            match('-'); 
+            match("ingredients"); 
+
 
             }
 
@@ -335,11 +339,10 @@ public class InternalMenuDslLexer extends Lexer {
         try {
             int _type = T__24;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:24:7: ( 'Ingredient' )
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:24:9: 'Ingredient'
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:24:7: ( '.' )
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:24:9: '.'
             {
-            match("Ingredient"); 
-
+            match('.'); 
 
             }
 
@@ -356,11 +359,10 @@ public class InternalMenuDslLexer extends Lexer {
         try {
             int _type = T__25;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:25:7: ( 'spiciness' )
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:25:9: 'spiciness'
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:25:7: ( '-' )
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:25:9: '-'
             {
-            match("spiciness"); 
-
+            match('-'); 
 
             }
 
@@ -377,10 +379,10 @@ public class InternalMenuDslLexer extends Lexer {
         try {
             int _type = T__26;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:26:7: ( 'breakfast' )
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:26:9: 'breakfast'
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:26:7: ( 'Ingredient' )
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:26:9: 'Ingredient'
             {
-            match("breakfast"); 
+            match("Ingredient"); 
 
 
             }
@@ -398,10 +400,10 @@ public class InternalMenuDslLexer extends Lexer {
         try {
             int _type = T__27;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:27:7: ( 'dinner' )
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:27:9: 'dinner'
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:27:7: ( 'spiciness' )
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:27:9: 'spiciness'
             {
-            match("dinner"); 
+            match("spiciness"); 
 
 
             }
@@ -419,10 +421,10 @@ public class InternalMenuDslLexer extends Lexer {
         try {
             int _type = T__28;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:28:7: ( 'lunch' )
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:28:9: 'lunch'
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:28:7: ( 'breakfast' )
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:28:9: 'breakfast'
             {
-            match("lunch"); 
+            match("breakfast"); 
 
 
             }
@@ -440,10 +442,10 @@ public class InternalMenuDslLexer extends Lexer {
         try {
             int _type = T__29;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:29:7: ( 'supper' )
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:29:9: 'supper'
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:29:7: ( 'dinner' )
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:29:9: 'dinner'
             {
-            match("supper"); 
+            match("dinner"); 
 
 
             }
@@ -461,10 +463,10 @@ public class InternalMenuDslLexer extends Lexer {
         try {
             int _type = T__30;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:30:7: ( 'dessert' )
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:30:9: 'dessert'
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:30:7: ( 'lunch' )
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:30:9: 'lunch'
             {
-            match("dessert"); 
+            match("lunch"); 
 
 
             }
@@ -482,10 +484,10 @@ public class InternalMenuDslLexer extends Lexer {
         try {
             int _type = T__31;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:31:7: ( 'gram' )
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:31:9: 'gram'
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:31:7: ( 'supper' )
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:31:9: 'supper'
             {
-            match("gram"); 
+            match("supper"); 
 
 
             }
@@ -503,10 +505,10 @@ public class InternalMenuDslLexer extends Lexer {
         try {
             int _type = T__32;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:32:7: ( 'milliliters' )
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:32:9: 'milliliters'
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:32:7: ( 'dessert' )
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:32:9: 'dessert'
             {
-            match("milliliters"); 
+            match("dessert"); 
 
 
             }
@@ -524,10 +526,10 @@ public class InternalMenuDslLexer extends Lexer {
         try {
             int _type = T__33;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:33:7: ( 'bottles' )
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:33:9: 'bottles'
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:33:7: ( 'gram' )
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:33:9: 'gram'
             {
-            match("bottles"); 
+            match("gram"); 
 
 
             }
@@ -545,10 +547,10 @@ public class InternalMenuDslLexer extends Lexer {
         try {
             int _type = T__34;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:34:7: ( 'items' )
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:34:9: 'items'
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:34:7: ( 'milliliters' )
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:34:9: 'milliliters'
             {
-            match("items"); 
+            match("milliliters"); 
 
 
             }
@@ -566,10 +568,10 @@ public class InternalMenuDslLexer extends Lexer {
         try {
             int _type = T__35;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:35:7: ( 'VeryHot' )
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:35:9: 'VeryHot'
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:35:7: ( 'bottles' )
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:35:9: 'bottles'
             {
-            match("VeryHot"); 
+            match("bottles"); 
 
 
             }
@@ -587,10 +589,10 @@ public class InternalMenuDslLexer extends Lexer {
         try {
             int _type = T__36;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:36:7: ( 'Hot' )
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:36:9: 'Hot'
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:36:7: ( 'items' )
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:36:9: 'items'
             {
-            match("Hot"); 
+            match("items"); 
 
 
             }
@@ -608,10 +610,10 @@ public class InternalMenuDslLexer extends Lexer {
         try {
             int _type = T__37;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:37:7: ( 'Normal' )
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:37:9: 'Normal'
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:37:7: ( 'VeryHot' )
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:37:9: 'VeryHot'
             {
-            match("Normal"); 
+            match("VeryHot"); 
 
 
             }
@@ -629,10 +631,10 @@ public class InternalMenuDslLexer extends Lexer {
         try {
             int _type = T__38;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:38:7: ( 'Mild' )
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:38:9: 'Mild'
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:38:7: ( 'Hot' )
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:38:9: 'Hot'
             {
-            match("Mild"); 
+            match("Hot"); 
 
 
             }
@@ -645,15 +647,57 @@ public class InternalMenuDslLexer extends Lexer {
     }
     // $ANTLR end "T__38"
 
+    // $ANTLR start "T__39"
+    public final void mT__39() throws RecognitionException {
+        try {
+            int _type = T__39;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:39:7: ( 'Normal' )
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:39:9: 'Normal'
+            {
+            match("Normal"); 
+
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        }
+    }
+    // $ANTLR end "T__39"
+
+    // $ANTLR start "T__40"
+    public final void mT__40() throws RecognitionException {
+        try {
+            int _type = T__40;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:40:7: ( 'Mild' )
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:40:9: 'Mild'
+            {
+            match("Mild"); 
+
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        }
+    }
+    // $ANTLR end "T__40"
+
     // $ANTLR start "RULE_ID"
     public final void mRULE_ID() throws RecognitionException {
         try {
             int _type = RULE_ID;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:662:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )* )
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:662:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:771:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )* )
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:771:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
             {
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:662:11: ( '^' )?
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:771:11: ( '^' )?
             int alt1=2;
             int LA1_0 = input.LA(1);
 
@@ -662,7 +706,7 @@ public class InternalMenuDslLexer extends Lexer {
             }
             switch (alt1) {
                 case 1 :
-                    // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:662:11: '^'
+                    // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:771:11: '^'
                     {
                     match('^'); 
 
@@ -680,7 +724,7 @@ public class InternalMenuDslLexer extends Lexer {
                 recover(mse);
                 throw mse;}
 
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:662:40: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:771:40: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
             loop2:
             do {
                 int alt2=2;
@@ -729,10 +773,10 @@ public class InternalMenuDslLexer extends Lexer {
         try {
             int _type = RULE_INT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:664:10: ( ( '0' .. '9' )+ )
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:664:12: ( '0' .. '9' )+
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:773:10: ( ( '0' .. '9' )+ )
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:773:12: ( '0' .. '9' )+
             {
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:664:12: ( '0' .. '9' )+
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:773:12: ( '0' .. '9' )+
             int cnt3=0;
             loop3:
             do {
@@ -746,7 +790,7 @@ public class InternalMenuDslLexer extends Lexer {
 
                 switch (alt3) {
             	case 1 :
-            	    // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:664:13: '0' .. '9'
+            	    // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:773:13: '0' .. '9'
             	    {
             	    matchRange('0','9'); 
 
@@ -778,10 +822,10 @@ public class InternalMenuDslLexer extends Lexer {
         try {
             int _type = RULE_STRING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:666:13: ( ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' ) )
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:666:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:775:13: ( ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' ) )
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:775:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
             {
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:666:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:775:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
             int alt6=2;
             int LA6_0 = input.LA(1);
 
@@ -799,10 +843,10 @@ public class InternalMenuDslLexer extends Lexer {
             }
             switch (alt6) {
                 case 1 :
-                    // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:666:16: '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
+                    // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:775:16: '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
                     {
                     match('\"'); 
-                    // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:666:20: ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )*
+                    // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:775:20: ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )*
                     loop4:
                     do {
                         int alt4=3;
@@ -818,7 +862,7 @@ public class InternalMenuDslLexer extends Lexer {
 
                         switch (alt4) {
                     	case 1 :
-                    	    // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:666:21: '\\\\' .
+                    	    // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:775:21: '\\\\' .
                     	    {
                     	    match('\\'); 
                     	    matchAny(); 
@@ -826,7 +870,7 @@ public class InternalMenuDslLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:666:28: ~ ( ( '\\\\' | '\"' ) )
+                    	    // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:775:28: ~ ( ( '\\\\' | '\"' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='!')||(input.LA(1)>='#' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -851,10 +895,10 @@ public class InternalMenuDslLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:666:48: '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\''
+                    // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:775:48: '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\''
                     {
                     match('\''); 
-                    // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:666:53: ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )*
+                    // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:775:53: ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )*
                     loop5:
                     do {
                         int alt5=3;
@@ -870,7 +914,7 @@ public class InternalMenuDslLexer extends Lexer {
 
                         switch (alt5) {
                     	case 1 :
-                    	    // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:666:54: '\\\\' .
+                    	    // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:775:54: '\\\\' .
                     	    {
                     	    match('\\'); 
                     	    matchAny(); 
@@ -878,7 +922,7 @@ public class InternalMenuDslLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:666:61: ~ ( ( '\\\\' | '\\'' ) )
+                    	    // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:775:61: ~ ( ( '\\\\' | '\\'' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -921,12 +965,12 @@ public class InternalMenuDslLexer extends Lexer {
         try {
             int _type = RULE_ML_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:668:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:668:19: '/*' ( options {greedy=false; } : . )* '*/'
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:777:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:777:19: '/*' ( options {greedy=false; } : . )* '*/'
             {
             match("/*"); 
 
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:668:24: ( options {greedy=false; } : . )*
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:777:24: ( options {greedy=false; } : . )*
             loop7:
             do {
                 int alt7=2;
@@ -951,7 +995,7 @@ public class InternalMenuDslLexer extends Lexer {
 
                 switch (alt7) {
             	case 1 :
-            	    // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:668:52: .
+            	    // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:777:52: .
             	    {
             	    matchAny(); 
 
@@ -981,12 +1025,12 @@ public class InternalMenuDslLexer extends Lexer {
         try {
             int _type = RULE_SL_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:670:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:670:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:779:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:779:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
             {
             match("//"); 
 
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:670:24: (~ ( ( '\\n' | '\\r' ) ) )*
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:779:24: (~ ( ( '\\n' | '\\r' ) ) )*
             loop8:
             do {
                 int alt8=2;
@@ -999,7 +1043,7 @@ public class InternalMenuDslLexer extends Lexer {
 
                 switch (alt8) {
             	case 1 :
-            	    // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:670:24: ~ ( ( '\\n' | '\\r' ) )
+            	    // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:779:24: ~ ( ( '\\n' | '\\r' ) )
             	    {
             	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='\uFFFF') ) {
             	        input.consume();
@@ -1019,7 +1063,7 @@ public class InternalMenuDslLexer extends Lexer {
                 }
             } while (true);
 
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:670:40: ( ( '\\r' )? '\\n' )?
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:779:40: ( ( '\\r' )? '\\n' )?
             int alt10=2;
             int LA10_0 = input.LA(1);
 
@@ -1028,9 +1072,9 @@ public class InternalMenuDslLexer extends Lexer {
             }
             switch (alt10) {
                 case 1 :
-                    // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:670:41: ( '\\r' )? '\\n'
+                    // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:779:41: ( '\\r' )? '\\n'
                     {
-                    // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:670:41: ( '\\r' )?
+                    // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:779:41: ( '\\r' )?
                     int alt9=2;
                     int LA9_0 = input.LA(1);
 
@@ -1039,7 +1083,7 @@ public class InternalMenuDslLexer extends Lexer {
                     }
                     switch (alt9) {
                         case 1 :
-                            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:670:41: '\\r'
+                            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:779:41: '\\r'
                             {
                             match('\r'); 
 
@@ -1071,10 +1115,10 @@ public class InternalMenuDslLexer extends Lexer {
         try {
             int _type = RULE_WS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:672:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:672:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:781:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:781:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             {
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:672:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:781:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             int cnt11=0;
             loop11:
             do {
@@ -1128,8 +1172,8 @@ public class InternalMenuDslLexer extends Lexer {
         try {
             int _type = RULE_ANY_OTHER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:674:16: ( . )
-            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:674:18: .
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:783:16: ( . )
+            // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:783:18: .
             {
             matchAny(); 
 
@@ -1144,8 +1188,8 @@ public class InternalMenuDslLexer extends Lexer {
     // $ANTLR end "RULE_ANY_OTHER"
 
     public void mTokens() throws RecognitionException {
-        // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:1:8: ( T__11 | T__12 | T__13 | T__14 | T__15 | T__16 | T__17 | T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | T__34 | T__35 | T__36 | T__37 | T__38 | RULE_ID | RULE_INT | RULE_STRING | RULE_ML_COMMENT | RULE_SL_COMMENT | RULE_WS | RULE_ANY_OTHER )
-        int alt12=35;
+        // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:1:8: ( T__11 | T__12 | T__13 | T__14 | T__15 | T__16 | T__17 | T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | T__34 | T__35 | T__36 | T__37 | T__38 | T__39 | T__40 | RULE_ID | RULE_INT | RULE_STRING | RULE_ML_COMMENT | RULE_SL_COMMENT | RULE_WS | RULE_ANY_OTHER )
+        int alt12=37;
         alt12 = dfa12.predict(input);
         switch (alt12) {
             case 1 :
@@ -1345,49 +1389,63 @@ public class InternalMenuDslLexer extends Lexer {
                 }
                 break;
             case 29 :
-                // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:1:178: RULE_ID
+                // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:1:178: T__39
+                {
+                mT__39(); 
+
+                }
+                break;
+            case 30 :
+                // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:1:184: T__40
+                {
+                mT__40(); 
+
+                }
+                break;
+            case 31 :
+                // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:1:190: RULE_ID
                 {
                 mRULE_ID(); 
 
                 }
                 break;
-            case 30 :
-                // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:1:186: RULE_INT
+            case 32 :
+                // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:1:198: RULE_INT
                 {
                 mRULE_INT(); 
 
                 }
                 break;
-            case 31 :
-                // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:1:195: RULE_STRING
+            case 33 :
+                // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:1:207: RULE_STRING
                 {
                 mRULE_STRING(); 
 
                 }
                 break;
-            case 32 :
-                // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:1:207: RULE_ML_COMMENT
+            case 34 :
+                // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:1:219: RULE_ML_COMMENT
                 {
                 mRULE_ML_COMMENT(); 
 
                 }
                 break;
-            case 33 :
-                // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:1:223: RULE_SL_COMMENT
+            case 35 :
+                // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:1:235: RULE_SL_COMMENT
                 {
                 mRULE_SL_COMMENT(); 
 
                 }
                 break;
-            case 34 :
-                // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:1:239: RULE_WS
+            case 36 :
+                // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:1:251: RULE_WS
                 {
                 mRULE_WS(); 
 
                 }
                 break;
-            case 35 :
-                // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:1:247: RULE_ANY_OTHER
+            case 37 :
+                // ../com.opcoach.restaurant.menu.xtext/src-gen/com/opcoach/restaurant/menu/xtext/parser/antlr/internal/InternalMenuDsl.g:1:259: RULE_ANY_OTHER
                 {
                 mRULE_ANY_OTHER(); 
 
@@ -1401,118 +1459,119 @@ public class InternalMenuDslLexer extends Lexer {
 
     protected DFA12 dfa12 = new DFA12(this);
     static final String DFA12_eotS =
-        "\1\uffff\1\41\1\uffff\2\41\2\uffff\4\41\2\uffff\13\41\1\37\2\uffff"+
-        "\3\37\2\uffff\1\41\2\uffff\2\41\2\uffff\5\41\2\uffff\16\41\5\uffff"+
-        "\23\41\1\152\22\41\1\175\2\41\1\uffff\1\41\1\u0081\1\u0082\3\41"+
-        "\1\u0086\2\41\1\u0089\7\41\1\u0091\1\uffff\3\41\2\uffff\2\41\1\u0097"+
-        "\1\uffff\1\u0099\1\41\1\uffff\2\41\1\u009d\2\41\1\u00a0\1\41\1\uffff"+
-        "\2\41\1\u00a4\1\41\1\u00a6\1\uffff\1\41\1\uffff\3\41\1\uffff\1\41"+
-        "\1\u00ac\1\uffff\1\u00ad\1\41\1\u00af\1\uffff\1\u00b0\1\uffff\5"+
-        "\41\2\uffff\1\41\2\uffff\3\41\1\u00ba\1\u00bb\1\41\1\u00bd\1\41"+
-        "\1\u00bf\2\uffff\1\41\1\uffff\1\u00c1\1\uffff\1\u00c2\2\uffff";
+        "\1\uffff\1\42\1\uffff\1\42\2\uffff\7\42\2\uffff\11\42\1\37\2\uffff"+
+        "\3\37\2\uffff\2\42\2\uffff\1\42\2\uffff\10\42\2\uffff\14\42\5\uffff"+
+        "\26\42\1\160\1\42\1\162\1\163\1\42\1\165\22\42\1\uffff\1\42\2\uffff"+
+        "\1\42\1\uffff\1\u008a\3\42\1\u008e\2\42\1\u0091\7\42\1\u0099\3\42"+
+        "\1\u009d\1\uffff\2\42\1\u00a0\1\uffff\1\u00a2\1\42\1\uffff\2\42"+
+        "\1\u00a6\2\42\1\u00a9\1\42\1\uffff\2\42\1\u00ad\1\uffff\1\42\1\u00af"+
+        "\1\uffff\1\42\1\uffff\3\42\1\uffff\1\42\1\u00b5\1\uffff\1\u00b6"+
+        "\1\42\1\u00b8\1\uffff\1\u00b9\1\uffff\5\42\2\uffff\1\42\2\uffff"+
+        "\3\42\1\u00c3\1\u00c4\1\42\1\u00c6\1\42\1\u00c8\2\uffff\1\42\1\uffff"+
+        "\1\u00ca\1\uffff\1\u00cb\2\uffff";
     static final String DFA12_eofS =
-        "\u00c3\uffff";
+        "\u00cc\uffff";
     static final String DFA12_minS =
-        "\1\0\1\162\1\uffff\1\141\1\145\2\uffff\1\145\1\162\1\155\1\156"+
-        "\2\uffff\1\156\1\160\1\157\1\145\1\165\1\162\1\151\1\145\2\157\1"+
-        "\151\1\101\2\uffff\2\0\1\52\2\uffff\1\157\2\uffff\1\164\1\143\2"+
-        "\uffff\1\143\1\151\1\157\1\147\1\145\2\uffff\1\147\1\151\1\160\1"+
-        "\145\1\164\1\156\1\163\1\156\1\141\1\154\1\162\1\164\1\162\1\154"+
-        "\5\uffff\1\165\1\145\2\151\1\143\1\165\1\162\1\155\1\162\1\143\1"+
-        "\160\1\141\1\164\1\156\1\163\1\143\1\155\1\154\1\171\1\60\1\155"+
-        "\1\144\1\160\1\147\2\160\1\145\1\156\1\145\1\163\1\145\1\151\1\145"+
-        "\1\153\1\154\2\145\1\150\1\60\1\151\1\110\1\uffff\1\141\2\60\1\157"+
-        "\2\145\1\60\1\164\1\144\1\60\1\144\1\156\1\162\1\146\1\145\2\162"+
-        "\1\60\1\uffff\1\154\1\157\1\154\2\uffff\1\162\1\163\1\60\1\uffff"+
-        "\1\60\1\151\1\uffff\1\151\1\145\1\60\1\141\1\163\1\60\1\164\1\uffff"+
-        "\1\151\1\164\1\60\1\171\1\60\1\uffff\1\171\1\uffff\2\145\1\163\1"+
-        "\uffff\1\163\1\60\1\uffff\1\60\1\164\1\60\1\uffff\1\60\1\uffff\1"+
-        "\160\2\156\1\163\1\164\2\uffff\1\145\2\uffff\1\145\2\164\2\60\1"+
-        "\162\1\60\1\163\1\60\2\uffff\1\163\1\uffff\1\60\1\uffff\1\60\2\uffff";
+        "\1\0\1\145\1\uffff\1\162\2\uffff\1\162\1\141\2\145\1\162\1\155"+
+        "\1\156\2\uffff\1\156\1\160\1\157\1\145\1\165\1\151\1\145\2\157\1"+
+        "\101\2\uffff\2\0\1\52\2\uffff\1\156\1\154\2\uffff\1\141\2\uffff"+
+        "\1\157\1\164\2\143\1\151\1\157\1\147\1\145\2\uffff\1\147\1\151\1"+
+        "\160\1\145\1\164\1\156\1\163\1\156\1\154\1\162\1\164\1\162\5\uffff"+
+        "\1\165\1\144\1\165\1\155\1\165\1\145\2\151\1\143\1\165\1\162\1\155"+
+        "\1\162\1\143\1\160\1\141\1\164\1\156\1\163\1\143\1\154\1\171\1\60"+
+        "\1\155\2\60\1\160\1\60\1\160\1\147\2\160\1\145\1\156\1\145\1\163"+
+        "\1\145\1\151\1\145\1\153\1\154\2\145\1\150\1\151\1\110\1\uffff\1"+
+        "\141\2\uffff\1\163\1\uffff\1\60\1\157\2\145\1\60\1\164\1\144\1\60"+
+        "\1\144\1\156\1\162\1\146\1\145\2\162\1\60\1\154\1\157\1\154\1\60"+
+        "\1\uffff\1\162\1\163\1\60\1\uffff\1\60\1\151\1\uffff\1\151\1\145"+
+        "\1\60\1\141\1\163\1\60\1\164\1\uffff\1\151\1\164\1\60\1\uffff\1"+
+        "\171\1\60\1\uffff\1\171\1\uffff\2\145\1\163\1\uffff\1\163\1\60\1"+
+        "\uffff\1\60\1\164\1\60\1\uffff\1\60\1\uffff\1\160\2\156\1\163\1"+
+        "\164\2\uffff\1\145\2\uffff\1\145\2\164\2\60\1\162\1\60\1\163\1\60"+
+        "\2\uffff\1\163\1\uffff\1\60\1\uffff\1\60\2\uffff";
     static final String DFA12_maxS =
-        "\1\uffff\1\162\1\uffff\1\141\1\145\2\uffff\1\145\1\162\1\155\1"+
-        "\164\2\uffff\1\156\1\165\1\162\1\151\1\165\1\162\1\151\1\145\2\157"+
-        "\1\151\1\172\2\uffff\2\uffff\1\57\2\uffff\1\157\2\uffff\1\164\1"+
-        "\143\2\uffff\1\143\1\151\1\157\1\147\1\145\2\uffff\1\147\1\151\1"+
-        "\160\1\145\1\164\1\156\1\163\1\156\1\141\1\154\1\162\1\164\1\162"+
-        "\1\154\5\uffff\1\165\1\145\2\151\1\143\1\165\1\162\1\155\1\162\1"+
-        "\143\1\160\1\141\1\164\1\156\1\163\1\143\1\155\1\154\1\171\1\172"+
-        "\1\155\1\144\1\160\1\147\2\160\1\145\1\156\1\145\1\163\1\145\1\151"+
-        "\1\145\1\153\1\154\2\145\1\150\1\172\1\151\1\110\1\uffff\1\141\2"+
-        "\172\1\157\2\145\1\172\1\164\1\144\1\172\1\144\1\156\1\162\1\146"+
-        "\1\145\2\162\1\172\1\uffff\1\154\1\157\1\154\2\uffff\1\162\1\163"+
-        "\1\172\1\uffff\1\172\1\151\1\uffff\1\151\1\145\1\172\1\141\1\163"+
-        "\1\172\1\164\1\uffff\1\151\1\164\1\172\1\171\1\172\1\uffff\1\171"+
-        "\1\uffff\2\145\1\163\1\uffff\1\163\1\172\1\uffff\1\172\1\164\1\172"+
-        "\1\uffff\1\172\1\uffff\1\160\2\156\1\163\1\164\2\uffff\1\145\2\uffff"+
-        "\1\145\2\164\2\172\1\162\1\172\1\163\1\172\2\uffff\1\163\1\uffff"+
-        "\1\172\1\uffff\1\172\2\uffff";
+        "\1\uffff\1\151\1\uffff\1\162\2\uffff\1\162\1\141\2\145\1\162\1"+
+        "\155\1\164\2\uffff\1\156\1\165\1\162\1\151\1\165\1\151\1\145\2\157"+
+        "\1\172\2\uffff\2\uffff\1\57\2\uffff\1\156\1\154\2\uffff\1\157\2"+
+        "\uffff\1\157\1\164\2\143\1\151\1\157\1\147\1\145\2\uffff\1\147\1"+
+        "\151\1\160\1\145\1\164\1\156\1\163\1\156\1\154\1\162\1\164\1\162"+
+        "\5\uffff\1\165\1\144\1\165\1\155\1\165\1\145\2\151\1\143\1\165\1"+
+        "\162\1\155\1\162\1\143\1\160\1\141\1\164\1\156\1\163\1\143\1\154"+
+        "\1\171\1\172\1\155\2\172\1\160\1\172\1\160\1\147\2\160\1\145\1\156"+
+        "\1\145\1\163\1\145\1\151\1\145\1\153\1\154\2\145\1\150\1\151\1\110"+
+        "\1\uffff\1\141\2\uffff\1\163\1\uffff\1\172\1\157\2\145\1\172\1\164"+
+        "\1\144\1\172\1\144\1\156\1\162\1\146\1\145\2\162\1\172\1\154\1\157"+
+        "\1\154\1\172\1\uffff\1\162\1\163\1\172\1\uffff\1\172\1\151\1\uffff"+
+        "\1\151\1\145\1\172\1\141\1\163\1\172\1\164\1\uffff\1\151\1\164\1"+
+        "\172\1\uffff\1\171\1\172\1\uffff\1\171\1\uffff\2\145\1\163\1\uffff"+
+        "\1\163\1\172\1\uffff\1\172\1\164\1\172\1\uffff\1\172\1\uffff\1\160"+
+        "\2\156\1\163\1\164\2\uffff\1\145\2\uffff\1\145\2\164\2\172\1\162"+
+        "\1\172\1\163\1\172\2\uffff\1\163\1\uffff\1\172\1\uffff\1\172\2\uffff";
     static final String DFA12_acceptS =
-        "\2\uffff\1\2\2\uffff\1\5\1\6\4\uffff\1\14\1\15\14\uffff\1\35\1"+
-        "\36\3\uffff\1\42\1\43\1\uffff\1\35\1\2\2\uffff\1\5\1\6\5\uffff\1"+
-        "\14\1\15\16\uffff\1\36\1\37\1\40\1\41\1\42\51\uffff\1\32\22\uffff"+
-        "\1\25\3\uffff\1\34\1\1\3\uffff\1\10\2\uffff\1\30\7\uffff\1\22\5"+
-        "\uffff\1\7\1\uffff\1\11\3\uffff\1\23\2\uffff\1\21\3\uffff\1\33\1"+
-        "\uffff\1\4\5\uffff\1\27\1\24\1\uffff\1\31\1\3\11\uffff\1\17\1\20"+
-        "\1\uffff\1\12\1\uffff\1\16\1\uffff\1\13\1\26";
+        "\2\uffff\1\2\1\uffff\1\4\1\5\7\uffff\1\16\1\17\12\uffff\1\37\1"+
+        "\40\3\uffff\1\44\1\45\2\uffff\1\37\1\2\1\uffff\1\4\1\5\10\uffff"+
+        "\1\16\1\17\14\uffff\1\40\1\41\1\42\1\43\1\44\56\uffff\1\34\1\uffff"+
+        "\1\1\1\36\1\uffff\1\27\24\uffff\1\6\3\uffff\1\12\2\uffff\1\32\7"+
+        "\uffff\1\24\3\uffff\1\3\2\uffff\1\11\1\uffff\1\13\3\uffff\1\25\2"+
+        "\uffff\1\23\3\uffff\1\35\1\uffff\1\10\5\uffff\1\31\1\26\1\uffff"+
+        "\1\33\1\7\11\uffff\1\21\1\22\1\uffff\1\14\1\uffff\1\20\1\uffff\1"+
+        "\15\1\30";
     static final String DFA12_specialS =
-        "\1\2\32\uffff\1\0\1\1\u00a6\uffff}>";
+        "\1\2\32\uffff\1\1\1\0\u00af\uffff}>";
     static final String[] DFA12_transitionS = {
             "\11\37\2\36\2\37\1\36\22\37\1\36\1\37\1\33\4\37\1\34\4\37\1"+
-            "\5\1\14\1\13\1\35\12\32\7\37\6\31\1\1\1\25\1\15\3\31\1\27\1"+
-            "\26\3\31\1\7\3\31\1\24\4\31\3\37\1\30\1\31\1\37\1\11\1\17\1"+
-            "\3\1\20\2\31\1\22\1\31\1\12\2\31\1\21\1\23\2\31\1\10\1\31\1"+
-            "\4\1\16\7\31\1\2\1\37\1\6\uff82\37",
-            "\1\40",
+            "\4\1\16\1\15\1\35\12\32\7\37\6\31\1\6\1\26\1\17\3\31\1\1\1\27"+
+            "\3\31\1\11\3\31\1\25\4\31\3\37\1\30\1\31\1\37\1\13\1\21\1\7"+
+            "\1\22\2\31\1\3\1\31\1\14\2\31\1\23\1\24\2\31\1\12\1\31\1\10"+
+            "\1\20\7\31\1\2\1\37\1\5\uff82\37",
+            "\1\40\3\uffff\1\41",
             "",
-            "\1\43",
             "\1\44",
             "",
             "",
             "\1\47",
             "\1\50",
             "\1\51",
-            "\1\52\5\uffff\1\53",
+            "\1\52",
+            "\1\53",
+            "\1\54",
+            "\1\55\5\uffff\1\56",
             "",
             "",
-            "\1\56",
-            "\1\57\4\uffff\1\60",
-            "\1\62\2\uffff\1\61",
-            "\1\64\3\uffff\1\63",
-            "\1\65",
-            "\1\66",
-            "\1\67",
+            "\1\61",
+            "\1\62\4\uffff\1\63",
+            "\1\65\2\uffff\1\64",
+            "\1\67\3\uffff\1\66",
             "\1\70",
             "\1\71",
             "\1\72",
             "\1\73",
-            "\32\41\4\uffff\1\41\1\uffff\32\41",
+            "\1\74",
+            "\32\42\4\uffff\1\42\1\uffff\32\42",
             "",
             "",
-            "\0\75",
-            "\0\75",
-            "\1\76\4\uffff\1\77",
-            "",
-            "",
-            "\1\101",
+            "\0\76",
+            "\0\76",
+            "\1\77\4\uffff\1\100",
             "",
             "",
             "\1\102",
             "\1\103",
             "",
             "",
-            "\1\104",
-            "\1\105",
+            "\1\105\15\uffff\1\104",
+            "",
+            "",
             "\1\106",
             "\1\107",
             "\1\110",
-            "",
-            "",
             "\1\111",
             "\1\112",
             "\1\113",
             "\1\114",
             "\1\115",
+            "",
+            "",
             "\1\116",
             "\1\117",
             "\1\120",
@@ -1522,14 +1581,14 @@ public class InternalMenuDslLexer extends Lexer {
             "\1\124",
             "\1\125",
             "\1\126",
-            "",
-            "",
-            "",
-            "",
-            "",
             "\1\127",
             "\1\130",
             "\1\131",
+            "",
+            "",
+            "",
+            "",
+            "",
             "\1\132",
             "\1\133",
             "\1\134",
@@ -1546,18 +1605,18 @@ public class InternalMenuDslLexer extends Lexer {
             "\1\147",
             "\1\150",
             "\1\151",
-            "\12\41\7\uffff\32\41\4\uffff\1\41\1\uffff\32\41",
+            "\1\152",
             "\1\153",
             "\1\154",
             "\1\155",
             "\1\156",
             "\1\157",
-            "\1\160",
+            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
             "\1\161",
-            "\1\162",
-            "\1\163",
+            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
+            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
             "\1\164",
-            "\1\165",
+            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
             "\1\166",
             "\1\167",
             "\1\170",
@@ -1565,97 +1624,108 @@ public class InternalMenuDslLexer extends Lexer {
             "\1\172",
             "\1\173",
             "\1\174",
-            "\12\41\7\uffff\32\41\4\uffff\1\41\1\uffff\32\41",
+            "\1\175",
             "\1\176",
             "\1\177",
-            "",
             "\1\u0080",
-            "\12\41\7\uffff\32\41\4\uffff\1\41\1\uffff\32\41",
-            "\12\41\7\uffff\32\41\4\uffff\1\41\1\uffff\32\41",
+            "\1\u0081",
+            "\1\u0082",
             "\1\u0083",
             "\1\u0084",
             "\1\u0085",
-            "\12\41\7\uffff\32\41\4\uffff\1\41\1\uffff\32\41",
+            "\1\u0086",
             "\1\u0087",
+            "",
             "\1\u0088",
-            "\12\41\7\uffff\32\41\4\uffff\1\41\1\uffff\32\41",
-            "\1\u008a",
+            "",
+            "",
+            "\1\u0089",
+            "",
+            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
             "\1\u008b",
             "\1\u008c",
             "\1\u008d",
-            "\1\u008e",
+            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
             "\1\u008f",
             "\1\u0090",
-            "\12\41\7\uffff\32\41\4\uffff\1\41\1\uffff\32\41",
-            "",
+            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
             "\1\u0092",
             "\1\u0093",
             "\1\u0094",
-            "",
-            "",
             "\1\u0095",
             "\1\u0096",
-            "\12\41\7\uffff\32\41\4\uffff\1\41\1\uffff\32\41",
-            "",
-            "\12\41\7\uffff\23\41\1\u0098\6\41\4\uffff\1\41\1\uffff\32"+
-            "\41",
+            "\1\u0097",
+            "\1\u0098",
+            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
             "\1\u009a",
-            "",
             "\1\u009b",
             "\1\u009c",
-            "\12\41\7\uffff\32\41\4\uffff\1\41\1\uffff\32\41",
+            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
+            "",
             "\1\u009e",
             "\1\u009f",
-            "\12\41\7\uffff\32\41\4\uffff\1\41\1\uffff\32\41",
-            "\1\u00a1",
+            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
             "",
-            "\1\u00a2",
+            "\12\42\7\uffff\23\42\1\u00a1\6\42\4\uffff\1\42\1\uffff\32"+
+            "\42",
             "\1\u00a3",
-            "\12\41\7\uffff\32\41\4\uffff\1\41\1\uffff\32\41",
+            "",
+            "\1\u00a4",
             "\1\u00a5",
-            "\12\41\7\uffff\32\41\4\uffff\1\41\1\uffff\32\41",
-            "",
+            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
             "\1\u00a7",
-            "",
             "\1\u00a8",
-            "\1\u00a9",
+            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
             "\1\u00aa",
             "",
             "\1\u00ab",
-            "\12\41\7\uffff\32\41\4\uffff\1\41\1\uffff\32\41",
+            "\1\u00ac",
+            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
             "",
-            "\12\41\7\uffff\32\41\4\uffff\1\41\1\uffff\32\41",
             "\1\u00ae",
-            "\12\41\7\uffff\32\41\4\uffff\1\41\1\uffff\32\41",
+            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
             "",
-            "\12\41\7\uffff\32\41\4\uffff\1\41\1\uffff\32\41",
+            "\1\u00b0",
             "",
             "\1\u00b1",
             "\1\u00b2",
             "\1\u00b3",
+            "",
             "\1\u00b4",
-            "\1\u00b5",
+            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
             "",
-            "",
-            "\1\u00b6",
-            "",
-            "",
+            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
             "\1\u00b7",
-            "\1\u00b8",
-            "\1\u00b9",
-            "\12\41\7\uffff\32\41\4\uffff\1\41\1\uffff\32\41",
-            "\12\41\7\uffff\32\41\4\uffff\1\41\1\uffff\32\41",
+            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
+            "",
+            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
+            "",
+            "\1\u00ba",
+            "\1\u00bb",
             "\1\u00bc",
-            "\12\41\7\uffff\32\41\4\uffff\1\41\1\uffff\32\41",
+            "\1\u00bd",
             "\1\u00be",
-            "\12\41\7\uffff\32\41\4\uffff\1\41\1\uffff\32\41",
+            "",
+            "",
+            "\1\u00bf",
             "",
             "",
             "\1\u00c0",
+            "\1\u00c1",
+            "\1\u00c2",
+            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
+            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
+            "\1\u00c5",
+            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
+            "\1\u00c7",
+            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
             "",
-            "\12\41\7\uffff\32\41\4\uffff\1\41\1\uffff\32\41",
             "",
-            "\12\41\7\uffff\32\41\4\uffff\1\41\1\uffff\32\41",
+            "\1\u00c9",
+            "",
+            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
+            "",
+            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
             "",
             ""
     };
@@ -1690,27 +1760,27 @@ public class InternalMenuDslLexer extends Lexer {
             this.transition = DFA12_transition;
         }
         public String getDescription() {
-            return "1:1: Tokens : ( T__11 | T__12 | T__13 | T__14 | T__15 | T__16 | T__17 | T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | T__34 | T__35 | T__36 | T__37 | T__38 | RULE_ID | RULE_INT | RULE_STRING | RULE_ML_COMMENT | RULE_SL_COMMENT | RULE_WS | RULE_ANY_OTHER );";
+            return "1:1: Tokens : ( T__11 | T__12 | T__13 | T__14 | T__15 | T__16 | T__17 | T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | T__34 | T__35 | T__36 | T__37 | T__38 | T__39 | T__40 | RULE_ID | RULE_INT | RULE_STRING | RULE_ML_COMMENT | RULE_SL_COMMENT | RULE_WS | RULE_ANY_OTHER );";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             IntStream input = _input;
         	int _s = s;
             switch ( s ) {
                     case 0 : 
-                        int LA12_27 = input.LA(1);
+                        int LA12_28 = input.LA(1);
 
                         s = -1;
-                        if ( ((LA12_27>='\u0000' && LA12_27<='\uFFFF')) ) {s = 61;}
+                        if ( ((LA12_28>='\u0000' && LA12_28<='\uFFFF')) ) {s = 62;}
 
                         else s = 31;
 
                         if ( s>=0 ) return s;
                         break;
                     case 1 : 
-                        int LA12_28 = input.LA(1);
+                        int LA12_27 = input.LA(1);
 
                         s = -1;
-                        if ( ((LA12_28>='\u0000' && LA12_28<='\uFFFF')) ) {s = 61;}
+                        if ( ((LA12_27>='\u0000' && LA12_27<='\uFFFF')) ) {s = 62;}
 
                         else s = 31;
 
@@ -1720,51 +1790,51 @@ public class InternalMenuDslLexer extends Lexer {
                         int LA12_0 = input.LA(1);
 
                         s = -1;
-                        if ( (LA12_0=='G') ) {s = 1;}
+                        if ( (LA12_0=='M') ) {s = 1;}
 
                         else if ( (LA12_0=='{') ) {s = 2;}
 
-                        else if ( (LA12_0=='c') ) {s = 3;}
+                        else if ( (LA12_0=='g') ) {s = 3;}
 
-                        else if ( (LA12_0=='r') ) {s = 4;}
+                        else if ( (LA12_0==',') ) {s = 4;}
 
-                        else if ( (LA12_0==',') ) {s = 5;}
+                        else if ( (LA12_0=='}') ) {s = 5;}
 
-                        else if ( (LA12_0=='}') ) {s = 6;}
+                        else if ( (LA12_0=='G') ) {s = 6;}
 
-                        else if ( (LA12_0=='R') ) {s = 7;}
+                        else if ( (LA12_0=='c') ) {s = 7;}
 
-                        else if ( (LA12_0=='p') ) {s = 8;}
+                        else if ( (LA12_0=='r') ) {s = 8;}
 
-                        else if ( (LA12_0=='a') ) {s = 9;}
+                        else if ( (LA12_0=='R') ) {s = 9;}
 
-                        else if ( (LA12_0=='i') ) {s = 10;}
+                        else if ( (LA12_0=='p') ) {s = 10;}
 
-                        else if ( (LA12_0=='.') ) {s = 11;}
+                        else if ( (LA12_0=='a') ) {s = 11;}
 
-                        else if ( (LA12_0=='-') ) {s = 12;}
+                        else if ( (LA12_0=='i') ) {s = 12;}
 
-                        else if ( (LA12_0=='I') ) {s = 13;}
+                        else if ( (LA12_0=='.') ) {s = 13;}
 
-                        else if ( (LA12_0=='s') ) {s = 14;}
+                        else if ( (LA12_0=='-') ) {s = 14;}
 
-                        else if ( (LA12_0=='b') ) {s = 15;}
+                        else if ( (LA12_0=='I') ) {s = 15;}
 
-                        else if ( (LA12_0=='d') ) {s = 16;}
+                        else if ( (LA12_0=='s') ) {s = 16;}
 
-                        else if ( (LA12_0=='l') ) {s = 17;}
+                        else if ( (LA12_0=='b') ) {s = 17;}
 
-                        else if ( (LA12_0=='g') ) {s = 18;}
+                        else if ( (LA12_0=='d') ) {s = 18;}
 
-                        else if ( (LA12_0=='m') ) {s = 19;}
+                        else if ( (LA12_0=='l') ) {s = 19;}
 
-                        else if ( (LA12_0=='V') ) {s = 20;}
+                        else if ( (LA12_0=='m') ) {s = 20;}
 
-                        else if ( (LA12_0=='H') ) {s = 21;}
+                        else if ( (LA12_0=='V') ) {s = 21;}
 
-                        else if ( (LA12_0=='N') ) {s = 22;}
+                        else if ( (LA12_0=='H') ) {s = 22;}
 
-                        else if ( (LA12_0=='M') ) {s = 23;}
+                        else if ( (LA12_0=='N') ) {s = 23;}
 
                         else if ( (LA12_0=='^') ) {s = 24;}
 

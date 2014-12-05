@@ -41,6 +41,9 @@ public class MenuDslParser extends AbstractContentAssistParser {
 					put(grammarAccess.getCategoryAccess().getAlternatives(), "rule__Category__Alternatives");
 					put(grammarAccess.getAmountTypeAccess().getAlternatives(), "rule__AmountType__Alternatives");
 					put(grammarAccess.getSpicinessAccess().getAlternatives(), "rule__Spiciness__Alternatives");
+					put(grammarAccess.getMenuAccess().getGroup(), "rule__Menu__Group__0");
+					put(grammarAccess.getMenuAccess().getGroup_4(), "rule__Menu__Group_4__0");
+					put(grammarAccess.getMenuAccess().getGroup_4_3(), "rule__Menu__Group_4_3__0");
 					put(grammarAccess.getGroupAccess().getGroup(), "rule__Group__Group__0");
 					put(grammarAccess.getGroupAccess().getGroup_4(), "rule__Group__Group_4__0");
 					put(grammarAccess.getGroupAccess().getGroup_5(), "rule__Group__Group_5__0");
@@ -55,6 +58,9 @@ public class MenuDslParser extends AbstractContentAssistParser {
 					put(grammarAccess.getEIntAccess().getGroup(), "rule__EInt__Group__0");
 					put(grammarAccess.getIngredientAccess().getGroup(), "rule__Ingredient__Group__0");
 					put(grammarAccess.getIngredientAccess().getGroup_4(), "rule__Ingredient__Group_4__0");
+					put(grammarAccess.getMenuAccess().getNameAssignment_2(), "rule__Menu__NameAssignment_2");
+					put(grammarAccess.getMenuAccess().getGroupsAssignment_4_2(), "rule__Menu__GroupsAssignment_4_2");
+					put(grammarAccess.getMenuAccess().getGroupsAssignment_4_3_1(), "rule__Menu__GroupsAssignment_4_3_1");
 					put(grammarAccess.getGroupAccess().getNameAssignment_2(), "rule__Group__NameAssignment_2");
 					put(grammarAccess.getGroupAccess().getCategoryAssignment_4_1(), "rule__Group__CategoryAssignment_4_1");
 					put(grammarAccess.getGroupAccess().getRecipesAssignment_5_2(), "rule__Group__RecipesAssignment_5_2");
@@ -77,7 +83,7 @@ public class MenuDslParser extends AbstractContentAssistParser {
 	protected Collection<FollowElement> getFollowElements(AbstractInternalContentAssistParser parser) {
 		try {
 			com.opcoach.restaurant.menu.xtext.ui.contentassist.antlr.internal.InternalMenuDslParser typedParser = (com.opcoach.restaurant.menu.xtext.ui.contentassist.antlr.internal.InternalMenuDslParser) parser;
-			typedParser.entryRuleGroup();
+			typedParser.entryRuleMenu();
 			return typedParser.getFollowElements();
 		} catch(RecognitionException ex) {
 			throw new RuntimeException(ex);

@@ -18,6 +18,102 @@ import org.eclipse.xtext.common.services.TerminalsGrammarAccess;
 public class MenuDslGrammarAccess extends AbstractGrammarElementFinder {
 	
 	
+	public class MenuElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Menu");
+		private final Group cGroup = (Group)rule.eContents().get(1);
+		private final Action cMenuAction_0 = (Action)cGroup.eContents().get(0);
+		private final Keyword cMenuKeyword_1 = (Keyword)cGroup.eContents().get(1);
+		private final Assignment cNameAssignment_2 = (Assignment)cGroup.eContents().get(2);
+		private final RuleCall cNameEStringParserRuleCall_2_0 = (RuleCall)cNameAssignment_2.eContents().get(0);
+		private final Keyword cLeftCurlyBracketKeyword_3 = (Keyword)cGroup.eContents().get(3);
+		private final Group cGroup_4 = (Group)cGroup.eContents().get(4);
+		private final Keyword cGroupsKeyword_4_0 = (Keyword)cGroup_4.eContents().get(0);
+		private final Keyword cLeftCurlyBracketKeyword_4_1 = (Keyword)cGroup_4.eContents().get(1);
+		private final Assignment cGroupsAssignment_4_2 = (Assignment)cGroup_4.eContents().get(2);
+		private final RuleCall cGroupsGroupParserRuleCall_4_2_0 = (RuleCall)cGroupsAssignment_4_2.eContents().get(0);
+		private final Group cGroup_4_3 = (Group)cGroup_4.eContents().get(3);
+		private final Keyword cCommaKeyword_4_3_0 = (Keyword)cGroup_4_3.eContents().get(0);
+		private final Assignment cGroupsAssignment_4_3_1 = (Assignment)cGroup_4_3.eContents().get(1);
+		private final RuleCall cGroupsGroupParserRuleCall_4_3_1_0 = (RuleCall)cGroupsAssignment_4_3_1.eContents().get(0);
+		private final Keyword cRightCurlyBracketKeyword_4_4 = (Keyword)cGroup_4.eContents().get(4);
+		private final Keyword cRightCurlyBracketKeyword_5 = (Keyword)cGroup.eContents().get(5);
+		
+		//Menu:
+		//	{Menu} "Menu" name=EString "{" ("groups" "{" groups+=Group ("," groups+=Group)* "}")? "}";
+		public ParserRule getRule() { return rule; }
+
+		//{Menu} "Menu" name=EString "{" ("groups" "{" groups+=Group ("," groups+=Group)* "}")? "}"
+		public Group getGroup() { return cGroup; }
+
+		//{Menu}
+		public Action getMenuAction_0() { return cMenuAction_0; }
+
+		//"Menu"
+		public Keyword getMenuKeyword_1() { return cMenuKeyword_1; }
+
+		//name=EString
+		public Assignment getNameAssignment_2() { return cNameAssignment_2; }
+
+		//EString
+		public RuleCall getNameEStringParserRuleCall_2_0() { return cNameEStringParserRuleCall_2_0; }
+
+		//"{"
+		public Keyword getLeftCurlyBracketKeyword_3() { return cLeftCurlyBracketKeyword_3; }
+
+		//("groups" "{" groups+=Group ("," groups+=Group)* "}")?
+		public Group getGroup_4() { return cGroup_4; }
+
+		//"groups"
+		public Keyword getGroupsKeyword_4_0() { return cGroupsKeyword_4_0; }
+
+		//"{"
+		public Keyword getLeftCurlyBracketKeyword_4_1() { return cLeftCurlyBracketKeyword_4_1; }
+
+		//groups+=Group
+		public Assignment getGroupsAssignment_4_2() { return cGroupsAssignment_4_2; }
+
+		//Group
+		public RuleCall getGroupsGroupParserRuleCall_4_2_0() { return cGroupsGroupParserRuleCall_4_2_0; }
+
+		//("," groups+=Group)*
+		public Group getGroup_4_3() { return cGroup_4_3; }
+
+		//","
+		public Keyword getCommaKeyword_4_3_0() { return cCommaKeyword_4_3_0; }
+
+		//groups+=Group
+		public Assignment getGroupsAssignment_4_3_1() { return cGroupsAssignment_4_3_1; }
+
+		//Group
+		public RuleCall getGroupsGroupParserRuleCall_4_3_1_0() { return cGroupsGroupParserRuleCall_4_3_1_0; }
+
+		//"}"
+		public Keyword getRightCurlyBracketKeyword_4_4() { return cRightCurlyBracketKeyword_4_4; }
+
+		//"}"
+		public Keyword getRightCurlyBracketKeyword_5() { return cRightCurlyBracketKeyword_5; }
+	}
+
+	public class EStringElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "EString");
+		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
+		private final RuleCall cSTRINGTerminalRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
+		private final RuleCall cIDTerminalRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
+		
+		//EString returns ecore::EString:
+		//	STRING | ID;
+		public ParserRule getRule() { return rule; }
+
+		//STRING | ID
+		public Alternatives getAlternatives() { return cAlternatives; }
+
+		//STRING
+		public RuleCall getSTRINGTerminalRuleCall_0() { return cSTRINGTerminalRuleCall_0; }
+
+		//ID
+		public RuleCall getIDTerminalRuleCall_1() { return cIDTerminalRuleCall_1; }
+	}
+
 	public class GroupElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Group");
 		private final Group cGroup = (Group)rule.eContents().get(1);
@@ -110,26 +206,6 @@ public class MenuDslGrammarAccess extends AbstractGrammarElementFinder {
 
 		//"}"
 		public Keyword getRightCurlyBracketKeyword_6() { return cRightCurlyBracketKeyword_6; }
-	}
-
-	public class EStringElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "EString");
-		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
-		private final RuleCall cSTRINGTerminalRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
-		private final RuleCall cIDTerminalRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
-		
-		//EString returns ecore::EString:
-		//	STRING | ID;
-		public ParserRule getRule() { return rule; }
-
-		//STRING | ID
-		public Alternatives getAlternatives() { return cAlternatives; }
-
-		//STRING
-		public RuleCall getSTRINGTerminalRuleCall_0() { return cSTRINGTerminalRuleCall_0; }
-
-		//ID
-		public RuleCall getIDTerminalRuleCall_1() { return cIDTerminalRuleCall_1; }
 	}
 
 	public class RecipeElements extends AbstractParserRuleElementFinder {
@@ -495,8 +571,9 @@ public class MenuDslGrammarAccess extends AbstractGrammarElementFinder {
 		public Keyword getMildMildKeyword_3_0() { return cMildMildKeyword_3_0; }
 	}
 	
-	private final GroupElements pGroup;
+	private final MenuElements pMenu;
 	private final EStringElements pEString;
+	private final GroupElements pGroup;
 	private final CategoryElements unknownRuleCategory;
 	private final RecipeElements pRecipe;
 	private final EBigDecimalElements pEBigDecimal;
@@ -514,8 +591,9 @@ public class MenuDslGrammarAccess extends AbstractGrammarElementFinder {
 		TerminalsGrammarAccess gaTerminals) {
 		this.grammar = internalFindGrammar(grammarProvider);
 		this.gaTerminals = gaTerminals;
-		this.pGroup = new GroupElements();
+		this.pMenu = new MenuElements();
 		this.pEString = new EStringElements();
+		this.pGroup = new GroupElements();
 		this.unknownRuleCategory = new CategoryElements();
 		this.pRecipe = new RecipeElements();
 		this.pEBigDecimal = new EBigDecimalElements();
@@ -552,15 +630,14 @@ public class MenuDslGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	
-	//Group:
-	//	{Group} "Group" name=EString "{" ("category" category=Category)? ("recipes" "{" recipes+=Recipe (","
-	//	recipes+=Recipe)* "}")? "}";
-	public GroupElements getGroupAccess() {
-		return pGroup;
+	//Menu:
+	//	{Menu} "Menu" name=EString "{" ("groups" "{" groups+=Group ("," groups+=Group)* "}")? "}";
+	public MenuElements getMenuAccess() {
+		return pMenu;
 	}
 	
-	public ParserRule getGroupRule() {
-		return getGroupAccess().getRule();
+	public ParserRule getMenuRule() {
+		return getMenuAccess().getRule();
 	}
 
 	//EString returns ecore::EString:
@@ -571,6 +648,17 @@ public class MenuDslGrammarAccess extends AbstractGrammarElementFinder {
 	
 	public ParserRule getEStringRule() {
 		return getEStringAccess().getRule();
+	}
+
+	//Group:
+	//	{Group} "Group" name=EString "{" ("category" category=Category)? ("recipes" "{" recipes+=Recipe (","
+	//	recipes+=Recipe)* "}")? "}";
+	public GroupElements getGroupAccess() {
+		return pGroup;
+	}
+	
+	public ParserRule getGroupRule() {
+		return getGroupAccess().getRule();
 	}
 
 	//enum Category:
