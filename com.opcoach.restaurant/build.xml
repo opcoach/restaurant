@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="project" default="generateCode">
+	<description> Building java code from ecore model</description>
+	
+	<target name="generateCode">
+		<emf.Ecore2Java genmodel="model/restaurant.genmodel"
+		model="model/restaurant.ecore"
+		generatemodelproject="true"
+		generateeditorproject="false"
+		generateeditproject="false"
+		reconcilegenmodel="reload" />	
+	</target>
+</project>
