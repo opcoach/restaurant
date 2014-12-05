@@ -6,7 +6,8 @@
     interfaceNamePattern="M{0}" classNamePattern="M{0}Impl" operationReflection="true"
     importOrganizing="true">
   <foreignModel>menu.ecore</foreignModel>
-  <genPackages prefix="Menu" disposableProviderFactory="true" ecorePackage="menu.ecore#/">
+  <genPackages prefix="Menu" basePackage="com.opcoach" disposableProviderFactory="true"
+      ecorePackage="menu.ecore#/">
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="menu.ecore#//Spiciness">
       <genEnumLiterals ecoreEnumLiteral="menu.ecore#//Spiciness/VeryHot"/>
       <genEnumLiterals ecoreEnumLiteral="menu.ecore#//Spiciness/Hot"/>

@@ -9,7 +9,10 @@ Bundle-Localization: plugin
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Export-Package: menu,
  menu.impl,
- menu.util
+ menu.util,
+ com.opcoach.menu,
+ com.opcoach.menu.impl,
+ com.opcoach.menu.util
 Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.emf.ecore;visibility:=reexport
 Bundle-ActivationPolicy: lazy

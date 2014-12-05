@@ -10,7 +10,7 @@
       <!-- @generated menu -->
       <package
             uri="http://www.opcoach.com/restaurant/menu/1.0"
-            class="menu.MMenuPackage"
+            class="com.opcoach.menu.MMenuPackage"
             genModel="model/menu.genmodel"/>
    </extension>
 

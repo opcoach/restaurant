@@ -7,7 +7,8 @@ Bundle-ClassPath: .
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
-Export-Package: menu.tests
+Export-Package: menu.tests,
+ com.opcoach.menu.tests
 Require-Bundle: org.eclipse.core.runtime,
  com.opcoach.restaurant.menu;visibility:=reexport,
  org.eclipse.emf.ecore.xmi;visibility:=reexport,
