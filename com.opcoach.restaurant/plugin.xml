@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated restaurant -->
+      <package
+            uri="http://www.opcoach.com/restaurant/1.0"
+            class="com.opcoach.restaurant.MRestaurantPackage"
+            genModel="model/restaurant.genmodel"/>
+   </extension>
+
+</plugin>

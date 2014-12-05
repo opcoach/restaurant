@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: com.opcoach.restaurant.edit;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-ClassPath: .
+Bundle-Activator: com.opcoach.restaurant.provider.RestaurantEditPlugin$Implementation
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: com.opcoach.restaurant.provider
+Require-Bundle: org.eclipse.core.runtime,
+ com.opcoach.restaurant;visibility:=reexport,
+ org.eclipse.emf.edit;visibility:=reexport,
+ com.opcoach.restaurant.menu;visibility:=reexport,
+ com.opcoach.restaurant.menu.edit;visibility:=reexport
+Bundle-ActivationPolicy: lazy

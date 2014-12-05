@@ -10,7 +10,7 @@
       <!-- @generated menu -->
       <factory
             uri="http://www.opcoach.com/restaurant/menu/1.0"
-            class="menu.provider.MenuItemProviderAdapterFactory"
+            class="com.opcoach.menu.provider.MenuItemProviderAdapterFactory"
             supportedTypes=
               "org.eclipse.emf.edit.provider.IEditingDomainItemProvider
                org.eclipse.emf.edit.provider.IStructuredItemContentProvider

@@ -4,11 +4,12 @@ Bundle-Name: %pluginName
 Bundle-SymbolicName: com.opcoach.restaurant.menu.editor;singleton:=true
 Bundle-Version: 1.0.0.qualifier
 Bundle-ClassPath: .
-Bundle-Activator: menu.presentation.MenuEditorPlugin$Implementation
+Bundle-Activator: com.opcoach.menu.presentation.MenuEditorPlugin$Implementation
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
-Export-Package: menu.presentation
+Export-Package: menu.presentation,
+ com.opcoach.menu.presentation
 Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.core.resources;visibility:=reexport,
  com.opcoach.restaurant.menu.edit;visibility:=reexport,

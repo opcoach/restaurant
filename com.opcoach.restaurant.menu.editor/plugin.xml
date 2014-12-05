@@ -12,9 +12,9 @@
             id="org.eclipse.emf.ecore.Wizard.category.ID"
             name="%_UI_Wizard_category"/>
       <wizard
-            id="menu.presentation.MenuModelWizardID"
+            id="com.opcoach.menu.presentation.MenuModelWizardID"
             name="%_UI_MenuModelWizard_label"
-            class="menu.presentation.MenuModelWizard"
+            class="com.opcoach.menu.presentation.MenuModelWizard"
             category="org.eclipse.emf.ecore.Wizard.category.ID"
             icon="icons/full/obj16/MenuModelFile.gif">
          <description>%_UI_MenuModelWizard_description</description>
@@ -25,13 +25,12 @@
    <extension point="org.eclipse.ui.editors">
       <!-- @generated menu -->
       <editor
-            id="menu.presentation.MenuEditorID"
+            id="com.opcoach.menu.presentation.MenuEditorID"
             name="%_UI_MenuEditor_label"
             icon="icons/full/obj16/MenuModelFile.gif"
             extensions="menu"
-            class="menu.presentation.MenuEditor"
-            contributorClass="menu.presentation.MenuActionBarContributor">
+            class="com.opcoach.menu.presentation.MenuEditor"
+            contributorClass="com.opcoach.menu.presentation.MenuActionBarContributor">
       </editor>
    </extension>
-
 </plugin>

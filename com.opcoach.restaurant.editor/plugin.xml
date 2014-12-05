@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated restaurant -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="com.opcoach.restaurant.presentation.RestaurantModelWizardID"
+            name="%_UI_RestaurantModelWizard_label"
+            class="com.opcoach.restaurant.presentation.RestaurantModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/RestaurantModelFile.gif">
+         <description>%_UI_RestaurantModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated restaurant -->
+      <editor
+            id="com.opcoach.restaurant.presentation.RestaurantEditorID"
+            name="%_UI_RestaurantEditor_label"
+            icon="icons/full/obj16/RestaurantModelFile.gif"
+            extensions="restaurant"
+            class="com.opcoach.restaurant.presentation.RestaurantEditor"
+            contributorClass="com.opcoach.restaurant.presentation.RestaurantActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>
