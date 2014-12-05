@@ -1,4 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" name="restaurantTables" version="8.1.0">
-  <ownedViewpoints name="restaurantTablesMainViewpoint" modelFileExtension="restaurant"/>
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="restaurantTables" version="8.1.0">
+  <ownedViewpoints name="restaurantTablesMainViewpoint" modelFileExtension="restaurant">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="RestaurantTablesDiagram" label="Restaurant Tables Diagram" domainClass="Restaurant">
+      <defaultLayer name="Default">
+        <nodeMappings name="TablesNode" label="Tables" semanticCandidatesExpression="feature:tables" domainClass="Table">
+          <style xsi:type="style:SquareDescription" labelExpression="feature:number" sizeComputationExpression="[capacity/]" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          </style>
+        </nodeMappings>
+        <toolSections>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="createTable" label="Create new table" nodeMappings="//@ownedViewpoints[name='restaurantTablesMainViewpoint']/@ownedRepresentations[name='RestaurantTablesDiagram']/@defaultLayer/@nodeMappings[name='TablesNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="Table" referenceName="tables">
+                  <subModelOperations xsi:type="tool_1:ChangeContext">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="capacity" valueExpression="10"/>
+                  </subModelOperations>
+                  <subModelOperations xsi:type="tool_1:ChangeContext">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="number" valueExpression="1000"/>
+                  </subModelOperations>
+                  <subModelOperations xsi:type="tool_1:ChangeContext">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="priority" valueExpression="LOW"/>
+                  </subModelOperations>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+    </ownedRepresentations>
+  </ownedViewpoints>
 </description:Group>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><templates>
+<template id="group" autoinsert="true" context="com.opcoach.restaurant.menu.xtext.MenuDsl.Group" deleted="false" description="" enabled="true" name="Group">Group ${name} {&#13;
+	&#13;
+}</template><template id="ing1" autoinsert="true" context="com.opcoach.restaurant.menu.xtext.MenuDsl.Ingredient" deleted="false" description="Ingredient" enabled="true" name="Ingredient">Ingredient ${ name} {&#13;
+	spiciness ${spiciness}&#13;
+}</template><template id="ing2" autoinsert="true" context="com.opcoach.restaurant.menu.xtext.MenuDsl.Ingredient" deleted="false" description="Ingredient without spiceness" enabled="true" name="Ingredient simple">Ingredient ${ name} {&#13;
+	&#13;
+}</template><template id="rec" autoinsert="true" context="com.opcoach.restaurant.menu.xtext.MenuDsl.Recipe" deleted="false" description="Receipe" enabled="true" name="Receipe">Recipe ${name} {&#13;
+	amount ${amount}  amountType ${amountType} &#13;
+	ingredients {&#13;
+		&#13;
+	}&#13;
+}</template></templates>

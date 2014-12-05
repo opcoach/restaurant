@@ -1,6 +1,5 @@
 package com.opcoach.restaurant.rcp;
 
-import org.eclipse.swt.graphics.Point;
 import org.eclipse.ui.application.ActionBarAdvisor;
 import org.eclipse.ui.application.IActionBarConfigurer;
 import org.eclipse.ui.application.IWorkbenchWindowConfigurer;
@@ -18,8 +17,13 @@ public class ApplicationWorkbenchWindowAdvisor extends WorkbenchWindowAdvisor {
     
     public void preWindowOpen() {
         IWorkbenchWindowConfigurer configurer = getWindowConfigurer();
-        configurer.setInitialSize(new Point(400, 300));
         configurer.setShowCoolBar(false);
         configurer.setShowStatusLine(false);
+    }
+    
+    @Override
+    public void postWindowOpen() {
+    	super.postWindowOpen();
+    	getWindowConfigurer().getWindow().getShell().setFullScreen(true);
     }
 }

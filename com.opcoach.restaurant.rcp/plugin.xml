@@ -15,8 +15,8 @@
          point="org.eclipse.ui.perspectives">
       <perspective
             name="Restaurant Perspective"
-            class="com.opcoach.restaurant.rcp.perspective.RestaurantPerspective"
-            id="com.opcoach.restaurant.perspective.id">
+            class="com.opcoach.restaurant.rcp.Perspective"
+            id="com.opcoach.restaurant.rcp.perspective.id">
       </perspective>
    </extension>
    <extension
@@ -30,6 +30,21 @@
                value="icons/alt_window_16.gif,icons/alt_window_32.gif">
          </property>
       </product>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            class="com.opcoach.restaurant.rcp.views.RestaurantView"
+            id="com.opcoach.restaurant.rcp.view.tree"
+            name="Restaurant Viewer"
+            restorable="true">
+      </view>
+      <view
+            class="com.opcoach.restaurant.rcp.views.MenuView"
+            id="com.opcoach.restaurant.rcp.view.menu"
+            name="Menu Viewer"
+            restorable="true">
+      </view>
    </extension>
 
 </plugin>
