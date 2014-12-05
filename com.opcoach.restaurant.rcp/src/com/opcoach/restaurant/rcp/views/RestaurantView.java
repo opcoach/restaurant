@@ -1,5 +1,6 @@
 package com.opcoach.restaurant.rcp.views;
 
+import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.ui.part.ViewPart;
 
@@ -10,23 +11,27 @@ public final class RestaurantView extends ViewPart {
 
 	public static final String VIEW_ID = "com.opcoach.restaurant.rcp.view.tree";
 	
-	
+	private RestaurantTreeViewer viewer;
 	
 	public RestaurantView() {
-		// TODO Auto-generated constructor stub
+		
 	}
 
 	@Override
 	public void createPartControl(final Composite parent) {
-		
-		final RestaurantTreeViewer viewer = new RestaurantTreeViewer(parent);
-		viewer.setInput(Activator.getDefault().getRestaurant());
+		viewer = new RestaurantTreeViewer(parent);
+		final Resource res = Activator.getDefault().getResource();
+		viewer.setInput(res.getContents().get(0));
 	}
 
 	@Override
 	public void setFocus() {
 		// TODO Auto-generated method stub
 
+	}
+
+	public RestaurantTreeViewer getViewer() {
+		return viewer;
 	}
 
 }

@@ -75,7 +75,7 @@ public class Activator extends AbstractUIPlugin {
 		return imageDescriptorFromPlugin(PLUGIN_ID, path);
 	}
 	
-	public MRestaurant getRestaurant() {
+	public Resource getResource() {
 		final ResourceSet resSet = new ResourceSetImpl();
 		resSet.getResourceFactoryRegistry().getExtensionToFactoryMap().put("restaurant", new XMIResourceFactoryImpl());
 		
@@ -97,8 +97,7 @@ public class Activator extends AbstractUIPlugin {
 			}
 		}
 		
-		final Resource res = resSet.getResource(uri, true);
-		return (MRestaurant) res.getContents().get(0);
+		return resSet.getResource(uri, true);
 	}
 	
 }
