@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Viewmodeleditor
+Bundle-SymbolicName: com.opcoach.restaurant.viewmodeleditor;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: OPCOACH
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.emf.edit.ui,
+ org.eclipse.emf.ecp.ui,
+ org.eclipse.emf.ecp.view.core.swt,
+ org.eclipse.emf.ecp.ui.view.swt,
+ org.eclipse.core.runtime,
+ com.opcoach.restaurant.viewmodel,
+ org.eclipse.emf.common
+Export-Package: com.opcoach.restaurant.viewmodeleditor.editor
