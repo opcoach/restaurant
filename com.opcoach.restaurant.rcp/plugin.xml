@@ -52,12 +52,28 @@
             id="com.opcoach.restaurant.rcp.command.new.customer"
             name="Add Customer">
       </command>
+      <command
+            id="com.opcoach.restaurant.rcp.command.new.booking"
+            name="Add Booking">
+      </command>
+      <command
+            id="com.opcoach.restaurant.rcp.command.new.menu"
+            name="Add Menu">
+      </command>
    </extension>
    <extension
          point="org.eclipse.ui.handlers">
       <handler
             class="com.opcoach.restaurant.rcp.handlers.AddCustomerHandler"
             commandId="com.opcoach.restaurant.rcp.command.new.customer">
+      </handler>
+      <handler
+            class="com.opcoach.restaurant.rcp.handlers.AddBookingHandler"
+            commandId="com.opcoach.restaurant.rcp.command.new.booking">
+      </handler>
+      <handler
+            class="com.opcoach.restaurant.rcp.handlers.AddMenuHandler"
+            commandId="com.opcoach.restaurant.rcp.command.new.menu">
       </handler>
    </extension>
    <extension
@@ -67,6 +83,25 @@
             locationURI="toolbar:com.opcoach.restaurant.rcp.view.tree?after=additions">
          <command
                commandId="com.opcoach.restaurant.rcp.command.new.customer"
+               icon="icons/add_customer.gif"
+               style="push">
+         </command>
+      </menuContribution>
+      <menuContribution
+            allPopups="false"
+            locationURI="toolbar:com.opcoach.restaurant.rcp.view.tree?after=additions">
+         <command
+               commandId="com.opcoach.restaurant.rcp.command.new.booking"
+               icon="icons/add_booking.gif"
+               style="push">
+         </command>
+      </menuContribution>
+      <menuContribution
+            allPopups="false"
+            locationURI="toolbar:com.opcoach.restaurant.rcp.view.tree?after=additions">
+         <command
+               commandId="com.opcoach.restaurant.rcp.command.new.menu"
+               icon="icons/alt_window16.gif"
                style="push">
          </command>
       </menuContribution>
