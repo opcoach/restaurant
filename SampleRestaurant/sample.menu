@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu:Menu xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:menu="http://www.opcoach.com/restaurant/menu/1.0" name="Christmas Eve Menu">
+  <groups name="Christmas dinner" category="dinner">
+    <recipes name="Karp" price="15" amount="200">
+      <ingredients name="Karp" spiciness="Normal"/>
+    </recipes>
+  </groups>
+  <groups name="Regular breakfast">
+    <recipes name="Scrambled eggs" price="8" amount="200">
+      <ingredients name="eggs" spiciness="Normal"/>
+    </recipes>
+  </groups>
+</menu:Menu>
