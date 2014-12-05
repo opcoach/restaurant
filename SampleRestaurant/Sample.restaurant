@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<re:Restaurant xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:re="http://www.opcoach.com/restaurant/1.0">
+  <tables capacity="4" priority="DEFAULT"/>
+  <tables number="1" capacity="4"/>
+  <tables number="2" capacity="6"/>
+  <waiters name="Kamil"/>
+  <bookings/>
+  <customers name="Marcin" phone="112" mail="" priority="DEFAULT"/>
+  <customers name="Bartosz" phone="997" priority="DEFAULT"/>
+</re:Restaurant>
