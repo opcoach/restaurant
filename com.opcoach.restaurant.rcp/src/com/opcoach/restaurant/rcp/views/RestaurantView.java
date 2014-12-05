@@ -1,7 +1,9 @@
 package com.opcoach.restaurant.rcp.views;
 
 import org.eclipse.emf.ecore.resource.Resource;
+import org.eclipse.jface.action.MenuManager;
 import org.eclipse.swt.widgets.Composite;
+import org.eclipse.swt.widgets.Menu;
 import org.eclipse.ui.part.ViewPart;
 
 import com.opcoach.restaurant.rcp.Activator;
@@ -22,6 +24,11 @@ public final class RestaurantView extends ViewPart {
 		viewer = new RestaurantTreeViewer(parent);
 		final Resource res = Activator.getDefault().getResource();
 		viewer.setInput(res.getContents().get(0));
+		
+		MenuManager menuMgr = new MenuManager();
+		Menu menu = menuMgr.createContextMenu(getViewer().getControl());
+		getViewer().getControl().setMenu(menu);
+		getSite().registerContextMenu(menuMgr, getViewer());
 	}
 
 	@Override
