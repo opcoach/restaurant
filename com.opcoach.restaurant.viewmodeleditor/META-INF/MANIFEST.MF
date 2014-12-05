@@ -4,7 +4,7 @@ Bundle-Name: Viewmodeleditor
 Bundle-SymbolicName: com.opcoach.restaurant.viewmodeleditor;singleton:=true
 Bundle-Version: 1.0.0.qualifier
 Bundle-Vendor: OPCOACH
-Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Require-Bundle: org.eclipse.ui,
  org.eclipse.emf.edit.ui,
  org.eclipse.emf.ecp.ui,
