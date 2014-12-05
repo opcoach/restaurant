@@ -3,17 +3,14 @@
  */
 package com.opcoach.restaurant.menu.xtext.formatting;
 
-import com.google.common.base.Objects;
 import com.google.inject.Inject;
 import com.opcoach.restaurant.menu.xtext.services.MenuDslGrammarAccess;
 import java.util.List;
 import org.eclipse.xtext.Keyword;
 import org.eclipse.xtext.ParserRule;
-import org.eclipse.xtext.RuleCall;
 import org.eclipse.xtext.formatting.impl.AbstractDeclarativeFormatter;
 import org.eclipse.xtext.formatting.impl.FormattingConfig;
 import org.eclipse.xtext.xbase.lib.Extension;
-import org.eclipse.xtext.xbase.lib.IterableExtensions;
 
 /**
  * This class contains custom formatting description.
@@ -41,57 +38,29 @@ public class MenuDslFormatter extends AbstractDeclarativeFormatter {
         _setLinewrap.after(comma);
       }
     }
-    boolean firstRule = true;
+    FormattingConfig.IndentationLocatorStart _setIndentationIncrement = c.setIndentationIncrement();
     MenuDslGrammarAccess.GroupElements _groupAccess = this._menuDslGrammarAccess.getGroupAccess();
-    ParserRule _rule = _groupAccess.getRule();
-    List<RuleCall> _findRuleCalls = this._menuDslGrammarAccess.findRuleCalls(_rule);
-    for (final RuleCall group : _findRuleCalls) {
-      {
-        if ((firstRule == true)) {
-          FormattingConfig.IndentationLocatorStart _setIndentationIncrement = c.setIndentationIncrement();
-          _setIndentationIncrement.before(group);
-          FormattingConfig.LinewrapLocator _setLinewrap = c.setLinewrap(1);
-          _setLinewrap.before(group);
-          firstRule = false;
-        }
-        FormattingConfig.LinewrapLocator _setLinewrap_1 = c.setLinewrap(1);
-        _setLinewrap_1.after(group);
-        MenuDslGrammarAccess.RecipeElements _recipeAccess = this._menuDslGrammarAccess.getRecipeAccess();
-        ParserRule _rule_1 = _recipeAccess.getRule();
-        List<RuleCall> _findRuleCalls_1 = this._menuDslGrammarAccess.findRuleCalls(_rule_1);
-        RuleCall _last = IterableExtensions.<RuleCall>last(_findRuleCalls_1);
-        boolean _equals = Objects.equal(group, _last);
-        if (_equals) {
-          FormattingConfig.IndentationLocatorEnd _setIndentationDecrement = c.setIndentationDecrement();
-          _setIndentationDecrement.after(group);
-        }
-      }
-    }
-    firstRule = true;
+    Keyword _groupKeyword_1 = _groupAccess.getGroupKeyword_1();
+    _setIndentationIncrement.before(_groupKeyword_1);
+    FormattingConfig.LinewrapLocator _setLinewrap = c.setLinewrap(1);
+    MenuDslGrammarAccess.GroupElements _groupAccess_1 = this._menuDslGrammarAccess.getGroupAccess();
+    Keyword _groupKeyword_1_1 = _groupAccess_1.getGroupKeyword_1();
+    _setLinewrap.before(_groupKeyword_1_1);
+    FormattingConfig.IndentationLocatorEnd _setIndentationDecrement = c.setIndentationDecrement();
+    MenuDslGrammarAccess.GroupElements _groupAccess_2 = this._menuDslGrammarAccess.getGroupAccess();
+    ParserRule _rule = _groupAccess_2.getRule();
+    _setIndentationDecrement.after(_rule);
+    FormattingConfig.IndentationLocatorStart _setIndentationIncrement_1 = c.setIndentationIncrement();
     MenuDslGrammarAccess.RecipeElements _recipeAccess = this._menuDslGrammarAccess.getRecipeAccess();
-    ParserRule _rule_1 = _recipeAccess.getRule();
-    List<RuleCall> _findRuleCalls_1 = this._menuDslGrammarAccess.findRuleCalls(_rule_1);
-    for (final RuleCall group_1 : _findRuleCalls_1) {
-      {
-        if ((firstRule == true)) {
-          FormattingConfig.IndentationLocatorStart _setIndentationIncrement = c.setIndentationIncrement();
-          _setIndentationIncrement.before(group_1);
-          FormattingConfig.LinewrapLocator _setLinewrap = c.setLinewrap(1);
-          _setLinewrap.before(group_1);
-          firstRule = false;
-        }
-        FormattingConfig.LinewrapLocator _setLinewrap_1 = c.setLinewrap(1);
-        _setLinewrap_1.after(group_1);
-        MenuDslGrammarAccess.RecipeElements _recipeAccess_1 = this._menuDslGrammarAccess.getRecipeAccess();
-        ParserRule _rule_2 = _recipeAccess_1.getRule();
-        List<RuleCall> _findRuleCalls_2 = this._menuDslGrammarAccess.findRuleCalls(_rule_2);
-        RuleCall _last = IterableExtensions.<RuleCall>last(_findRuleCalls_2);
-        boolean _equals = Objects.equal(group_1, _last);
-        if (_equals) {
-          FormattingConfig.IndentationLocatorEnd _setIndentationDecrement = c.setIndentationDecrement();
-          _setIndentationDecrement.after(group_1);
-        }
-      }
-    }
+    Keyword _recipeKeyword_1 = _recipeAccess.getRecipeKeyword_1();
+    _setIndentationIncrement_1.before(_recipeKeyword_1);
+    FormattingConfig.LinewrapLocator _setLinewrap_1 = c.setLinewrap(1);
+    MenuDslGrammarAccess.RecipeElements _recipeAccess_1 = this._menuDslGrammarAccess.getRecipeAccess();
+    Keyword _recipeKeyword_1_1 = _recipeAccess_1.getRecipeKeyword_1();
+    _setLinewrap_1.before(_recipeKeyword_1_1);
+    FormattingConfig.IndentationLocatorEnd _setIndentationDecrement_1 = c.setIndentationDecrement();
+    MenuDslGrammarAccess.RecipeElements _recipeAccess_2 = this._menuDslGrammarAccess.getRecipeAccess();
+    ParserRule _rule_1 = _recipeAccess_2.getRule();
+    _setIndentationDecrement_1.after(_rule_1);
   }
 }

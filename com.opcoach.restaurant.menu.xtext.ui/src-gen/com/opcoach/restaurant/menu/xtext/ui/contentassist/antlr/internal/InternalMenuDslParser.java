@@ -22,7 +22,7 @@ import java.util.ArrayList;
 @SuppressWarnings("all")
 public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
     public static final String[] tokenNames = new String[] {
-        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_STRING", "RULE_ID", "RULE_INT", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'breakfast'", "'dinner'", "'lunch'", "'supper'", "'dessert'", "'gram'", "'milliliters'", "'bottles'", "'items'", "'VeryHot'", "'Hot'", "'Normal'", "'Mild'", "'Menu'", "','", "'Group'", "'Recipe'", "'price'", "'ingredients'", "'.'", "'-'", "'Ingredient'"
+        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_STRING", "RULE_ID", "RULE_INT", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'breakfast'", "'dinner'", "'lunch'", "'supper'", "'dessert'", "'gram'", "'milliliters'", "'bottles'", "'items'", "'VeryHot'", "'Hot'", "'Normal'", "'Mild'", "'Menu'", "'Group'", "','", "'Recipe'", "'Price'", "'.'", "'-'", "'Ingredient'"
     };
     public static final int RULE_ID=5;
     public static final int T__29=29;
@@ -43,7 +43,6 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
     public static final int T__19=19;
     public static final int T__31=31;
     public static final int RULE_STRING=4;
-    public static final int T__32=32;
     public static final int T__16=16;
     public static final int T__15=15;
     public static final int T__18=18;
@@ -1572,7 +1571,7 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
             int alt5=2;
             int LA5_0 = input.LA(1);
 
-            if ( (LA5_0==26) ) {
+            if ( (LA5_0==25) ) {
                 alt5=1;
             }
             switch (alt5) {
@@ -1731,20 +1730,20 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Menu__Group_3__1__Impl"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:625:1: rule__Menu__Group_3__1__Impl : ( ( rule__Menu__Group_3_1__0 )* ) ;
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:625:1: rule__Menu__Group_3__1__Impl : ( ( rule__Menu__GroupsAssignment_3_1 )* ) ;
     public final void rule__Menu__Group_3__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:629:1: ( ( ( rule__Menu__Group_3_1__0 )* ) )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:630:1: ( ( rule__Menu__Group_3_1__0 )* )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:629:1: ( ( ( rule__Menu__GroupsAssignment_3_1 )* ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:630:1: ( ( rule__Menu__GroupsAssignment_3_1 )* )
             {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:630:1: ( ( rule__Menu__Group_3_1__0 )* )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:631:1: ( rule__Menu__Group_3_1__0 )*
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:630:1: ( ( rule__Menu__GroupsAssignment_3_1 )* )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:631:1: ( rule__Menu__GroupsAssignment_3_1 )*
             {
-             before(grammarAccess.getMenuAccess().getGroup_3_1()); 
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:632:1: ( rule__Menu__Group_3_1__0 )*
+             before(grammarAccess.getMenuAccess().getGroupsAssignment_3_1()); 
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:632:1: ( rule__Menu__GroupsAssignment_3_1 )*
             loop6:
             do {
                 int alt6=2;
@@ -1757,10 +1756,10 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
 
                 switch (alt6) {
             	case 1 :
-            	    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:632:2: rule__Menu__Group_3_1__0
+            	    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:632:2: rule__Menu__GroupsAssignment_3_1
             	    {
-            	    pushFollow(FollowSets000.FOLLOW_rule__Menu__Group_3_1__0_in_rule__Menu__Group_3__1__Impl1299);
-            	    rule__Menu__Group_3_1__0();
+            	    pushFollow(FollowSets000.FOLLOW_rule__Menu__GroupsAssignment_3_1_in_rule__Menu__Group_3__1__Impl1299);
+            	    rule__Menu__GroupsAssignment_3_1();
 
             	    state._fsp--;
 
@@ -1773,7 +1772,7 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
                 }
             } while (true);
 
-             after(grammarAccess.getMenuAccess().getGroup_3_1()); 
+             after(grammarAccess.getMenuAccess().getGroupsAssignment_3_1()); 
 
             }
 
@@ -1795,177 +1794,22 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__Menu__Group_3__1__Impl"
 
 
-    // $ANTLR start "rule__Menu__Group_3_1__0"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:646:1: rule__Menu__Group_3_1__0 : rule__Menu__Group_3_1__0__Impl rule__Menu__Group_3_1__1 ;
-    public final void rule__Menu__Group_3_1__0() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:650:1: ( rule__Menu__Group_3_1__0__Impl rule__Menu__Group_3_1__1 )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:651:2: rule__Menu__Group_3_1__0__Impl rule__Menu__Group_3_1__1
-            {
-            pushFollow(FollowSets000.FOLLOW_rule__Menu__Group_3_1__0__Impl_in_rule__Menu__Group_3_1__01334);
-            rule__Menu__Group_3_1__0__Impl();
-
-            state._fsp--;
-
-            pushFollow(FollowSets000.FOLLOW_rule__Menu__Group_3_1__1_in_rule__Menu__Group_3_1__01337);
-            rule__Menu__Group_3_1__1();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Menu__Group_3_1__0"
-
-
-    // $ANTLR start "rule__Menu__Group_3_1__0__Impl"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:658:1: rule__Menu__Group_3_1__0__Impl : ( ',' ) ;
-    public final void rule__Menu__Group_3_1__0__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:662:1: ( ( ',' ) )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:663:1: ( ',' )
-            {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:663:1: ( ',' )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:664:1: ','
-            {
-             before(grammarAccess.getMenuAccess().getCommaKeyword_3_1_0()); 
-            match(input,25,FollowSets000.FOLLOW_25_in_rule__Menu__Group_3_1__0__Impl1365); 
-             after(grammarAccess.getMenuAccess().getCommaKeyword_3_1_0()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Menu__Group_3_1__0__Impl"
-
-
-    // $ANTLR start "rule__Menu__Group_3_1__1"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:677:1: rule__Menu__Group_3_1__1 : rule__Menu__Group_3_1__1__Impl ;
-    public final void rule__Menu__Group_3_1__1() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:681:1: ( rule__Menu__Group_3_1__1__Impl )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:682:2: rule__Menu__Group_3_1__1__Impl
-            {
-            pushFollow(FollowSets000.FOLLOW_rule__Menu__Group_3_1__1__Impl_in_rule__Menu__Group_3_1__11396);
-            rule__Menu__Group_3_1__1__Impl();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Menu__Group_3_1__1"
-
-
-    // $ANTLR start "rule__Menu__Group_3_1__1__Impl"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:688:1: rule__Menu__Group_3_1__1__Impl : ( ( rule__Menu__GroupsAssignment_3_1_1 ) ) ;
-    public final void rule__Menu__Group_3_1__1__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:692:1: ( ( ( rule__Menu__GroupsAssignment_3_1_1 ) ) )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:693:1: ( ( rule__Menu__GroupsAssignment_3_1_1 ) )
-            {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:693:1: ( ( rule__Menu__GroupsAssignment_3_1_1 ) )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:694:1: ( rule__Menu__GroupsAssignment_3_1_1 )
-            {
-             before(grammarAccess.getMenuAccess().getGroupsAssignment_3_1_1()); 
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:695:1: ( rule__Menu__GroupsAssignment_3_1_1 )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:695:2: rule__Menu__GroupsAssignment_3_1_1
-            {
-            pushFollow(FollowSets000.FOLLOW_rule__Menu__GroupsAssignment_3_1_1_in_rule__Menu__Group_3_1__1__Impl1423);
-            rule__Menu__GroupsAssignment_3_1_1();
-
-            state._fsp--;
-
-
-            }
-
-             after(grammarAccess.getMenuAccess().getGroupsAssignment_3_1_1()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Menu__Group_3_1__1__Impl"
-
-
     // $ANTLR start "rule__Group__Group__0"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:709:1: rule__Group__Group__0 : rule__Group__Group__0__Impl rule__Group__Group__1 ;
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:646:1: rule__Group__Group__0 : rule__Group__Group__0__Impl rule__Group__Group__1 ;
     public final void rule__Group__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:713:1: ( rule__Group__Group__0__Impl rule__Group__Group__1 )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:714:2: rule__Group__Group__0__Impl rule__Group__Group__1
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:650:1: ( rule__Group__Group__0__Impl rule__Group__Group__1 )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:651:2: rule__Group__Group__0__Impl rule__Group__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Group__Group__0__Impl_in_rule__Group__Group__01457);
+            pushFollow(FollowSets000.FOLLOW_rule__Group__Group__0__Impl_in_rule__Group__Group__01334);
             rule__Group__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Group__Group__1_in_rule__Group__Group__01460);
+            pushFollow(FollowSets000.FOLLOW_rule__Group__Group__1_in_rule__Group__Group__01337);
             rule__Group__Group__1();
 
             state._fsp--;
@@ -1989,21 +1833,21 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Group__Group__0__Impl"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:721:1: rule__Group__Group__0__Impl : ( () ) ;
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:658:1: rule__Group__Group__0__Impl : ( () ) ;
     public final void rule__Group__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:725:1: ( ( () ) )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:726:1: ( () )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:662:1: ( ( () ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:663:1: ( () )
             {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:726:1: ( () )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:727:1: ()
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:663:1: ( () )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:664:1: ()
             {
              before(grammarAccess.getGroupAccess().getGroupAction_0()); 
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:728:1: ()
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:730:1: 
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:665:1: ()
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:667:1: 
             {
             }
 
@@ -2026,21 +1870,21 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Group__Group__1"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:740:1: rule__Group__Group__1 : rule__Group__Group__1__Impl rule__Group__Group__2 ;
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:677:1: rule__Group__Group__1 : rule__Group__Group__1__Impl rule__Group__Group__2 ;
     public final void rule__Group__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:744:1: ( rule__Group__Group__1__Impl rule__Group__Group__2 )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:745:2: rule__Group__Group__1__Impl rule__Group__Group__2
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:681:1: ( rule__Group__Group__1__Impl rule__Group__Group__2 )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:682:2: rule__Group__Group__1__Impl rule__Group__Group__2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Group__Group__1__Impl_in_rule__Group__Group__11518);
+            pushFollow(FollowSets000.FOLLOW_rule__Group__Group__1__Impl_in_rule__Group__Group__11395);
             rule__Group__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Group__Group__2_in_rule__Group__Group__11521);
+            pushFollow(FollowSets000.FOLLOW_rule__Group__Group__2_in_rule__Group__Group__11398);
             rule__Group__Group__2();
 
             state._fsp--;
@@ -2064,20 +1908,20 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Group__Group__1__Impl"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:752:1: rule__Group__Group__1__Impl : ( 'Group' ) ;
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:689:1: rule__Group__Group__1__Impl : ( 'Group' ) ;
     public final void rule__Group__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:756:1: ( ( 'Group' ) )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:757:1: ( 'Group' )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:693:1: ( ( 'Group' ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:694:1: ( 'Group' )
             {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:757:1: ( 'Group' )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:758:1: 'Group'
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:694:1: ( 'Group' )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:695:1: 'Group'
             {
              before(grammarAccess.getGroupAccess().getGroupKeyword_1()); 
-            match(input,26,FollowSets000.FOLLOW_26_in_rule__Group__Group__1__Impl1549); 
+            match(input,25,FollowSets000.FOLLOW_25_in_rule__Group__Group__1__Impl1426); 
              after(grammarAccess.getGroupAccess().getGroupKeyword_1()); 
 
             }
@@ -2101,21 +1945,21 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Group__Group__2"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:771:1: rule__Group__Group__2 : rule__Group__Group__2__Impl rule__Group__Group__3 ;
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:708:1: rule__Group__Group__2 : rule__Group__Group__2__Impl rule__Group__Group__3 ;
     public final void rule__Group__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:775:1: ( rule__Group__Group__2__Impl rule__Group__Group__3 )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:776:2: rule__Group__Group__2__Impl rule__Group__Group__3
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:712:1: ( rule__Group__Group__2__Impl rule__Group__Group__3 )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:713:2: rule__Group__Group__2__Impl rule__Group__Group__3
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Group__Group__2__Impl_in_rule__Group__Group__21580);
+            pushFollow(FollowSets000.FOLLOW_rule__Group__Group__2__Impl_in_rule__Group__Group__21457);
             rule__Group__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Group__Group__3_in_rule__Group__Group__21583);
+            pushFollow(FollowSets000.FOLLOW_rule__Group__Group__3_in_rule__Group__Group__21460);
             rule__Group__Group__3();
 
             state._fsp--;
@@ -2139,23 +1983,23 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Group__Group__2__Impl"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:783:1: rule__Group__Group__2__Impl : ( ( rule__Group__NameAssignment_2 ) ) ;
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:720:1: rule__Group__Group__2__Impl : ( ( rule__Group__NameAssignment_2 ) ) ;
     public final void rule__Group__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:787:1: ( ( ( rule__Group__NameAssignment_2 ) ) )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:788:1: ( ( rule__Group__NameAssignment_2 ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:724:1: ( ( ( rule__Group__NameAssignment_2 ) ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:725:1: ( ( rule__Group__NameAssignment_2 ) )
             {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:788:1: ( ( rule__Group__NameAssignment_2 ) )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:789:1: ( rule__Group__NameAssignment_2 )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:725:1: ( ( rule__Group__NameAssignment_2 ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:726:1: ( rule__Group__NameAssignment_2 )
             {
              before(grammarAccess.getGroupAccess().getNameAssignment_2()); 
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:790:1: ( rule__Group__NameAssignment_2 )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:790:2: rule__Group__NameAssignment_2
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:727:1: ( rule__Group__NameAssignment_2 )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:727:2: rule__Group__NameAssignment_2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Group__NameAssignment_2_in_rule__Group__Group__2__Impl1610);
+            pushFollow(FollowSets000.FOLLOW_rule__Group__NameAssignment_2_in_rule__Group__Group__2__Impl1487);
             rule__Group__NameAssignment_2();
 
             state._fsp--;
@@ -2186,21 +2030,21 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Group__Group__3"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:800:1: rule__Group__Group__3 : rule__Group__Group__3__Impl rule__Group__Group__4 ;
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:737:1: rule__Group__Group__3 : rule__Group__Group__3__Impl rule__Group__Group__4 ;
     public final void rule__Group__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:804:1: ( rule__Group__Group__3__Impl rule__Group__Group__4 )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:805:2: rule__Group__Group__3__Impl rule__Group__Group__4
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:741:1: ( rule__Group__Group__3__Impl rule__Group__Group__4 )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:742:2: rule__Group__Group__3__Impl rule__Group__Group__4
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Group__Group__3__Impl_in_rule__Group__Group__31640);
+            pushFollow(FollowSets000.FOLLOW_rule__Group__Group__3__Impl_in_rule__Group__Group__31517);
             rule__Group__Group__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Group__Group__4_in_rule__Group__Group__31643);
+            pushFollow(FollowSets000.FOLLOW_rule__Group__Group__4_in_rule__Group__Group__31520);
             rule__Group__Group__4();
 
             state._fsp--;
@@ -2224,20 +2068,20 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Group__Group__3__Impl"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:812:1: rule__Group__Group__3__Impl : ( ( rule__Group__CategoryAssignment_3 )? ) ;
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:749:1: rule__Group__Group__3__Impl : ( ( rule__Group__CategoryAssignment_3 )? ) ;
     public final void rule__Group__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:816:1: ( ( ( rule__Group__CategoryAssignment_3 )? ) )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:817:1: ( ( rule__Group__CategoryAssignment_3 )? )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:753:1: ( ( ( rule__Group__CategoryAssignment_3 )? ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:754:1: ( ( rule__Group__CategoryAssignment_3 )? )
             {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:817:1: ( ( rule__Group__CategoryAssignment_3 )? )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:818:1: ( rule__Group__CategoryAssignment_3 )?
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:754:1: ( ( rule__Group__CategoryAssignment_3 )? )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:755:1: ( rule__Group__CategoryAssignment_3 )?
             {
              before(grammarAccess.getGroupAccess().getCategoryAssignment_3()); 
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:819:1: ( rule__Group__CategoryAssignment_3 )?
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:756:1: ( rule__Group__CategoryAssignment_3 )?
             int alt7=2;
             int LA7_0 = input.LA(1);
 
@@ -2246,9 +2090,9 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
             }
             switch (alt7) {
                 case 1 :
-                    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:819:2: rule__Group__CategoryAssignment_3
+                    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:756:2: rule__Group__CategoryAssignment_3
                     {
-                    pushFollow(FollowSets000.FOLLOW_rule__Group__CategoryAssignment_3_in_rule__Group__Group__3__Impl1670);
+                    pushFollow(FollowSets000.FOLLOW_rule__Group__CategoryAssignment_3_in_rule__Group__Group__3__Impl1547);
                     rule__Group__CategoryAssignment_3();
 
                     state._fsp--;
@@ -2282,16 +2126,16 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Group__Group__4"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:829:1: rule__Group__Group__4 : rule__Group__Group__4__Impl ;
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:766:1: rule__Group__Group__4 : rule__Group__Group__4__Impl ;
     public final void rule__Group__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:833:1: ( rule__Group__Group__4__Impl )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:834:2: rule__Group__Group__4__Impl
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:770:1: ( rule__Group__Group__4__Impl )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:771:2: rule__Group__Group__4__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Group__Group__4__Impl_in_rule__Group__Group__41701);
+            pushFollow(FollowSets000.FOLLOW_rule__Group__Group__4__Impl_in_rule__Group__Group__41578);
             rule__Group__Group__4__Impl();
 
             state._fsp--;
@@ -2315,20 +2159,20 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Group__Group__4__Impl"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:840:1: rule__Group__Group__4__Impl : ( ( rule__Group__Group_4__0 )? ) ;
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:777:1: rule__Group__Group__4__Impl : ( ( rule__Group__Group_4__0 )? ) ;
     public final void rule__Group__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:844:1: ( ( ( rule__Group__Group_4__0 )? ) )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:845:1: ( ( rule__Group__Group_4__0 )? )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:781:1: ( ( ( rule__Group__Group_4__0 )? ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:782:1: ( ( rule__Group__Group_4__0 )? )
             {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:845:1: ( ( rule__Group__Group_4__0 )? )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:846:1: ( rule__Group__Group_4__0 )?
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:782:1: ( ( rule__Group__Group_4__0 )? )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:783:1: ( rule__Group__Group_4__0 )?
             {
              before(grammarAccess.getGroupAccess().getGroup_4()); 
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:847:1: ( rule__Group__Group_4__0 )?
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:784:1: ( rule__Group__Group_4__0 )?
             int alt8=2;
             int LA8_0 = input.LA(1);
 
@@ -2337,9 +2181,9 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
             }
             switch (alt8) {
                 case 1 :
-                    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:847:2: rule__Group__Group_4__0
+                    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:784:2: rule__Group__Group_4__0
                     {
-                    pushFollow(FollowSets000.FOLLOW_rule__Group__Group_4__0_in_rule__Group__Group__4__Impl1728);
+                    pushFollow(FollowSets000.FOLLOW_rule__Group__Group_4__0_in_rule__Group__Group__4__Impl1605);
                     rule__Group__Group_4__0();
 
                     state._fsp--;
@@ -2373,21 +2217,21 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Group__Group_4__0"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:867:1: rule__Group__Group_4__0 : rule__Group__Group_4__0__Impl rule__Group__Group_4__1 ;
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:804:1: rule__Group__Group_4__0 : rule__Group__Group_4__0__Impl rule__Group__Group_4__1 ;
     public final void rule__Group__Group_4__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:871:1: ( rule__Group__Group_4__0__Impl rule__Group__Group_4__1 )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:872:2: rule__Group__Group_4__0__Impl rule__Group__Group_4__1
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:808:1: ( rule__Group__Group_4__0__Impl rule__Group__Group_4__1 )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:809:2: rule__Group__Group_4__0__Impl rule__Group__Group_4__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Group__Group_4__0__Impl_in_rule__Group__Group_4__01769);
+            pushFollow(FollowSets000.FOLLOW_rule__Group__Group_4__0__Impl_in_rule__Group__Group_4__01646);
             rule__Group__Group_4__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Group__Group_4__1_in_rule__Group__Group_4__01772);
+            pushFollow(FollowSets000.FOLLOW_rule__Group__Group_4__1_in_rule__Group__Group_4__01649);
             rule__Group__Group_4__1();
 
             state._fsp--;
@@ -2411,23 +2255,23 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Group__Group_4__0__Impl"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:879:1: rule__Group__Group_4__0__Impl : ( ( rule__Group__RecipesAssignment_4_0 ) ) ;
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:816:1: rule__Group__Group_4__0__Impl : ( ( rule__Group__RecipesAssignment_4_0 ) ) ;
     public final void rule__Group__Group_4__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:883:1: ( ( ( rule__Group__RecipesAssignment_4_0 ) ) )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:884:1: ( ( rule__Group__RecipesAssignment_4_0 ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:820:1: ( ( ( rule__Group__RecipesAssignment_4_0 ) ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:821:1: ( ( rule__Group__RecipesAssignment_4_0 ) )
             {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:884:1: ( ( rule__Group__RecipesAssignment_4_0 ) )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:885:1: ( rule__Group__RecipesAssignment_4_0 )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:821:1: ( ( rule__Group__RecipesAssignment_4_0 ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:822:1: ( rule__Group__RecipesAssignment_4_0 )
             {
              before(grammarAccess.getGroupAccess().getRecipesAssignment_4_0()); 
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:886:1: ( rule__Group__RecipesAssignment_4_0 )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:886:2: rule__Group__RecipesAssignment_4_0
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:823:1: ( rule__Group__RecipesAssignment_4_0 )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:823:2: rule__Group__RecipesAssignment_4_0
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Group__RecipesAssignment_4_0_in_rule__Group__Group_4__0__Impl1799);
+            pushFollow(FollowSets000.FOLLOW_rule__Group__RecipesAssignment_4_0_in_rule__Group__Group_4__0__Impl1676);
             rule__Group__RecipesAssignment_4_0();
 
             state._fsp--;
@@ -2458,16 +2302,16 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Group__Group_4__1"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:896:1: rule__Group__Group_4__1 : rule__Group__Group_4__1__Impl ;
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:833:1: rule__Group__Group_4__1 : rule__Group__Group_4__1__Impl ;
     public final void rule__Group__Group_4__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:900:1: ( rule__Group__Group_4__1__Impl )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:901:2: rule__Group__Group_4__1__Impl
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:837:1: ( rule__Group__Group_4__1__Impl )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:838:2: rule__Group__Group_4__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Group__Group_4__1__Impl_in_rule__Group__Group_4__11829);
+            pushFollow(FollowSets000.FOLLOW_rule__Group__Group_4__1__Impl_in_rule__Group__Group_4__11706);
             rule__Group__Group_4__1__Impl();
 
             state._fsp--;
@@ -2491,41 +2335,35 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Group__Group_4__1__Impl"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:907:1: rule__Group__Group_4__1__Impl : ( ( rule__Group__Group_4_1__0 )* ) ;
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:844:1: rule__Group__Group_4__1__Impl : ( ( rule__Group__Group_4_1__0 )* ) ;
     public final void rule__Group__Group_4__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:911:1: ( ( ( rule__Group__Group_4_1__0 )* ) )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:912:1: ( ( rule__Group__Group_4_1__0 )* )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:848:1: ( ( ( rule__Group__Group_4_1__0 )* ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:849:1: ( ( rule__Group__Group_4_1__0 )* )
             {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:912:1: ( ( rule__Group__Group_4_1__0 )* )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:913:1: ( rule__Group__Group_4_1__0 )*
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:849:1: ( ( rule__Group__Group_4_1__0 )* )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:850:1: ( rule__Group__Group_4_1__0 )*
             {
              before(grammarAccess.getGroupAccess().getGroup_4_1()); 
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:914:1: ( rule__Group__Group_4_1__0 )*
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:851:1: ( rule__Group__Group_4_1__0 )*
             loop9:
             do {
                 int alt9=2;
                 int LA9_0 = input.LA(1);
 
-                if ( (LA9_0==25) ) {
-                    int LA9_2 = input.LA(2);
-
-                    if ( (LA9_2==27) ) {
-                        alt9=1;
-                    }
-
-
+                if ( (LA9_0==26) ) {
+                    alt9=1;
                 }
 
 
                 switch (alt9) {
             	case 1 :
-            	    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:914:2: rule__Group__Group_4_1__0
+            	    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:851:2: rule__Group__Group_4_1__0
             	    {
-            	    pushFollow(FollowSets000.FOLLOW_rule__Group__Group_4_1__0_in_rule__Group__Group_4__1__Impl1856);
+            	    pushFollow(FollowSets000.FOLLOW_rule__Group__Group_4_1__0_in_rule__Group__Group_4__1__Impl1733);
             	    rule__Group__Group_4_1__0();
 
             	    state._fsp--;
@@ -2562,21 +2400,21 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Group__Group_4_1__0"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:928:1: rule__Group__Group_4_1__0 : rule__Group__Group_4_1__0__Impl rule__Group__Group_4_1__1 ;
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:865:1: rule__Group__Group_4_1__0 : rule__Group__Group_4_1__0__Impl rule__Group__Group_4_1__1 ;
     public final void rule__Group__Group_4_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:932:1: ( rule__Group__Group_4_1__0__Impl rule__Group__Group_4_1__1 )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:933:2: rule__Group__Group_4_1__0__Impl rule__Group__Group_4_1__1
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:869:1: ( rule__Group__Group_4_1__0__Impl rule__Group__Group_4_1__1 )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:870:2: rule__Group__Group_4_1__0__Impl rule__Group__Group_4_1__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Group__Group_4_1__0__Impl_in_rule__Group__Group_4_1__01891);
+            pushFollow(FollowSets000.FOLLOW_rule__Group__Group_4_1__0__Impl_in_rule__Group__Group_4_1__01768);
             rule__Group__Group_4_1__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Group__Group_4_1__1_in_rule__Group__Group_4_1__01894);
+            pushFollow(FollowSets000.FOLLOW_rule__Group__Group_4_1__1_in_rule__Group__Group_4_1__01771);
             rule__Group__Group_4_1__1();
 
             state._fsp--;
@@ -2600,20 +2438,20 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Group__Group_4_1__0__Impl"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:940:1: rule__Group__Group_4_1__0__Impl : ( ',' ) ;
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:877:1: rule__Group__Group_4_1__0__Impl : ( ',' ) ;
     public final void rule__Group__Group_4_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:944:1: ( ( ',' ) )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:945:1: ( ',' )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:881:1: ( ( ',' ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:882:1: ( ',' )
             {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:945:1: ( ',' )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:946:1: ','
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:882:1: ( ',' )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:883:1: ','
             {
              before(grammarAccess.getGroupAccess().getCommaKeyword_4_1_0()); 
-            match(input,25,FollowSets000.FOLLOW_25_in_rule__Group__Group_4_1__0__Impl1922); 
+            match(input,26,FollowSets000.FOLLOW_26_in_rule__Group__Group_4_1__0__Impl1799); 
              after(grammarAccess.getGroupAccess().getCommaKeyword_4_1_0()); 
 
             }
@@ -2637,16 +2475,16 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Group__Group_4_1__1"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:959:1: rule__Group__Group_4_1__1 : rule__Group__Group_4_1__1__Impl ;
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:896:1: rule__Group__Group_4_1__1 : rule__Group__Group_4_1__1__Impl ;
     public final void rule__Group__Group_4_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:963:1: ( rule__Group__Group_4_1__1__Impl )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:964:2: rule__Group__Group_4_1__1__Impl
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:900:1: ( rule__Group__Group_4_1__1__Impl )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:901:2: rule__Group__Group_4_1__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Group__Group_4_1__1__Impl_in_rule__Group__Group_4_1__11953);
+            pushFollow(FollowSets000.FOLLOW_rule__Group__Group_4_1__1__Impl_in_rule__Group__Group_4_1__11830);
             rule__Group__Group_4_1__1__Impl();
 
             state._fsp--;
@@ -2670,23 +2508,23 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Group__Group_4_1__1__Impl"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:970:1: rule__Group__Group_4_1__1__Impl : ( ( rule__Group__RecipesAssignment_4_1_1 ) ) ;
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:907:1: rule__Group__Group_4_1__1__Impl : ( ( rule__Group__RecipesAssignment_4_1_1 ) ) ;
     public final void rule__Group__Group_4_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:974:1: ( ( ( rule__Group__RecipesAssignment_4_1_1 ) ) )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:975:1: ( ( rule__Group__RecipesAssignment_4_1_1 ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:911:1: ( ( ( rule__Group__RecipesAssignment_4_1_1 ) ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:912:1: ( ( rule__Group__RecipesAssignment_4_1_1 ) )
             {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:975:1: ( ( rule__Group__RecipesAssignment_4_1_1 ) )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:976:1: ( rule__Group__RecipesAssignment_4_1_1 )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:912:1: ( ( rule__Group__RecipesAssignment_4_1_1 ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:913:1: ( rule__Group__RecipesAssignment_4_1_1 )
             {
              before(grammarAccess.getGroupAccess().getRecipesAssignment_4_1_1()); 
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:977:1: ( rule__Group__RecipesAssignment_4_1_1 )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:977:2: rule__Group__RecipesAssignment_4_1_1
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:914:1: ( rule__Group__RecipesAssignment_4_1_1 )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:914:2: rule__Group__RecipesAssignment_4_1_1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Group__RecipesAssignment_4_1_1_in_rule__Group__Group_4_1__1__Impl1980);
+            pushFollow(FollowSets000.FOLLOW_rule__Group__RecipesAssignment_4_1_1_in_rule__Group__Group_4_1__1__Impl1857);
             rule__Group__RecipesAssignment_4_1_1();
 
             state._fsp--;
@@ -2717,21 +2555,21 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Recipe__Group__0"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:991:1: rule__Recipe__Group__0 : rule__Recipe__Group__0__Impl rule__Recipe__Group__1 ;
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:928:1: rule__Recipe__Group__0 : rule__Recipe__Group__0__Impl rule__Recipe__Group__1 ;
     public final void rule__Recipe__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:995:1: ( rule__Recipe__Group__0__Impl rule__Recipe__Group__1 )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:996:2: rule__Recipe__Group__0__Impl rule__Recipe__Group__1
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:932:1: ( rule__Recipe__Group__0__Impl rule__Recipe__Group__1 )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:933:2: rule__Recipe__Group__0__Impl rule__Recipe__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Recipe__Group__0__Impl_in_rule__Recipe__Group__02014);
+            pushFollow(FollowSets000.FOLLOW_rule__Recipe__Group__0__Impl_in_rule__Recipe__Group__01891);
             rule__Recipe__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Recipe__Group__1_in_rule__Recipe__Group__02017);
+            pushFollow(FollowSets000.FOLLOW_rule__Recipe__Group__1_in_rule__Recipe__Group__01894);
             rule__Recipe__Group__1();
 
             state._fsp--;
@@ -2755,21 +2593,21 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Recipe__Group__0__Impl"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1003:1: rule__Recipe__Group__0__Impl : ( () ) ;
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:940:1: rule__Recipe__Group__0__Impl : ( () ) ;
     public final void rule__Recipe__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1007:1: ( ( () ) )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1008:1: ( () )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:944:1: ( ( () ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:945:1: ( () )
             {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1008:1: ( () )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1009:1: ()
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:945:1: ( () )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:946:1: ()
             {
              before(grammarAccess.getRecipeAccess().getRecipeAction_0()); 
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1010:1: ()
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1012:1: 
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:947:1: ()
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:949:1: 
             {
             }
 
@@ -2792,21 +2630,21 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Recipe__Group__1"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1022:1: rule__Recipe__Group__1 : rule__Recipe__Group__1__Impl rule__Recipe__Group__2 ;
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:959:1: rule__Recipe__Group__1 : rule__Recipe__Group__1__Impl rule__Recipe__Group__2 ;
     public final void rule__Recipe__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1026:1: ( rule__Recipe__Group__1__Impl rule__Recipe__Group__2 )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1027:2: rule__Recipe__Group__1__Impl rule__Recipe__Group__2
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:963:1: ( rule__Recipe__Group__1__Impl rule__Recipe__Group__2 )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:964:2: rule__Recipe__Group__1__Impl rule__Recipe__Group__2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Recipe__Group__1__Impl_in_rule__Recipe__Group__12075);
+            pushFollow(FollowSets000.FOLLOW_rule__Recipe__Group__1__Impl_in_rule__Recipe__Group__11952);
             rule__Recipe__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Recipe__Group__2_in_rule__Recipe__Group__12078);
+            pushFollow(FollowSets000.FOLLOW_rule__Recipe__Group__2_in_rule__Recipe__Group__11955);
             rule__Recipe__Group__2();
 
             state._fsp--;
@@ -2830,20 +2668,20 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Recipe__Group__1__Impl"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1034:1: rule__Recipe__Group__1__Impl : ( 'Recipe' ) ;
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:971:1: rule__Recipe__Group__1__Impl : ( 'Recipe' ) ;
     public final void rule__Recipe__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1038:1: ( ( 'Recipe' ) )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1039:1: ( 'Recipe' )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:975:1: ( ( 'Recipe' ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:976:1: ( 'Recipe' )
             {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1039:1: ( 'Recipe' )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1040:1: 'Recipe'
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:976:1: ( 'Recipe' )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:977:1: 'Recipe'
             {
              before(grammarAccess.getRecipeAccess().getRecipeKeyword_1()); 
-            match(input,27,FollowSets000.FOLLOW_27_in_rule__Recipe__Group__1__Impl2106); 
+            match(input,27,FollowSets000.FOLLOW_27_in_rule__Recipe__Group__1__Impl1983); 
              after(grammarAccess.getRecipeAccess().getRecipeKeyword_1()); 
 
             }
@@ -2867,21 +2705,21 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Recipe__Group__2"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1053:1: rule__Recipe__Group__2 : rule__Recipe__Group__2__Impl rule__Recipe__Group__3 ;
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:990:1: rule__Recipe__Group__2 : rule__Recipe__Group__2__Impl rule__Recipe__Group__3 ;
     public final void rule__Recipe__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1057:1: ( rule__Recipe__Group__2__Impl rule__Recipe__Group__3 )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1058:2: rule__Recipe__Group__2__Impl rule__Recipe__Group__3
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:994:1: ( rule__Recipe__Group__2__Impl rule__Recipe__Group__3 )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:995:2: rule__Recipe__Group__2__Impl rule__Recipe__Group__3
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Recipe__Group__2__Impl_in_rule__Recipe__Group__22137);
+            pushFollow(FollowSets000.FOLLOW_rule__Recipe__Group__2__Impl_in_rule__Recipe__Group__22014);
             rule__Recipe__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Recipe__Group__3_in_rule__Recipe__Group__22140);
+            pushFollow(FollowSets000.FOLLOW_rule__Recipe__Group__3_in_rule__Recipe__Group__22017);
             rule__Recipe__Group__3();
 
             state._fsp--;
@@ -2905,23 +2743,23 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Recipe__Group__2__Impl"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1065:1: rule__Recipe__Group__2__Impl : ( ( rule__Recipe__NameAssignment_2 ) ) ;
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1002:1: rule__Recipe__Group__2__Impl : ( ( rule__Recipe__NameAssignment_2 ) ) ;
     public final void rule__Recipe__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1069:1: ( ( ( rule__Recipe__NameAssignment_2 ) ) )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1070:1: ( ( rule__Recipe__NameAssignment_2 ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1006:1: ( ( ( rule__Recipe__NameAssignment_2 ) ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1007:1: ( ( rule__Recipe__NameAssignment_2 ) )
             {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1070:1: ( ( rule__Recipe__NameAssignment_2 ) )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1071:1: ( rule__Recipe__NameAssignment_2 )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1007:1: ( ( rule__Recipe__NameAssignment_2 ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1008:1: ( rule__Recipe__NameAssignment_2 )
             {
              before(grammarAccess.getRecipeAccess().getNameAssignment_2()); 
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1072:1: ( rule__Recipe__NameAssignment_2 )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1072:2: rule__Recipe__NameAssignment_2
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1009:1: ( rule__Recipe__NameAssignment_2 )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1009:2: rule__Recipe__NameAssignment_2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Recipe__NameAssignment_2_in_rule__Recipe__Group__2__Impl2167);
+            pushFollow(FollowSets000.FOLLOW_rule__Recipe__NameAssignment_2_in_rule__Recipe__Group__2__Impl2044);
             rule__Recipe__NameAssignment_2();
 
             state._fsp--;
@@ -2952,21 +2790,21 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Recipe__Group__3"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1082:1: rule__Recipe__Group__3 : rule__Recipe__Group__3__Impl rule__Recipe__Group__4 ;
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1019:1: rule__Recipe__Group__3 : rule__Recipe__Group__3__Impl rule__Recipe__Group__4 ;
     public final void rule__Recipe__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1086:1: ( rule__Recipe__Group__3__Impl rule__Recipe__Group__4 )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1087:2: rule__Recipe__Group__3__Impl rule__Recipe__Group__4
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1023:1: ( rule__Recipe__Group__3__Impl rule__Recipe__Group__4 )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1024:2: rule__Recipe__Group__3__Impl rule__Recipe__Group__4
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Recipe__Group__3__Impl_in_rule__Recipe__Group__32197);
+            pushFollow(FollowSets000.FOLLOW_rule__Recipe__Group__3__Impl_in_rule__Recipe__Group__32074);
             rule__Recipe__Group__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Recipe__Group__4_in_rule__Recipe__Group__32200);
+            pushFollow(FollowSets000.FOLLOW_rule__Recipe__Group__4_in_rule__Recipe__Group__32077);
             rule__Recipe__Group__4();
 
             state._fsp--;
@@ -2990,20 +2828,20 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Recipe__Group__3__Impl"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1094:1: rule__Recipe__Group__3__Impl : ( ( rule__Recipe__Group_3__0 )? ) ;
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1031:1: rule__Recipe__Group__3__Impl : ( ( rule__Recipe__Group_3__0 )? ) ;
     public final void rule__Recipe__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1098:1: ( ( ( rule__Recipe__Group_3__0 )? ) )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1099:1: ( ( rule__Recipe__Group_3__0 )? )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1035:1: ( ( ( rule__Recipe__Group_3__0 )? ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1036:1: ( ( rule__Recipe__Group_3__0 )? )
             {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1099:1: ( ( rule__Recipe__Group_3__0 )? )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1100:1: ( rule__Recipe__Group_3__0 )?
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1036:1: ( ( rule__Recipe__Group_3__0 )? )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1037:1: ( rule__Recipe__Group_3__0 )?
             {
              before(grammarAccess.getRecipeAccess().getGroup_3()); 
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1101:1: ( rule__Recipe__Group_3__0 )?
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1038:1: ( rule__Recipe__Group_3__0 )?
             int alt10=2;
             int LA10_0 = input.LA(1);
 
@@ -3012,9 +2850,9 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
             }
             switch (alt10) {
                 case 1 :
-                    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1101:2: rule__Recipe__Group_3__0
+                    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1038:2: rule__Recipe__Group_3__0
                     {
-                    pushFollow(FollowSets000.FOLLOW_rule__Recipe__Group_3__0_in_rule__Recipe__Group__3__Impl2227);
+                    pushFollow(FollowSets000.FOLLOW_rule__Recipe__Group_3__0_in_rule__Recipe__Group__3__Impl2104);
                     rule__Recipe__Group_3__0();
 
                     state._fsp--;
@@ -3048,21 +2886,21 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Recipe__Group__4"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1111:1: rule__Recipe__Group__4 : rule__Recipe__Group__4__Impl rule__Recipe__Group__5 ;
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1048:1: rule__Recipe__Group__4 : rule__Recipe__Group__4__Impl rule__Recipe__Group__5 ;
     public final void rule__Recipe__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1115:1: ( rule__Recipe__Group__4__Impl rule__Recipe__Group__5 )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1116:2: rule__Recipe__Group__4__Impl rule__Recipe__Group__5
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1052:1: ( rule__Recipe__Group__4__Impl rule__Recipe__Group__5 )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1053:2: rule__Recipe__Group__4__Impl rule__Recipe__Group__5
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Recipe__Group__4__Impl_in_rule__Recipe__Group__42258);
+            pushFollow(FollowSets000.FOLLOW_rule__Recipe__Group__4__Impl_in_rule__Recipe__Group__42135);
             rule__Recipe__Group__4__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Recipe__Group__5_in_rule__Recipe__Group__42261);
+            pushFollow(FollowSets000.FOLLOW_rule__Recipe__Group__5_in_rule__Recipe__Group__42138);
             rule__Recipe__Group__5();
 
             state._fsp--;
@@ -3086,32 +2924,32 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Recipe__Group__4__Impl"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1123:1: rule__Recipe__Group__4__Impl : ( ( rule__Recipe__AmountAssignment_4 )? ) ;
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1060:1: rule__Recipe__Group__4__Impl : ( ( rule__Recipe__Group_4__0 )? ) ;
     public final void rule__Recipe__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1127:1: ( ( ( rule__Recipe__AmountAssignment_4 )? ) )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1128:1: ( ( rule__Recipe__AmountAssignment_4 )? )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1064:1: ( ( ( rule__Recipe__Group_4__0 )? ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1065:1: ( ( rule__Recipe__Group_4__0 )? )
             {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1128:1: ( ( rule__Recipe__AmountAssignment_4 )? )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1129:1: ( rule__Recipe__AmountAssignment_4 )?
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1065:1: ( ( rule__Recipe__Group_4__0 )? )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1066:1: ( rule__Recipe__Group_4__0 )?
             {
-             before(grammarAccess.getRecipeAccess().getAmountAssignment_4()); 
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1130:1: ( rule__Recipe__AmountAssignment_4 )?
+             before(grammarAccess.getRecipeAccess().getGroup_4()); 
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1067:1: ( rule__Recipe__Group_4__0 )?
             int alt11=2;
             int LA11_0 = input.LA(1);
 
-            if ( (LA11_0==RULE_INT||LA11_0==31) ) {
+            if ( (LA11_0==RULE_INT||LA11_0==30) ) {
                 alt11=1;
             }
             switch (alt11) {
                 case 1 :
-                    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1130:2: rule__Recipe__AmountAssignment_4
+                    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1067:2: rule__Recipe__Group_4__0
                     {
-                    pushFollow(FollowSets000.FOLLOW_rule__Recipe__AmountAssignment_4_in_rule__Recipe__Group__4__Impl2288);
-                    rule__Recipe__AmountAssignment_4();
+                    pushFollow(FollowSets000.FOLLOW_rule__Recipe__Group_4__0_in_rule__Recipe__Group__4__Impl2165);
+                    rule__Recipe__Group_4__0();
 
                     state._fsp--;
 
@@ -3121,7 +2959,7 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
 
             }
 
-             after(grammarAccess.getRecipeAccess().getAmountAssignment_4()); 
+             after(grammarAccess.getRecipeAccess().getGroup_4()); 
 
             }
 
@@ -3144,22 +2982,17 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Recipe__Group__5"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1140:1: rule__Recipe__Group__5 : rule__Recipe__Group__5__Impl rule__Recipe__Group__6 ;
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1077:1: rule__Recipe__Group__5 : rule__Recipe__Group__5__Impl ;
     public final void rule__Recipe__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1144:1: ( rule__Recipe__Group__5__Impl rule__Recipe__Group__6 )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1145:2: rule__Recipe__Group__5__Impl rule__Recipe__Group__6
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1081:1: ( rule__Recipe__Group__5__Impl )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1082:2: rule__Recipe__Group__5__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Recipe__Group__5__Impl_in_rule__Recipe__Group__52319);
+            pushFollow(FollowSets000.FOLLOW_rule__Recipe__Group__5__Impl_in_rule__Recipe__Group__52196);
             rule__Recipe__Group__5__Impl();
-
-            state._fsp--;
-
-            pushFollow(FollowSets000.FOLLOW_rule__Recipe__Group__6_in_rule__Recipe__Group__52322);
-            rule__Recipe__Group__6();
 
             state._fsp--;
 
@@ -3182,32 +3015,32 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Recipe__Group__5__Impl"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1152:1: rule__Recipe__Group__5__Impl : ( ( rule__Recipe__AmountTypeAssignment_5 )? ) ;
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1088:1: rule__Recipe__Group__5__Impl : ( ( rule__Recipe__Group_5__0 )? ) ;
     public final void rule__Recipe__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1156:1: ( ( ( rule__Recipe__AmountTypeAssignment_5 )? ) )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1157:1: ( ( rule__Recipe__AmountTypeAssignment_5 )? )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1092:1: ( ( ( rule__Recipe__Group_5__0 )? ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1093:1: ( ( rule__Recipe__Group_5__0 )? )
             {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1157:1: ( ( rule__Recipe__AmountTypeAssignment_5 )? )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1158:1: ( rule__Recipe__AmountTypeAssignment_5 )?
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1093:1: ( ( rule__Recipe__Group_5__0 )? )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1094:1: ( rule__Recipe__Group_5__0 )?
             {
-             before(grammarAccess.getRecipeAccess().getAmountTypeAssignment_5()); 
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1159:1: ( rule__Recipe__AmountTypeAssignment_5 )?
+             before(grammarAccess.getRecipeAccess().getGroup_5()); 
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1095:1: ( rule__Recipe__Group_5__0 )?
             int alt12=2;
             int LA12_0 = input.LA(1);
 
-            if ( ((LA12_0>=16 && LA12_0<=19)) ) {
+            if ( (LA12_0==31) ) {
                 alt12=1;
             }
             switch (alt12) {
                 case 1 :
-                    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1159:2: rule__Recipe__AmountTypeAssignment_5
+                    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1095:2: rule__Recipe__Group_5__0
                     {
-                    pushFollow(FollowSets000.FOLLOW_rule__Recipe__AmountTypeAssignment_5_in_rule__Recipe__Group__5__Impl2349);
-                    rule__Recipe__AmountTypeAssignment_5();
+                    pushFollow(FollowSets000.FOLLOW_rule__Recipe__Group_5__0_in_rule__Recipe__Group__5__Impl2223);
+                    rule__Recipe__Group_5__0();
 
                     state._fsp--;
 
@@ -3217,7 +3050,7 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
 
             }
 
-             after(grammarAccess.getRecipeAccess().getAmountTypeAssignment_5()); 
+             after(grammarAccess.getRecipeAccess().getGroup_5()); 
 
             }
 
@@ -3239,113 +3072,22 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__Recipe__Group__5__Impl"
 
 
-    // $ANTLR start "rule__Recipe__Group__6"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1169:1: rule__Recipe__Group__6 : rule__Recipe__Group__6__Impl ;
-    public final void rule__Recipe__Group__6() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1173:1: ( rule__Recipe__Group__6__Impl )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1174:2: rule__Recipe__Group__6__Impl
-            {
-            pushFollow(FollowSets000.FOLLOW_rule__Recipe__Group__6__Impl_in_rule__Recipe__Group__62380);
-            rule__Recipe__Group__6__Impl();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Recipe__Group__6"
-
-
-    // $ANTLR start "rule__Recipe__Group__6__Impl"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1180:1: rule__Recipe__Group__6__Impl : ( ( rule__Recipe__Group_6__0 )? ) ;
-    public final void rule__Recipe__Group__6__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1184:1: ( ( ( rule__Recipe__Group_6__0 )? ) )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1185:1: ( ( rule__Recipe__Group_6__0 )? )
-            {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1185:1: ( ( rule__Recipe__Group_6__0 )? )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1186:1: ( rule__Recipe__Group_6__0 )?
-            {
-             before(grammarAccess.getRecipeAccess().getGroup_6()); 
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1187:1: ( rule__Recipe__Group_6__0 )?
-            int alt13=2;
-            int LA13_0 = input.LA(1);
-
-            if ( (LA13_0==29) ) {
-                alt13=1;
-            }
-            switch (alt13) {
-                case 1 :
-                    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1187:2: rule__Recipe__Group_6__0
-                    {
-                    pushFollow(FollowSets000.FOLLOW_rule__Recipe__Group_6__0_in_rule__Recipe__Group__6__Impl2407);
-                    rule__Recipe__Group_6__0();
-
-                    state._fsp--;
-
-
-                    }
-                    break;
-
-            }
-
-             after(grammarAccess.getRecipeAccess().getGroup_6()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Recipe__Group__6__Impl"
-
-
     // $ANTLR start "rule__Recipe__Group_3__0"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1211:1: rule__Recipe__Group_3__0 : rule__Recipe__Group_3__0__Impl rule__Recipe__Group_3__1 ;
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1117:1: rule__Recipe__Group_3__0 : rule__Recipe__Group_3__0__Impl rule__Recipe__Group_3__1 ;
     public final void rule__Recipe__Group_3__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1215:1: ( rule__Recipe__Group_3__0__Impl rule__Recipe__Group_3__1 )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1216:2: rule__Recipe__Group_3__0__Impl rule__Recipe__Group_3__1
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1121:1: ( rule__Recipe__Group_3__0__Impl rule__Recipe__Group_3__1 )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1122:2: rule__Recipe__Group_3__0__Impl rule__Recipe__Group_3__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Recipe__Group_3__0__Impl_in_rule__Recipe__Group_3__02452);
+            pushFollow(FollowSets000.FOLLOW_rule__Recipe__Group_3__0__Impl_in_rule__Recipe__Group_3__02266);
             rule__Recipe__Group_3__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Recipe__Group_3__1_in_rule__Recipe__Group_3__02455);
+            pushFollow(FollowSets000.FOLLOW_rule__Recipe__Group_3__1_in_rule__Recipe__Group_3__02269);
             rule__Recipe__Group_3__1();
 
             state._fsp--;
@@ -3369,20 +3111,20 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Recipe__Group_3__0__Impl"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1223:1: rule__Recipe__Group_3__0__Impl : ( 'price' ) ;
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1129:1: rule__Recipe__Group_3__0__Impl : ( 'Price' ) ;
     public final void rule__Recipe__Group_3__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1227:1: ( ( 'price' ) )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1228:1: ( 'price' )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1133:1: ( ( 'Price' ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1134:1: ( 'Price' )
             {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1228:1: ( 'price' )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1229:1: 'price'
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1134:1: ( 'Price' )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1135:1: 'Price'
             {
              before(grammarAccess.getRecipeAccess().getPriceKeyword_3_0()); 
-            match(input,28,FollowSets000.FOLLOW_28_in_rule__Recipe__Group_3__0__Impl2483); 
+            match(input,28,FollowSets000.FOLLOW_28_in_rule__Recipe__Group_3__0__Impl2297); 
              after(grammarAccess.getRecipeAccess().getPriceKeyword_3_0()); 
 
             }
@@ -3406,16 +3148,16 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Recipe__Group_3__1"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1242:1: rule__Recipe__Group_3__1 : rule__Recipe__Group_3__1__Impl ;
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1148:1: rule__Recipe__Group_3__1 : rule__Recipe__Group_3__1__Impl ;
     public final void rule__Recipe__Group_3__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1246:1: ( rule__Recipe__Group_3__1__Impl )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1247:2: rule__Recipe__Group_3__1__Impl
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1152:1: ( rule__Recipe__Group_3__1__Impl )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1153:2: rule__Recipe__Group_3__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Recipe__Group_3__1__Impl_in_rule__Recipe__Group_3__12514);
+            pushFollow(FollowSets000.FOLLOW_rule__Recipe__Group_3__1__Impl_in_rule__Recipe__Group_3__12328);
             rule__Recipe__Group_3__1__Impl();
 
             state._fsp--;
@@ -3439,23 +3181,23 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Recipe__Group_3__1__Impl"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1253:1: rule__Recipe__Group_3__1__Impl : ( ( rule__Recipe__PriceAssignment_3_1 ) ) ;
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1159:1: rule__Recipe__Group_3__1__Impl : ( ( rule__Recipe__PriceAssignment_3_1 ) ) ;
     public final void rule__Recipe__Group_3__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1257:1: ( ( ( rule__Recipe__PriceAssignment_3_1 ) ) )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1258:1: ( ( rule__Recipe__PriceAssignment_3_1 ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1163:1: ( ( ( rule__Recipe__PriceAssignment_3_1 ) ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1164:1: ( ( rule__Recipe__PriceAssignment_3_1 ) )
             {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1258:1: ( ( rule__Recipe__PriceAssignment_3_1 ) )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1259:1: ( rule__Recipe__PriceAssignment_3_1 )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1164:1: ( ( rule__Recipe__PriceAssignment_3_1 ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1165:1: ( rule__Recipe__PriceAssignment_3_1 )
             {
              before(grammarAccess.getRecipeAccess().getPriceAssignment_3_1()); 
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1260:1: ( rule__Recipe__PriceAssignment_3_1 )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1260:2: rule__Recipe__PriceAssignment_3_1
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1166:1: ( rule__Recipe__PriceAssignment_3_1 )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1166:2: rule__Recipe__PriceAssignment_3_1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Recipe__PriceAssignment_3_1_in_rule__Recipe__Group_3__1__Impl2541);
+            pushFollow(FollowSets000.FOLLOW_rule__Recipe__PriceAssignment_3_1_in_rule__Recipe__Group_3__1__Impl2355);
             rule__Recipe__PriceAssignment_3_1();
 
             state._fsp--;
@@ -3485,98 +3227,23 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__Recipe__Group_3__1__Impl"
 
 
-    // $ANTLR start "rule__Recipe__Group_6__0"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1274:1: rule__Recipe__Group_6__0 : rule__Recipe__Group_6__0__Impl rule__Recipe__Group_6__1 ;
-    public final void rule__Recipe__Group_6__0() throws RecognitionException {
+    // $ANTLR start "rule__Recipe__Group_4__0"
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1180:1: rule__Recipe__Group_4__0 : rule__Recipe__Group_4__0__Impl rule__Recipe__Group_4__1 ;
+    public final void rule__Recipe__Group_4__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1278:1: ( rule__Recipe__Group_6__0__Impl rule__Recipe__Group_6__1 )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1279:2: rule__Recipe__Group_6__0__Impl rule__Recipe__Group_6__1
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1184:1: ( rule__Recipe__Group_4__0__Impl rule__Recipe__Group_4__1 )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1185:2: rule__Recipe__Group_4__0__Impl rule__Recipe__Group_4__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Recipe__Group_6__0__Impl_in_rule__Recipe__Group_6__02575);
-            rule__Recipe__Group_6__0__Impl();
+            pushFollow(FollowSets000.FOLLOW_rule__Recipe__Group_4__0__Impl_in_rule__Recipe__Group_4__02389);
+            rule__Recipe__Group_4__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Recipe__Group_6__1_in_rule__Recipe__Group_6__02578);
-            rule__Recipe__Group_6__1();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Recipe__Group_6__0"
-
-
-    // $ANTLR start "rule__Recipe__Group_6__0__Impl"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1286:1: rule__Recipe__Group_6__0__Impl : ( 'ingredients' ) ;
-    public final void rule__Recipe__Group_6__0__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1290:1: ( ( 'ingredients' ) )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1291:1: ( 'ingredients' )
-            {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1291:1: ( 'ingredients' )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1292:1: 'ingredients'
-            {
-             before(grammarAccess.getRecipeAccess().getIngredientsKeyword_6_0()); 
-            match(input,29,FollowSets000.FOLLOW_29_in_rule__Recipe__Group_6__0__Impl2606); 
-             after(grammarAccess.getRecipeAccess().getIngredientsKeyword_6_0()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Recipe__Group_6__0__Impl"
-
-
-    // $ANTLR start "rule__Recipe__Group_6__1"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1305:1: rule__Recipe__Group_6__1 : rule__Recipe__Group_6__1__Impl rule__Recipe__Group_6__2 ;
-    public final void rule__Recipe__Group_6__1() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1309:1: ( rule__Recipe__Group_6__1__Impl rule__Recipe__Group_6__2 )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1310:2: rule__Recipe__Group_6__1__Impl rule__Recipe__Group_6__2
-            {
-            pushFollow(FollowSets000.FOLLOW_rule__Recipe__Group_6__1__Impl_in_rule__Recipe__Group_6__12637);
-            rule__Recipe__Group_6__1__Impl();
-
-            state._fsp--;
-
-            pushFollow(FollowSets000.FOLLOW_rule__Recipe__Group_6__2_in_rule__Recipe__Group_6__12640);
-            rule__Recipe__Group_6__2();
+            pushFollow(FollowSets000.FOLLOW_rule__Recipe__Group_4__1_in_rule__Recipe__Group_4__02392);
+            rule__Recipe__Group_4__1();
 
             state._fsp--;
 
@@ -3595,35 +3262,35 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__Recipe__Group_6__1"
+    // $ANTLR end "rule__Recipe__Group_4__0"
 
 
-    // $ANTLR start "rule__Recipe__Group_6__1__Impl"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1317:1: rule__Recipe__Group_6__1__Impl : ( ( rule__Recipe__IngredientsAssignment_6_1 ) ) ;
-    public final void rule__Recipe__Group_6__1__Impl() throws RecognitionException {
+    // $ANTLR start "rule__Recipe__Group_4__0__Impl"
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1192:1: rule__Recipe__Group_4__0__Impl : ( ( rule__Recipe__AmountAssignment_4_0 ) ) ;
+    public final void rule__Recipe__Group_4__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1321:1: ( ( ( rule__Recipe__IngredientsAssignment_6_1 ) ) )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1322:1: ( ( rule__Recipe__IngredientsAssignment_6_1 ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1196:1: ( ( ( rule__Recipe__AmountAssignment_4_0 ) ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1197:1: ( ( rule__Recipe__AmountAssignment_4_0 ) )
             {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1322:1: ( ( rule__Recipe__IngredientsAssignment_6_1 ) )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1323:1: ( rule__Recipe__IngredientsAssignment_6_1 )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1197:1: ( ( rule__Recipe__AmountAssignment_4_0 ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1198:1: ( rule__Recipe__AmountAssignment_4_0 )
             {
-             before(grammarAccess.getRecipeAccess().getIngredientsAssignment_6_1()); 
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1324:1: ( rule__Recipe__IngredientsAssignment_6_1 )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1324:2: rule__Recipe__IngredientsAssignment_6_1
+             before(grammarAccess.getRecipeAccess().getAmountAssignment_4_0()); 
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1199:1: ( rule__Recipe__AmountAssignment_4_0 )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1199:2: rule__Recipe__AmountAssignment_4_0
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Recipe__IngredientsAssignment_6_1_in_rule__Recipe__Group_6__1__Impl2667);
-            rule__Recipe__IngredientsAssignment_6_1();
+            pushFollow(FollowSets000.FOLLOW_rule__Recipe__AmountAssignment_4_0_in_rule__Recipe__Group_4__0__Impl2419);
+            rule__Recipe__AmountAssignment_4_0();
 
             state._fsp--;
 
 
             }
 
-             after(grammarAccess.getRecipeAccess().getIngredientsAssignment_6_1()); 
+             after(grammarAccess.getRecipeAccess().getAmountAssignment_4_0()); 
 
             }
 
@@ -3642,21 +3309,21 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__Recipe__Group_6__1__Impl"
+    // $ANTLR end "rule__Recipe__Group_4__0__Impl"
 
 
-    // $ANTLR start "rule__Recipe__Group_6__2"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1334:1: rule__Recipe__Group_6__2 : rule__Recipe__Group_6__2__Impl ;
-    public final void rule__Recipe__Group_6__2() throws RecognitionException {
+    // $ANTLR start "rule__Recipe__Group_4__1"
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1209:1: rule__Recipe__Group_4__1 : rule__Recipe__Group_4__1__Impl ;
+    public final void rule__Recipe__Group_4__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1338:1: ( rule__Recipe__Group_6__2__Impl )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1339:2: rule__Recipe__Group_6__2__Impl
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1213:1: ( rule__Recipe__Group_4__1__Impl )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1214:2: rule__Recipe__Group_4__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Recipe__Group_6__2__Impl_in_rule__Recipe__Group_6__22697);
-            rule__Recipe__Group_6__2__Impl();
+            pushFollow(FollowSets000.FOLLOW_rule__Recipe__Group_4__1__Impl_in_rule__Recipe__Group_4__12449);
+            rule__Recipe__Group_4__1__Impl();
 
             state._fsp--;
 
@@ -3675,46 +3342,211 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__Recipe__Group_6__2"
+    // $ANTLR end "rule__Recipe__Group_4__1"
 
 
-    // $ANTLR start "rule__Recipe__Group_6__2__Impl"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1345:1: rule__Recipe__Group_6__2__Impl : ( ( rule__Recipe__Group_6_2__0 )* ) ;
-    public final void rule__Recipe__Group_6__2__Impl() throws RecognitionException {
+    // $ANTLR start "rule__Recipe__Group_4__1__Impl"
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1220:1: rule__Recipe__Group_4__1__Impl : ( ( rule__Recipe__AmountTypeAssignment_4_1 ) ) ;
+    public final void rule__Recipe__Group_4__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1349:1: ( ( ( rule__Recipe__Group_6_2__0 )* ) )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1350:1: ( ( rule__Recipe__Group_6_2__0 )* )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1224:1: ( ( ( rule__Recipe__AmountTypeAssignment_4_1 ) ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1225:1: ( ( rule__Recipe__AmountTypeAssignment_4_1 ) )
             {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1350:1: ( ( rule__Recipe__Group_6_2__0 )* )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1351:1: ( rule__Recipe__Group_6_2__0 )*
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1225:1: ( ( rule__Recipe__AmountTypeAssignment_4_1 ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1226:1: ( rule__Recipe__AmountTypeAssignment_4_1 )
             {
-             before(grammarAccess.getRecipeAccess().getGroup_6_2()); 
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1352:1: ( rule__Recipe__Group_6_2__0 )*
-            loop14:
+             before(grammarAccess.getRecipeAccess().getAmountTypeAssignment_4_1()); 
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1227:1: ( rule__Recipe__AmountTypeAssignment_4_1 )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1227:2: rule__Recipe__AmountTypeAssignment_4_1
+            {
+            pushFollow(FollowSets000.FOLLOW_rule__Recipe__AmountTypeAssignment_4_1_in_rule__Recipe__Group_4__1__Impl2476);
+            rule__Recipe__AmountTypeAssignment_4_1();
+
+            state._fsp--;
+
+
+            }
+
+             after(grammarAccess.getRecipeAccess().getAmountTypeAssignment_4_1()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Recipe__Group_4__1__Impl"
+
+
+    // $ANTLR start "rule__Recipe__Group_5__0"
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1241:1: rule__Recipe__Group_5__0 : rule__Recipe__Group_5__0__Impl rule__Recipe__Group_5__1 ;
+    public final void rule__Recipe__Group_5__0() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1245:1: ( rule__Recipe__Group_5__0__Impl rule__Recipe__Group_5__1 )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1246:2: rule__Recipe__Group_5__0__Impl rule__Recipe__Group_5__1
+            {
+            pushFollow(FollowSets000.FOLLOW_rule__Recipe__Group_5__0__Impl_in_rule__Recipe__Group_5__02510);
+            rule__Recipe__Group_5__0__Impl();
+
+            state._fsp--;
+
+            pushFollow(FollowSets000.FOLLOW_rule__Recipe__Group_5__1_in_rule__Recipe__Group_5__02513);
+            rule__Recipe__Group_5__1();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Recipe__Group_5__0"
+
+
+    // $ANTLR start "rule__Recipe__Group_5__0__Impl"
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1253:1: rule__Recipe__Group_5__0__Impl : ( ( rule__Recipe__IngredientsAssignment_5_0 ) ) ;
+    public final void rule__Recipe__Group_5__0__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1257:1: ( ( ( rule__Recipe__IngredientsAssignment_5_0 ) ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1258:1: ( ( rule__Recipe__IngredientsAssignment_5_0 ) )
+            {
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1258:1: ( ( rule__Recipe__IngredientsAssignment_5_0 ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1259:1: ( rule__Recipe__IngredientsAssignment_5_0 )
+            {
+             before(grammarAccess.getRecipeAccess().getIngredientsAssignment_5_0()); 
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1260:1: ( rule__Recipe__IngredientsAssignment_5_0 )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1260:2: rule__Recipe__IngredientsAssignment_5_0
+            {
+            pushFollow(FollowSets000.FOLLOW_rule__Recipe__IngredientsAssignment_5_0_in_rule__Recipe__Group_5__0__Impl2540);
+            rule__Recipe__IngredientsAssignment_5_0();
+
+            state._fsp--;
+
+
+            }
+
+             after(grammarAccess.getRecipeAccess().getIngredientsAssignment_5_0()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Recipe__Group_5__0__Impl"
+
+
+    // $ANTLR start "rule__Recipe__Group_5__1"
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1270:1: rule__Recipe__Group_5__1 : rule__Recipe__Group_5__1__Impl ;
+    public final void rule__Recipe__Group_5__1() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1274:1: ( rule__Recipe__Group_5__1__Impl )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1275:2: rule__Recipe__Group_5__1__Impl
+            {
+            pushFollow(FollowSets000.FOLLOW_rule__Recipe__Group_5__1__Impl_in_rule__Recipe__Group_5__12570);
+            rule__Recipe__Group_5__1__Impl();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Recipe__Group_5__1"
+
+
+    // $ANTLR start "rule__Recipe__Group_5__1__Impl"
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1281:1: rule__Recipe__Group_5__1__Impl : ( ( rule__Recipe__Group_5_1__0 )* ) ;
+    public final void rule__Recipe__Group_5__1__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1285:1: ( ( ( rule__Recipe__Group_5_1__0 )* ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1286:1: ( ( rule__Recipe__Group_5_1__0 )* )
+            {
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1286:1: ( ( rule__Recipe__Group_5_1__0 )* )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1287:1: ( rule__Recipe__Group_5_1__0 )*
+            {
+             before(grammarAccess.getRecipeAccess().getGroup_5_1()); 
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1288:1: ( rule__Recipe__Group_5_1__0 )*
+            loop13:
             do {
-                int alt14=2;
-                int LA14_0 = input.LA(1);
+                int alt13=2;
+                int LA13_0 = input.LA(1);
 
-                if ( (LA14_0==25) ) {
-                    int LA14_2 = input.LA(2);
+                if ( (LA13_0==26) ) {
+                    int LA13_2 = input.LA(2);
 
-                    if ( (LA14_2==32) ) {
-                        alt14=1;
+                    if ( (LA13_2==31) ) {
+                        alt13=1;
                     }
 
 
                 }
 
 
-                switch (alt14) {
+                switch (alt13) {
             	case 1 :
-            	    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1352:2: rule__Recipe__Group_6_2__0
+            	    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1288:2: rule__Recipe__Group_5_1__0
             	    {
-            	    pushFollow(FollowSets000.FOLLOW_rule__Recipe__Group_6_2__0_in_rule__Recipe__Group_6__2__Impl2724);
-            	    rule__Recipe__Group_6_2__0();
+            	    pushFollow(FollowSets000.FOLLOW_rule__Recipe__Group_5_1__0_in_rule__Recipe__Group_5__1__Impl2597);
+            	    rule__Recipe__Group_5_1__0();
 
             	    state._fsp--;
 
@@ -3723,11 +3555,11 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
             	    break;
 
             	default :
-            	    break loop14;
+            	    break loop13;
                 }
             } while (true);
 
-             after(grammarAccess.getRecipeAccess().getGroup_6_2()); 
+             after(grammarAccess.getRecipeAccess().getGroup_5_1()); 
 
             }
 
@@ -3746,96 +3578,26 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__Recipe__Group_6__2__Impl"
+    // $ANTLR end "rule__Recipe__Group_5__1__Impl"
 
 
-    // $ANTLR start "rule__Recipe__Group_6_2__0"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1368:1: rule__Recipe__Group_6_2__0 : rule__Recipe__Group_6_2__0__Impl rule__Recipe__Group_6_2__1 ;
-    public final void rule__Recipe__Group_6_2__0() throws RecognitionException {
+    // $ANTLR start "rule__Recipe__Group_5_1__0"
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1302:1: rule__Recipe__Group_5_1__0 : rule__Recipe__Group_5_1__0__Impl rule__Recipe__Group_5_1__1 ;
+    public final void rule__Recipe__Group_5_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1372:1: ( rule__Recipe__Group_6_2__0__Impl rule__Recipe__Group_6_2__1 )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1373:2: rule__Recipe__Group_6_2__0__Impl rule__Recipe__Group_6_2__1
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1306:1: ( rule__Recipe__Group_5_1__0__Impl rule__Recipe__Group_5_1__1 )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1307:2: rule__Recipe__Group_5_1__0__Impl rule__Recipe__Group_5_1__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Recipe__Group_6_2__0__Impl_in_rule__Recipe__Group_6_2__02761);
-            rule__Recipe__Group_6_2__0__Impl();
+            pushFollow(FollowSets000.FOLLOW_rule__Recipe__Group_5_1__0__Impl_in_rule__Recipe__Group_5_1__02632);
+            rule__Recipe__Group_5_1__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Recipe__Group_6_2__1_in_rule__Recipe__Group_6_2__02764);
-            rule__Recipe__Group_6_2__1();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Recipe__Group_6_2__0"
-
-
-    // $ANTLR start "rule__Recipe__Group_6_2__0__Impl"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1380:1: rule__Recipe__Group_6_2__0__Impl : ( ',' ) ;
-    public final void rule__Recipe__Group_6_2__0__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1384:1: ( ( ',' ) )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1385:1: ( ',' )
-            {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1385:1: ( ',' )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1386:1: ','
-            {
-             before(grammarAccess.getRecipeAccess().getCommaKeyword_6_2_0()); 
-            match(input,25,FollowSets000.FOLLOW_25_in_rule__Recipe__Group_6_2__0__Impl2792); 
-             after(grammarAccess.getRecipeAccess().getCommaKeyword_6_2_0()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Recipe__Group_6_2__0__Impl"
-
-
-    // $ANTLR start "rule__Recipe__Group_6_2__1"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1399:1: rule__Recipe__Group_6_2__1 : rule__Recipe__Group_6_2__1__Impl ;
-    public final void rule__Recipe__Group_6_2__1() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1403:1: ( rule__Recipe__Group_6_2__1__Impl )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1404:2: rule__Recipe__Group_6_2__1__Impl
-            {
-            pushFollow(FollowSets000.FOLLOW_rule__Recipe__Group_6_2__1__Impl_in_rule__Recipe__Group_6_2__12823);
-            rule__Recipe__Group_6_2__1__Impl();
+            pushFollow(FollowSets000.FOLLOW_rule__Recipe__Group_5_1__1_in_rule__Recipe__Group_5_1__02635);
+            rule__Recipe__Group_5_1__1();
 
             state._fsp--;
 
@@ -3854,35 +3616,25 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__Recipe__Group_6_2__1"
+    // $ANTLR end "rule__Recipe__Group_5_1__0"
 
 
-    // $ANTLR start "rule__Recipe__Group_6_2__1__Impl"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1410:1: rule__Recipe__Group_6_2__1__Impl : ( ( rule__Recipe__IngredientsAssignment_6_2_1 ) ) ;
-    public final void rule__Recipe__Group_6_2__1__Impl() throws RecognitionException {
+    // $ANTLR start "rule__Recipe__Group_5_1__0__Impl"
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1314:1: rule__Recipe__Group_5_1__0__Impl : ( ',' ) ;
+    public final void rule__Recipe__Group_5_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1414:1: ( ( ( rule__Recipe__IngredientsAssignment_6_2_1 ) ) )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1415:1: ( ( rule__Recipe__IngredientsAssignment_6_2_1 ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1318:1: ( ( ',' ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1319:1: ( ',' )
             {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1415:1: ( ( rule__Recipe__IngredientsAssignment_6_2_1 ) )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1416:1: ( rule__Recipe__IngredientsAssignment_6_2_1 )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1319:1: ( ',' )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1320:1: ','
             {
-             before(grammarAccess.getRecipeAccess().getIngredientsAssignment_6_2_1()); 
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1417:1: ( rule__Recipe__IngredientsAssignment_6_2_1 )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1417:2: rule__Recipe__IngredientsAssignment_6_2_1
-            {
-            pushFollow(FollowSets000.FOLLOW_rule__Recipe__IngredientsAssignment_6_2_1_in_rule__Recipe__Group_6_2__1__Impl2850);
-            rule__Recipe__IngredientsAssignment_6_2_1();
-
-            state._fsp--;
-
-
-            }
-
-             after(grammarAccess.getRecipeAccess().getIngredientsAssignment_6_2_1()); 
+             before(grammarAccess.getRecipeAccess().getCommaKeyword_5_1_0()); 
+            match(input,26,FollowSets000.FOLLOW_26_in_rule__Recipe__Group_5_1__0__Impl2663); 
+             after(grammarAccess.getRecipeAccess().getCommaKeyword_5_1_0()); 
 
             }
 
@@ -3901,25 +3653,105 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__Recipe__Group_6_2__1__Impl"
+    // $ANTLR end "rule__Recipe__Group_5_1__0__Impl"
+
+
+    // $ANTLR start "rule__Recipe__Group_5_1__1"
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1333:1: rule__Recipe__Group_5_1__1 : rule__Recipe__Group_5_1__1__Impl ;
+    public final void rule__Recipe__Group_5_1__1() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1337:1: ( rule__Recipe__Group_5_1__1__Impl )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1338:2: rule__Recipe__Group_5_1__1__Impl
+            {
+            pushFollow(FollowSets000.FOLLOW_rule__Recipe__Group_5_1__1__Impl_in_rule__Recipe__Group_5_1__12694);
+            rule__Recipe__Group_5_1__1__Impl();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Recipe__Group_5_1__1"
+
+
+    // $ANTLR start "rule__Recipe__Group_5_1__1__Impl"
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1344:1: rule__Recipe__Group_5_1__1__Impl : ( ( rule__Recipe__IngredientsAssignment_5_1_1 ) ) ;
+    public final void rule__Recipe__Group_5_1__1__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1348:1: ( ( ( rule__Recipe__IngredientsAssignment_5_1_1 ) ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1349:1: ( ( rule__Recipe__IngredientsAssignment_5_1_1 ) )
+            {
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1349:1: ( ( rule__Recipe__IngredientsAssignment_5_1_1 ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1350:1: ( rule__Recipe__IngredientsAssignment_5_1_1 )
+            {
+             before(grammarAccess.getRecipeAccess().getIngredientsAssignment_5_1_1()); 
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1351:1: ( rule__Recipe__IngredientsAssignment_5_1_1 )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1351:2: rule__Recipe__IngredientsAssignment_5_1_1
+            {
+            pushFollow(FollowSets000.FOLLOW_rule__Recipe__IngredientsAssignment_5_1_1_in_rule__Recipe__Group_5_1__1__Impl2721);
+            rule__Recipe__IngredientsAssignment_5_1_1();
+
+            state._fsp--;
+
+
+            }
+
+             after(grammarAccess.getRecipeAccess().getIngredientsAssignment_5_1_1()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Recipe__Group_5_1__1__Impl"
 
 
     // $ANTLR start "rule__EBigDecimal__Group__0"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1431:1: rule__EBigDecimal__Group__0 : rule__EBigDecimal__Group__0__Impl rule__EBigDecimal__Group__1 ;
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1365:1: rule__EBigDecimal__Group__0 : rule__EBigDecimal__Group__0__Impl rule__EBigDecimal__Group__1 ;
     public final void rule__EBigDecimal__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1435:1: ( rule__EBigDecimal__Group__0__Impl rule__EBigDecimal__Group__1 )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1436:2: rule__EBigDecimal__Group__0__Impl rule__EBigDecimal__Group__1
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1369:1: ( rule__EBigDecimal__Group__0__Impl rule__EBigDecimal__Group__1 )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1370:2: rule__EBigDecimal__Group__0__Impl rule__EBigDecimal__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__EBigDecimal__Group__0__Impl_in_rule__EBigDecimal__Group__02884);
+            pushFollow(FollowSets000.FOLLOW_rule__EBigDecimal__Group__0__Impl_in_rule__EBigDecimal__Group__02755);
             rule__EBigDecimal__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__EBigDecimal__Group__1_in_rule__EBigDecimal__Group__02887);
+            pushFollow(FollowSets000.FOLLOW_rule__EBigDecimal__Group__1_in_rule__EBigDecimal__Group__02758);
             rule__EBigDecimal__Group__1();
 
             state._fsp--;
@@ -3943,37 +3775,20 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EBigDecimal__Group__0__Impl"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1443:1: rule__EBigDecimal__Group__0__Impl : ( ( RULE_INT )? ) ;
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1377:1: rule__EBigDecimal__Group__0__Impl : ( RULE_INT ) ;
     public final void rule__EBigDecimal__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1447:1: ( ( ( RULE_INT )? ) )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1448:1: ( ( RULE_INT )? )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1381:1: ( ( RULE_INT ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1382:1: ( RULE_INT )
             {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1448:1: ( ( RULE_INT )? )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1449:1: ( RULE_INT )?
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1382:1: ( RULE_INT )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1383:1: RULE_INT
             {
              before(grammarAccess.getEBigDecimalAccess().getINTTerminalRuleCall_0()); 
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1450:1: ( RULE_INT )?
-            int alt15=2;
-            int LA15_0 = input.LA(1);
-
-            if ( (LA15_0==RULE_INT) ) {
-                alt15=1;
-            }
-            switch (alt15) {
-                case 1 :
-                    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1450:3: RULE_INT
-                    {
-                    match(input,RULE_INT,FollowSets000.FOLLOW_RULE_INT_in_rule__EBigDecimal__Group__0__Impl2915); 
-
-                    }
-                    break;
-
-            }
-
+            match(input,RULE_INT,FollowSets000.FOLLOW_RULE_INT_in_rule__EBigDecimal__Group__0__Impl2785); 
              after(grammarAccess.getEBigDecimalAccess().getINTTerminalRuleCall_0()); 
 
             }
@@ -3997,22 +3812,17 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EBigDecimal__Group__1"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1460:1: rule__EBigDecimal__Group__1 : rule__EBigDecimal__Group__1__Impl rule__EBigDecimal__Group__2 ;
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1394:1: rule__EBigDecimal__Group__1 : rule__EBigDecimal__Group__1__Impl ;
     public final void rule__EBigDecimal__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1464:1: ( rule__EBigDecimal__Group__1__Impl rule__EBigDecimal__Group__2 )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1465:2: rule__EBigDecimal__Group__1__Impl rule__EBigDecimal__Group__2
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1398:1: ( rule__EBigDecimal__Group__1__Impl )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1399:2: rule__EBigDecimal__Group__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__EBigDecimal__Group__1__Impl_in_rule__EBigDecimal__Group__12946);
+            pushFollow(FollowSets000.FOLLOW_rule__EBigDecimal__Group__1__Impl_in_rule__EBigDecimal__Group__12814);
             rule__EBigDecimal__Group__1__Impl();
-
-            state._fsp--;
-
-            pushFollow(FollowSets000.FOLLOW_rule__EBigDecimal__Group__2_in_rule__EBigDecimal__Group__12949);
-            rule__EBigDecimal__Group__2();
 
             state._fsp--;
 
@@ -4035,21 +3845,42 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EBigDecimal__Group__1__Impl"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1472:1: rule__EBigDecimal__Group__1__Impl : ( '.' ) ;
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1405:1: rule__EBigDecimal__Group__1__Impl : ( ( rule__EBigDecimal__Group_1__0 )? ) ;
     public final void rule__EBigDecimal__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1476:1: ( ( '.' ) )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1477:1: ( '.' )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1409:1: ( ( ( rule__EBigDecimal__Group_1__0 )? ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1410:1: ( ( rule__EBigDecimal__Group_1__0 )? )
             {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1477:1: ( '.' )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1478:1: '.'
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1410:1: ( ( rule__EBigDecimal__Group_1__0 )? )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1411:1: ( rule__EBigDecimal__Group_1__0 )?
             {
-             before(grammarAccess.getEBigDecimalAccess().getFullStopKeyword_1()); 
-            match(input,30,FollowSets000.FOLLOW_30_in_rule__EBigDecimal__Group__1__Impl2977); 
-             after(grammarAccess.getEBigDecimalAccess().getFullStopKeyword_1()); 
+             before(grammarAccess.getEBigDecimalAccess().getGroup_1()); 
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1412:1: ( rule__EBigDecimal__Group_1__0 )?
+            int alt14=2;
+            int LA14_0 = input.LA(1);
+
+            if ( (LA14_0==29) ) {
+                alt14=1;
+            }
+            switch (alt14) {
+                case 1 :
+                    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1412:2: rule__EBigDecimal__Group_1__0
+                    {
+                    pushFollow(FollowSets000.FOLLOW_rule__EBigDecimal__Group_1__0_in_rule__EBigDecimal__Group__1__Impl2841);
+                    rule__EBigDecimal__Group_1__0();
+
+                    state._fsp--;
+
+
+                    }
+                    break;
+
+            }
+
+             after(grammarAccess.getEBigDecimalAccess().getGroup_1()); 
 
             }
 
@@ -4071,18 +3902,23 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__EBigDecimal__Group__1__Impl"
 
 
-    // $ANTLR start "rule__EBigDecimal__Group__2"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1491:1: rule__EBigDecimal__Group__2 : rule__EBigDecimal__Group__2__Impl ;
-    public final void rule__EBigDecimal__Group__2() throws RecognitionException {
+    // $ANTLR start "rule__EBigDecimal__Group_1__0"
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1426:1: rule__EBigDecimal__Group_1__0 : rule__EBigDecimal__Group_1__0__Impl rule__EBigDecimal__Group_1__1 ;
+    public final void rule__EBigDecimal__Group_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1495:1: ( rule__EBigDecimal__Group__2__Impl )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1496:2: rule__EBigDecimal__Group__2__Impl
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1430:1: ( rule__EBigDecimal__Group_1__0__Impl rule__EBigDecimal__Group_1__1 )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1431:2: rule__EBigDecimal__Group_1__0__Impl rule__EBigDecimal__Group_1__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__EBigDecimal__Group__2__Impl_in_rule__EBigDecimal__Group__23008);
-            rule__EBigDecimal__Group__2__Impl();
+            pushFollow(FollowSets000.FOLLOW_rule__EBigDecimal__Group_1__0__Impl_in_rule__EBigDecimal__Group_1__02876);
+            rule__EBigDecimal__Group_1__0__Impl();
+
+            state._fsp--;
+
+            pushFollow(FollowSets000.FOLLOW_rule__EBigDecimal__Group_1__1_in_rule__EBigDecimal__Group_1__02879);
+            rule__EBigDecimal__Group_1__1();
 
             state._fsp--;
 
@@ -4101,25 +3937,25 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__EBigDecimal__Group__2"
+    // $ANTLR end "rule__EBigDecimal__Group_1__0"
 
 
-    // $ANTLR start "rule__EBigDecimal__Group__2__Impl"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1502:1: rule__EBigDecimal__Group__2__Impl : ( RULE_INT ) ;
-    public final void rule__EBigDecimal__Group__2__Impl() throws RecognitionException {
+    // $ANTLR start "rule__EBigDecimal__Group_1__0__Impl"
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1438:1: rule__EBigDecimal__Group_1__0__Impl : ( '.' ) ;
+    public final void rule__EBigDecimal__Group_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1506:1: ( ( RULE_INT ) )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1507:1: ( RULE_INT )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1442:1: ( ( '.' ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1443:1: ( '.' )
             {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1507:1: ( RULE_INT )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1508:1: RULE_INT
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1443:1: ( '.' )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1444:1: '.'
             {
-             before(grammarAccess.getEBigDecimalAccess().getINTTerminalRuleCall_2()); 
-            match(input,RULE_INT,FollowSets000.FOLLOW_RULE_INT_in_rule__EBigDecimal__Group__2__Impl3035); 
-             after(grammarAccess.getEBigDecimalAccess().getINTTerminalRuleCall_2()); 
+             before(grammarAccess.getEBigDecimalAccess().getFullStopKeyword_1_0()); 
+            match(input,29,FollowSets000.FOLLOW_29_in_rule__EBigDecimal__Group_1__0__Impl2907); 
+             after(grammarAccess.getEBigDecimalAccess().getFullStopKeyword_1_0()); 
 
             }
 
@@ -4138,25 +3974,95 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__EBigDecimal__Group__2__Impl"
+    // $ANTLR end "rule__EBigDecimal__Group_1__0__Impl"
+
+
+    // $ANTLR start "rule__EBigDecimal__Group_1__1"
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1457:1: rule__EBigDecimal__Group_1__1 : rule__EBigDecimal__Group_1__1__Impl ;
+    public final void rule__EBigDecimal__Group_1__1() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1461:1: ( rule__EBigDecimal__Group_1__1__Impl )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1462:2: rule__EBigDecimal__Group_1__1__Impl
+            {
+            pushFollow(FollowSets000.FOLLOW_rule__EBigDecimal__Group_1__1__Impl_in_rule__EBigDecimal__Group_1__12938);
+            rule__EBigDecimal__Group_1__1__Impl();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__EBigDecimal__Group_1__1"
+
+
+    // $ANTLR start "rule__EBigDecimal__Group_1__1__Impl"
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1468:1: rule__EBigDecimal__Group_1__1__Impl : ( RULE_INT ) ;
+    public final void rule__EBigDecimal__Group_1__1__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1472:1: ( ( RULE_INT ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1473:1: ( RULE_INT )
+            {
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1473:1: ( RULE_INT )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1474:1: RULE_INT
+            {
+             before(grammarAccess.getEBigDecimalAccess().getINTTerminalRuleCall_1_1()); 
+            match(input,RULE_INT,FollowSets000.FOLLOW_RULE_INT_in_rule__EBigDecimal__Group_1__1__Impl2965); 
+             after(grammarAccess.getEBigDecimalAccess().getINTTerminalRuleCall_1_1()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__EBigDecimal__Group_1__1__Impl"
 
 
     // $ANTLR start "rule__EInt__Group__0"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1525:1: rule__EInt__Group__0 : rule__EInt__Group__0__Impl rule__EInt__Group__1 ;
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1489:1: rule__EInt__Group__0 : rule__EInt__Group__0__Impl rule__EInt__Group__1 ;
     public final void rule__EInt__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1529:1: ( rule__EInt__Group__0__Impl rule__EInt__Group__1 )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1530:2: rule__EInt__Group__0__Impl rule__EInt__Group__1
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1493:1: ( rule__EInt__Group__0__Impl rule__EInt__Group__1 )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1494:2: rule__EInt__Group__0__Impl rule__EInt__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__EInt__Group__0__Impl_in_rule__EInt__Group__03070);
+            pushFollow(FollowSets000.FOLLOW_rule__EInt__Group__0__Impl_in_rule__EInt__Group__02998);
             rule__EInt__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__EInt__Group__1_in_rule__EInt__Group__03073);
+            pushFollow(FollowSets000.FOLLOW_rule__EInt__Group__1_in_rule__EInt__Group__03001);
             rule__EInt__Group__1();
 
             state._fsp--;
@@ -4180,31 +4086,31 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EInt__Group__0__Impl"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1537:1: rule__EInt__Group__0__Impl : ( ( '-' )? ) ;
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1501:1: rule__EInt__Group__0__Impl : ( ( '-' )? ) ;
     public final void rule__EInt__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1541:1: ( ( ( '-' )? ) )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1542:1: ( ( '-' )? )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1505:1: ( ( ( '-' )? ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1506:1: ( ( '-' )? )
             {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1542:1: ( ( '-' )? )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1543:1: ( '-' )?
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1506:1: ( ( '-' )? )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1507:1: ( '-' )?
             {
              before(grammarAccess.getEIntAccess().getHyphenMinusKeyword_0()); 
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1544:1: ( '-' )?
-            int alt16=2;
-            int LA16_0 = input.LA(1);
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1508:1: ( '-' )?
+            int alt15=2;
+            int LA15_0 = input.LA(1);
 
-            if ( (LA16_0==31) ) {
-                alt16=1;
+            if ( (LA15_0==30) ) {
+                alt15=1;
             }
-            switch (alt16) {
+            switch (alt15) {
                 case 1 :
-                    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1545:2: '-'
+                    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1509:2: '-'
                     {
-                    match(input,31,FollowSets000.FOLLOW_31_in_rule__EInt__Group__0__Impl3102); 
+                    match(input,30,FollowSets000.FOLLOW_30_in_rule__EInt__Group__0__Impl3030); 
 
                     }
                     break;
@@ -4234,16 +4140,16 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EInt__Group__1"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1556:1: rule__EInt__Group__1 : rule__EInt__Group__1__Impl ;
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1520:1: rule__EInt__Group__1 : rule__EInt__Group__1__Impl ;
     public final void rule__EInt__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1560:1: ( rule__EInt__Group__1__Impl )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1561:2: rule__EInt__Group__1__Impl
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1524:1: ( rule__EInt__Group__1__Impl )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1525:2: rule__EInt__Group__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__EInt__Group__1__Impl_in_rule__EInt__Group__13135);
+            pushFollow(FollowSets000.FOLLOW_rule__EInt__Group__1__Impl_in_rule__EInt__Group__13063);
             rule__EInt__Group__1__Impl();
 
             state._fsp--;
@@ -4267,20 +4173,20 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EInt__Group__1__Impl"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1567:1: rule__EInt__Group__1__Impl : ( RULE_INT ) ;
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1531:1: rule__EInt__Group__1__Impl : ( RULE_INT ) ;
     public final void rule__EInt__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1571:1: ( ( RULE_INT ) )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1572:1: ( RULE_INT )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1535:1: ( ( RULE_INT ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1536:1: ( RULE_INT )
             {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1572:1: ( RULE_INT )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1573:1: RULE_INT
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1536:1: ( RULE_INT )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1537:1: RULE_INT
             {
              before(grammarAccess.getEIntAccess().getINTTerminalRuleCall_1()); 
-            match(input,RULE_INT,FollowSets000.FOLLOW_RULE_INT_in_rule__EInt__Group__1__Impl3162); 
+            match(input,RULE_INT,FollowSets000.FOLLOW_RULE_INT_in_rule__EInt__Group__1__Impl3090); 
              after(grammarAccess.getEIntAccess().getINTTerminalRuleCall_1()); 
 
             }
@@ -4304,21 +4210,21 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Ingredient__Group__0"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1588:1: rule__Ingredient__Group__0 : rule__Ingredient__Group__0__Impl rule__Ingredient__Group__1 ;
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1552:1: rule__Ingredient__Group__0 : rule__Ingredient__Group__0__Impl rule__Ingredient__Group__1 ;
     public final void rule__Ingredient__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1592:1: ( rule__Ingredient__Group__0__Impl rule__Ingredient__Group__1 )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1593:2: rule__Ingredient__Group__0__Impl rule__Ingredient__Group__1
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1556:1: ( rule__Ingredient__Group__0__Impl rule__Ingredient__Group__1 )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1557:2: rule__Ingredient__Group__0__Impl rule__Ingredient__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Ingredient__Group__0__Impl_in_rule__Ingredient__Group__03195);
+            pushFollow(FollowSets000.FOLLOW_rule__Ingredient__Group__0__Impl_in_rule__Ingredient__Group__03123);
             rule__Ingredient__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Ingredient__Group__1_in_rule__Ingredient__Group__03198);
+            pushFollow(FollowSets000.FOLLOW_rule__Ingredient__Group__1_in_rule__Ingredient__Group__03126);
             rule__Ingredient__Group__1();
 
             state._fsp--;
@@ -4342,21 +4248,21 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Ingredient__Group__0__Impl"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1600:1: rule__Ingredient__Group__0__Impl : ( () ) ;
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1564:1: rule__Ingredient__Group__0__Impl : ( () ) ;
     public final void rule__Ingredient__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1604:1: ( ( () ) )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1605:1: ( () )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1568:1: ( ( () ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1569:1: ( () )
             {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1605:1: ( () )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1606:1: ()
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1569:1: ( () )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1570:1: ()
             {
              before(grammarAccess.getIngredientAccess().getIngredientAction_0()); 
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1607:1: ()
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1609:1: 
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1571:1: ()
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1573:1: 
             {
             }
 
@@ -4379,21 +4285,21 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Ingredient__Group__1"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1619:1: rule__Ingredient__Group__1 : rule__Ingredient__Group__1__Impl rule__Ingredient__Group__2 ;
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1583:1: rule__Ingredient__Group__1 : rule__Ingredient__Group__1__Impl rule__Ingredient__Group__2 ;
     public final void rule__Ingredient__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1623:1: ( rule__Ingredient__Group__1__Impl rule__Ingredient__Group__2 )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1624:2: rule__Ingredient__Group__1__Impl rule__Ingredient__Group__2
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1587:1: ( rule__Ingredient__Group__1__Impl rule__Ingredient__Group__2 )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1588:2: rule__Ingredient__Group__1__Impl rule__Ingredient__Group__2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Ingredient__Group__1__Impl_in_rule__Ingredient__Group__13256);
+            pushFollow(FollowSets000.FOLLOW_rule__Ingredient__Group__1__Impl_in_rule__Ingredient__Group__13184);
             rule__Ingredient__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Ingredient__Group__2_in_rule__Ingredient__Group__13259);
+            pushFollow(FollowSets000.FOLLOW_rule__Ingredient__Group__2_in_rule__Ingredient__Group__13187);
             rule__Ingredient__Group__2();
 
             state._fsp--;
@@ -4417,20 +4323,20 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Ingredient__Group__1__Impl"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1631:1: rule__Ingredient__Group__1__Impl : ( 'Ingredient' ) ;
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1595:1: rule__Ingredient__Group__1__Impl : ( 'Ingredient' ) ;
     public final void rule__Ingredient__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1635:1: ( ( 'Ingredient' ) )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1636:1: ( 'Ingredient' )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1599:1: ( ( 'Ingredient' ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1600:1: ( 'Ingredient' )
             {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1636:1: ( 'Ingredient' )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1637:1: 'Ingredient'
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1600:1: ( 'Ingredient' )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1601:1: 'Ingredient'
             {
              before(grammarAccess.getIngredientAccess().getIngredientKeyword_1()); 
-            match(input,32,FollowSets000.FOLLOW_32_in_rule__Ingredient__Group__1__Impl3287); 
+            match(input,31,FollowSets000.FOLLOW_31_in_rule__Ingredient__Group__1__Impl3215); 
              after(grammarAccess.getIngredientAccess().getIngredientKeyword_1()); 
 
             }
@@ -4454,21 +4360,21 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Ingredient__Group__2"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1650:1: rule__Ingredient__Group__2 : rule__Ingredient__Group__2__Impl rule__Ingredient__Group__3 ;
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1614:1: rule__Ingredient__Group__2 : rule__Ingredient__Group__2__Impl rule__Ingredient__Group__3 ;
     public final void rule__Ingredient__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1654:1: ( rule__Ingredient__Group__2__Impl rule__Ingredient__Group__3 )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1655:2: rule__Ingredient__Group__2__Impl rule__Ingredient__Group__3
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1618:1: ( rule__Ingredient__Group__2__Impl rule__Ingredient__Group__3 )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1619:2: rule__Ingredient__Group__2__Impl rule__Ingredient__Group__3
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Ingredient__Group__2__Impl_in_rule__Ingredient__Group__23318);
+            pushFollow(FollowSets000.FOLLOW_rule__Ingredient__Group__2__Impl_in_rule__Ingredient__Group__23246);
             rule__Ingredient__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Ingredient__Group__3_in_rule__Ingredient__Group__23321);
+            pushFollow(FollowSets000.FOLLOW_rule__Ingredient__Group__3_in_rule__Ingredient__Group__23249);
             rule__Ingredient__Group__3();
 
             state._fsp--;
@@ -4492,23 +4398,23 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Ingredient__Group__2__Impl"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1662:1: rule__Ingredient__Group__2__Impl : ( ( rule__Ingredient__NameAssignment_2 ) ) ;
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1626:1: rule__Ingredient__Group__2__Impl : ( ( rule__Ingredient__NameAssignment_2 ) ) ;
     public final void rule__Ingredient__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1666:1: ( ( ( rule__Ingredient__NameAssignment_2 ) ) )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1667:1: ( ( rule__Ingredient__NameAssignment_2 ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1630:1: ( ( ( rule__Ingredient__NameAssignment_2 ) ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1631:1: ( ( rule__Ingredient__NameAssignment_2 ) )
             {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1667:1: ( ( rule__Ingredient__NameAssignment_2 ) )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1668:1: ( rule__Ingredient__NameAssignment_2 )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1631:1: ( ( rule__Ingredient__NameAssignment_2 ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1632:1: ( rule__Ingredient__NameAssignment_2 )
             {
              before(grammarAccess.getIngredientAccess().getNameAssignment_2()); 
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1669:1: ( rule__Ingredient__NameAssignment_2 )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1669:2: rule__Ingredient__NameAssignment_2
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1633:1: ( rule__Ingredient__NameAssignment_2 )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1633:2: rule__Ingredient__NameAssignment_2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Ingredient__NameAssignment_2_in_rule__Ingredient__Group__2__Impl3348);
+            pushFollow(FollowSets000.FOLLOW_rule__Ingredient__NameAssignment_2_in_rule__Ingredient__Group__2__Impl3276);
             rule__Ingredient__NameAssignment_2();
 
             state._fsp--;
@@ -4539,16 +4445,16 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Ingredient__Group__3"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1679:1: rule__Ingredient__Group__3 : rule__Ingredient__Group__3__Impl ;
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1643:1: rule__Ingredient__Group__3 : rule__Ingredient__Group__3__Impl ;
     public final void rule__Ingredient__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1683:1: ( rule__Ingredient__Group__3__Impl )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1684:2: rule__Ingredient__Group__3__Impl
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1647:1: ( rule__Ingredient__Group__3__Impl )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1648:2: rule__Ingredient__Group__3__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Ingredient__Group__3__Impl_in_rule__Ingredient__Group__33378);
+            pushFollow(FollowSets000.FOLLOW_rule__Ingredient__Group__3__Impl_in_rule__Ingredient__Group__33306);
             rule__Ingredient__Group__3__Impl();
 
             state._fsp--;
@@ -4572,31 +4478,31 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Ingredient__Group__3__Impl"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1690:1: rule__Ingredient__Group__3__Impl : ( ( rule__Ingredient__SpicinessAssignment_3 )? ) ;
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1654:1: rule__Ingredient__Group__3__Impl : ( ( rule__Ingredient__SpicinessAssignment_3 )? ) ;
     public final void rule__Ingredient__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1694:1: ( ( ( rule__Ingredient__SpicinessAssignment_3 )? ) )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1695:1: ( ( rule__Ingredient__SpicinessAssignment_3 )? )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1658:1: ( ( ( rule__Ingredient__SpicinessAssignment_3 )? ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1659:1: ( ( rule__Ingredient__SpicinessAssignment_3 )? )
             {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1695:1: ( ( rule__Ingredient__SpicinessAssignment_3 )? )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1696:1: ( rule__Ingredient__SpicinessAssignment_3 )?
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1659:1: ( ( rule__Ingredient__SpicinessAssignment_3 )? )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1660:1: ( rule__Ingredient__SpicinessAssignment_3 )?
             {
              before(grammarAccess.getIngredientAccess().getSpicinessAssignment_3()); 
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1697:1: ( rule__Ingredient__SpicinessAssignment_3 )?
-            int alt17=2;
-            int LA17_0 = input.LA(1);
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1661:1: ( rule__Ingredient__SpicinessAssignment_3 )?
+            int alt16=2;
+            int LA16_0 = input.LA(1);
 
-            if ( ((LA17_0>=20 && LA17_0<=23)) ) {
-                alt17=1;
+            if ( ((LA16_0>=20 && LA16_0<=23)) ) {
+                alt16=1;
             }
-            switch (alt17) {
+            switch (alt16) {
                 case 1 :
-                    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1697:2: rule__Ingredient__SpicinessAssignment_3
+                    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1661:2: rule__Ingredient__SpicinessAssignment_3
                     {
-                    pushFollow(FollowSets000.FOLLOW_rule__Ingredient__SpicinessAssignment_3_in_rule__Ingredient__Group__3__Impl3405);
+                    pushFollow(FollowSets000.FOLLOW_rule__Ingredient__SpicinessAssignment_3_in_rule__Ingredient__Group__3__Impl3333);
                     rule__Ingredient__SpicinessAssignment_3();
 
                     state._fsp--;
@@ -4630,20 +4536,20 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Menu__NameAssignment_2"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1716:1: rule__Menu__NameAssignment_2 : ( ruleEString ) ;
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1680:1: rule__Menu__NameAssignment_2 : ( ruleEString ) ;
     public final void rule__Menu__NameAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1720:1: ( ( ruleEString ) )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1721:1: ( ruleEString )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1684:1: ( ( ruleEString ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1685:1: ( ruleEString )
             {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1721:1: ( ruleEString )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1722:1: ruleEString
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1685:1: ( ruleEString )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1686:1: ruleEString
             {
              before(grammarAccess.getMenuAccess().getNameEStringParserRuleCall_2_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Menu__NameAssignment_23449);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Menu__NameAssignment_23377);
             ruleEString();
 
             state._fsp--;
@@ -4671,20 +4577,20 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Menu__GroupsAssignment_3_0"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1731:1: rule__Menu__GroupsAssignment_3_0 : ( ruleGroup ) ;
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1695:1: rule__Menu__GroupsAssignment_3_0 : ( ruleGroup ) ;
     public final void rule__Menu__GroupsAssignment_3_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1735:1: ( ( ruleGroup ) )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1736:1: ( ruleGroup )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1699:1: ( ( ruleGroup ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1700:1: ( ruleGroup )
             {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1736:1: ( ruleGroup )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1737:1: ruleGroup
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1700:1: ( ruleGroup )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1701:1: ruleGroup
             {
              before(grammarAccess.getMenuAccess().getGroupsGroupParserRuleCall_3_0_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleGroup_in_rule__Menu__GroupsAssignment_3_03480);
+            pushFollow(FollowSets000.FOLLOW_ruleGroup_in_rule__Menu__GroupsAssignment_3_03408);
             ruleGroup();
 
             state._fsp--;
@@ -4711,26 +4617,26 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__Menu__GroupsAssignment_3_0"
 
 
-    // $ANTLR start "rule__Menu__GroupsAssignment_3_1_1"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1746:1: rule__Menu__GroupsAssignment_3_1_1 : ( ruleGroup ) ;
-    public final void rule__Menu__GroupsAssignment_3_1_1() throws RecognitionException {
+    // $ANTLR start "rule__Menu__GroupsAssignment_3_1"
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1710:1: rule__Menu__GroupsAssignment_3_1 : ( ruleGroup ) ;
+    public final void rule__Menu__GroupsAssignment_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1750:1: ( ( ruleGroup ) )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1751:1: ( ruleGroup )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1714:1: ( ( ruleGroup ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1715:1: ( ruleGroup )
             {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1751:1: ( ruleGroup )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1752:1: ruleGroup
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1715:1: ( ruleGroup )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1716:1: ruleGroup
             {
-             before(grammarAccess.getMenuAccess().getGroupsGroupParserRuleCall_3_1_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleGroup_in_rule__Menu__GroupsAssignment_3_1_13511);
+             before(grammarAccess.getMenuAccess().getGroupsGroupParserRuleCall_3_1_0()); 
+            pushFollow(FollowSets000.FOLLOW_ruleGroup_in_rule__Menu__GroupsAssignment_3_13439);
             ruleGroup();
 
             state._fsp--;
 
-             after(grammarAccess.getMenuAccess().getGroupsGroupParserRuleCall_3_1_1_0()); 
+             after(grammarAccess.getMenuAccess().getGroupsGroupParserRuleCall_3_1_0()); 
 
             }
 
@@ -4749,24 +4655,24 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__Menu__GroupsAssignment_3_1_1"
+    // $ANTLR end "rule__Menu__GroupsAssignment_3_1"
 
 
     // $ANTLR start "rule__Group__NameAssignment_2"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1761:1: rule__Group__NameAssignment_2 : ( ruleEString ) ;
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1725:1: rule__Group__NameAssignment_2 : ( ruleEString ) ;
     public final void rule__Group__NameAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1765:1: ( ( ruleEString ) )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1766:1: ( ruleEString )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1729:1: ( ( ruleEString ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1730:1: ( ruleEString )
             {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1766:1: ( ruleEString )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1767:1: ruleEString
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1730:1: ( ruleEString )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1731:1: ruleEString
             {
              before(grammarAccess.getGroupAccess().getNameEStringParserRuleCall_2_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Group__NameAssignment_23542);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Group__NameAssignment_23470);
             ruleEString();
 
             state._fsp--;
@@ -4794,20 +4700,20 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Group__CategoryAssignment_3"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1776:1: rule__Group__CategoryAssignment_3 : ( ruleCategory ) ;
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1740:1: rule__Group__CategoryAssignment_3 : ( ruleCategory ) ;
     public final void rule__Group__CategoryAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1780:1: ( ( ruleCategory ) )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1781:1: ( ruleCategory )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1744:1: ( ( ruleCategory ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1745:1: ( ruleCategory )
             {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1781:1: ( ruleCategory )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1782:1: ruleCategory
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1745:1: ( ruleCategory )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1746:1: ruleCategory
             {
              before(grammarAccess.getGroupAccess().getCategoryCategoryEnumRuleCall_3_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleCategory_in_rule__Group__CategoryAssignment_33573);
+            pushFollow(FollowSets000.FOLLOW_ruleCategory_in_rule__Group__CategoryAssignment_33501);
             ruleCategory();
 
             state._fsp--;
@@ -4835,20 +4741,20 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Group__RecipesAssignment_4_0"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1791:1: rule__Group__RecipesAssignment_4_0 : ( ruleRecipe ) ;
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1755:1: rule__Group__RecipesAssignment_4_0 : ( ruleRecipe ) ;
     public final void rule__Group__RecipesAssignment_4_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1795:1: ( ( ruleRecipe ) )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1796:1: ( ruleRecipe )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1759:1: ( ( ruleRecipe ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1760:1: ( ruleRecipe )
             {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1796:1: ( ruleRecipe )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1797:1: ruleRecipe
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1760:1: ( ruleRecipe )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1761:1: ruleRecipe
             {
              before(grammarAccess.getGroupAccess().getRecipesRecipeParserRuleCall_4_0_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleRecipe_in_rule__Group__RecipesAssignment_4_03604);
+            pushFollow(FollowSets000.FOLLOW_ruleRecipe_in_rule__Group__RecipesAssignment_4_03532);
             ruleRecipe();
 
             state._fsp--;
@@ -4876,20 +4782,20 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Group__RecipesAssignment_4_1_1"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1806:1: rule__Group__RecipesAssignment_4_1_1 : ( ruleRecipe ) ;
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1770:1: rule__Group__RecipesAssignment_4_1_1 : ( ruleRecipe ) ;
     public final void rule__Group__RecipesAssignment_4_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1810:1: ( ( ruleRecipe ) )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1811:1: ( ruleRecipe )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1774:1: ( ( ruleRecipe ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1775:1: ( ruleRecipe )
             {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1811:1: ( ruleRecipe )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1812:1: ruleRecipe
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1775:1: ( ruleRecipe )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1776:1: ruleRecipe
             {
              before(grammarAccess.getGroupAccess().getRecipesRecipeParserRuleCall_4_1_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleRecipe_in_rule__Group__RecipesAssignment_4_1_13635);
+            pushFollow(FollowSets000.FOLLOW_ruleRecipe_in_rule__Group__RecipesAssignment_4_1_13563);
             ruleRecipe();
 
             state._fsp--;
@@ -4917,20 +4823,20 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Recipe__NameAssignment_2"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1821:1: rule__Recipe__NameAssignment_2 : ( ruleEString ) ;
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1785:1: rule__Recipe__NameAssignment_2 : ( ruleEString ) ;
     public final void rule__Recipe__NameAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1825:1: ( ( ruleEString ) )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1826:1: ( ruleEString )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1789:1: ( ( ruleEString ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1790:1: ( ruleEString )
             {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1826:1: ( ruleEString )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1827:1: ruleEString
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1790:1: ( ruleEString )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1791:1: ruleEString
             {
              before(grammarAccess.getRecipeAccess().getNameEStringParserRuleCall_2_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Recipe__NameAssignment_23666);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Recipe__NameAssignment_23594);
             ruleEString();
 
             state._fsp--;
@@ -4958,20 +4864,20 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Recipe__PriceAssignment_3_1"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1836:1: rule__Recipe__PriceAssignment_3_1 : ( ruleEBigDecimal ) ;
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1800:1: rule__Recipe__PriceAssignment_3_1 : ( ruleEBigDecimal ) ;
     public final void rule__Recipe__PriceAssignment_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1840:1: ( ( ruleEBigDecimal ) )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1841:1: ( ruleEBigDecimal )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1804:1: ( ( ruleEBigDecimal ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1805:1: ( ruleEBigDecimal )
             {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1841:1: ( ruleEBigDecimal )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1842:1: ruleEBigDecimal
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1805:1: ( ruleEBigDecimal )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1806:1: ruleEBigDecimal
             {
              before(grammarAccess.getRecipeAccess().getPriceEBigDecimalParserRuleCall_3_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEBigDecimal_in_rule__Recipe__PriceAssignment_3_13697);
+            pushFollow(FollowSets000.FOLLOW_ruleEBigDecimal_in_rule__Recipe__PriceAssignment_3_13625);
             ruleEBigDecimal();
 
             state._fsp--;
@@ -4998,26 +4904,26 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__Recipe__PriceAssignment_3_1"
 
 
-    // $ANTLR start "rule__Recipe__AmountAssignment_4"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1851:1: rule__Recipe__AmountAssignment_4 : ( ruleEInt ) ;
-    public final void rule__Recipe__AmountAssignment_4() throws RecognitionException {
+    // $ANTLR start "rule__Recipe__AmountAssignment_4_0"
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1815:1: rule__Recipe__AmountAssignment_4_0 : ( ruleEInt ) ;
+    public final void rule__Recipe__AmountAssignment_4_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1855:1: ( ( ruleEInt ) )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1856:1: ( ruleEInt )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1819:1: ( ( ruleEInt ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1820:1: ( ruleEInt )
             {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1856:1: ( ruleEInt )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1857:1: ruleEInt
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1820:1: ( ruleEInt )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1821:1: ruleEInt
             {
-             before(grammarAccess.getRecipeAccess().getAmountEIntParserRuleCall_4_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEInt_in_rule__Recipe__AmountAssignment_43728);
+             before(grammarAccess.getRecipeAccess().getAmountEIntParserRuleCall_4_0_0()); 
+            pushFollow(FollowSets000.FOLLOW_ruleEInt_in_rule__Recipe__AmountAssignment_4_03656);
             ruleEInt();
 
             state._fsp--;
 
-             after(grammarAccess.getRecipeAccess().getAmountEIntParserRuleCall_4_0()); 
+             after(grammarAccess.getRecipeAccess().getAmountEIntParserRuleCall_4_0_0()); 
 
             }
 
@@ -5036,29 +4942,29 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__Recipe__AmountAssignment_4"
+    // $ANTLR end "rule__Recipe__AmountAssignment_4_0"
 
 
-    // $ANTLR start "rule__Recipe__AmountTypeAssignment_5"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1866:1: rule__Recipe__AmountTypeAssignment_5 : ( ruleAmountType ) ;
-    public final void rule__Recipe__AmountTypeAssignment_5() throws RecognitionException {
+    // $ANTLR start "rule__Recipe__AmountTypeAssignment_4_1"
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1830:1: rule__Recipe__AmountTypeAssignment_4_1 : ( ruleAmountType ) ;
+    public final void rule__Recipe__AmountTypeAssignment_4_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1870:1: ( ( ruleAmountType ) )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1871:1: ( ruleAmountType )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1834:1: ( ( ruleAmountType ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1835:1: ( ruleAmountType )
             {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1871:1: ( ruleAmountType )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1872:1: ruleAmountType
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1835:1: ( ruleAmountType )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1836:1: ruleAmountType
             {
-             before(grammarAccess.getRecipeAccess().getAmountTypeAmountTypeEnumRuleCall_5_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleAmountType_in_rule__Recipe__AmountTypeAssignment_53759);
+             before(grammarAccess.getRecipeAccess().getAmountTypeAmountTypeEnumRuleCall_4_1_0()); 
+            pushFollow(FollowSets000.FOLLOW_ruleAmountType_in_rule__Recipe__AmountTypeAssignment_4_13687);
             ruleAmountType();
 
             state._fsp--;
 
-             after(grammarAccess.getRecipeAccess().getAmountTypeAmountTypeEnumRuleCall_5_0()); 
+             after(grammarAccess.getRecipeAccess().getAmountTypeAmountTypeEnumRuleCall_4_1_0()); 
 
             }
 
@@ -5077,29 +4983,29 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__Recipe__AmountTypeAssignment_5"
+    // $ANTLR end "rule__Recipe__AmountTypeAssignment_4_1"
 
 
-    // $ANTLR start "rule__Recipe__IngredientsAssignment_6_1"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1881:1: rule__Recipe__IngredientsAssignment_6_1 : ( ruleIngredient ) ;
-    public final void rule__Recipe__IngredientsAssignment_6_1() throws RecognitionException {
+    // $ANTLR start "rule__Recipe__IngredientsAssignment_5_0"
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1845:1: rule__Recipe__IngredientsAssignment_5_0 : ( ruleIngredient ) ;
+    public final void rule__Recipe__IngredientsAssignment_5_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1885:1: ( ( ruleIngredient ) )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1886:1: ( ruleIngredient )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1849:1: ( ( ruleIngredient ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1850:1: ( ruleIngredient )
             {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1886:1: ( ruleIngredient )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1887:1: ruleIngredient
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1850:1: ( ruleIngredient )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1851:1: ruleIngredient
             {
-             before(grammarAccess.getRecipeAccess().getIngredientsIngredientParserRuleCall_6_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleIngredient_in_rule__Recipe__IngredientsAssignment_6_13790);
+             before(grammarAccess.getRecipeAccess().getIngredientsIngredientParserRuleCall_5_0_0()); 
+            pushFollow(FollowSets000.FOLLOW_ruleIngredient_in_rule__Recipe__IngredientsAssignment_5_03718);
             ruleIngredient();
 
             state._fsp--;
 
-             after(grammarAccess.getRecipeAccess().getIngredientsIngredientParserRuleCall_6_1_0()); 
+             after(grammarAccess.getRecipeAccess().getIngredientsIngredientParserRuleCall_5_0_0()); 
 
             }
 
@@ -5118,29 +5024,29 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__Recipe__IngredientsAssignment_6_1"
+    // $ANTLR end "rule__Recipe__IngredientsAssignment_5_0"
 
 
-    // $ANTLR start "rule__Recipe__IngredientsAssignment_6_2_1"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1896:1: rule__Recipe__IngredientsAssignment_6_2_1 : ( ruleIngredient ) ;
-    public final void rule__Recipe__IngredientsAssignment_6_2_1() throws RecognitionException {
+    // $ANTLR start "rule__Recipe__IngredientsAssignment_5_1_1"
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1860:1: rule__Recipe__IngredientsAssignment_5_1_1 : ( ruleIngredient ) ;
+    public final void rule__Recipe__IngredientsAssignment_5_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1900:1: ( ( ruleIngredient ) )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1901:1: ( ruleIngredient )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1864:1: ( ( ruleIngredient ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1865:1: ( ruleIngredient )
             {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1901:1: ( ruleIngredient )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1902:1: ruleIngredient
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1865:1: ( ruleIngredient )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1866:1: ruleIngredient
             {
-             before(grammarAccess.getRecipeAccess().getIngredientsIngredientParserRuleCall_6_2_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleIngredient_in_rule__Recipe__IngredientsAssignment_6_2_13821);
+             before(grammarAccess.getRecipeAccess().getIngredientsIngredientParserRuleCall_5_1_1_0()); 
+            pushFollow(FollowSets000.FOLLOW_ruleIngredient_in_rule__Recipe__IngredientsAssignment_5_1_13749);
             ruleIngredient();
 
             state._fsp--;
 
-             after(grammarAccess.getRecipeAccess().getIngredientsIngredientParserRuleCall_6_2_1_0()); 
+             after(grammarAccess.getRecipeAccess().getIngredientsIngredientParserRuleCall_5_1_1_0()); 
 
             }
 
@@ -5159,24 +5065,24 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__Recipe__IngredientsAssignment_6_2_1"
+    // $ANTLR end "rule__Recipe__IngredientsAssignment_5_1_1"
 
 
     // $ANTLR start "rule__Ingredient__NameAssignment_2"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1911:1: rule__Ingredient__NameAssignment_2 : ( ruleEString ) ;
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1875:1: rule__Ingredient__NameAssignment_2 : ( ruleEString ) ;
     public final void rule__Ingredient__NameAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1915:1: ( ( ruleEString ) )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1916:1: ( ruleEString )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1879:1: ( ( ruleEString ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1880:1: ( ruleEString )
             {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1916:1: ( ruleEString )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1917:1: ruleEString
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1880:1: ( ruleEString )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1881:1: ruleEString
             {
              before(grammarAccess.getIngredientAccess().getNameEStringParserRuleCall_2_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Ingredient__NameAssignment_23852);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Ingredient__NameAssignment_23780);
             ruleEString();
 
             state._fsp--;
@@ -5204,20 +5110,20 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Ingredient__SpicinessAssignment_3"
-    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1926:1: rule__Ingredient__SpicinessAssignment_3 : ( ruleSpiciness ) ;
+    // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1890:1: rule__Ingredient__SpicinessAssignment_3 : ( ruleSpiciness ) ;
     public final void rule__Ingredient__SpicinessAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1930:1: ( ( ruleSpiciness ) )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1931:1: ( ruleSpiciness )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1894:1: ( ( ruleSpiciness ) )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1895:1: ( ruleSpiciness )
             {
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1931:1: ( ruleSpiciness )
-            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1932:1: ruleSpiciness
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1895:1: ( ruleSpiciness )
+            // ../com.opcoach.restaurant.menu.xtext.ui/src-gen/com/opcoach/restaurant/menu/xtext/ui/contentassist/antlr/internal/InternalMenuDsl.g:1896:1: ruleSpiciness
             {
              before(grammarAccess.getIngredientAccess().getSpicinessSpicinessEnumRuleCall_3_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleSpiciness_in_rule__Ingredient__SpicinessAssignment_33883);
+            pushFollow(FollowSets000.FOLLOW_ruleSpiciness_in_rule__Ingredient__SpicinessAssignment_33811);
             ruleSpiciness();
 
             state._fsp--;
@@ -5294,7 +5200,7 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
         public static final BitSet FOLLOW_rule__Menu__Group__1__Impl_in_rule__Menu__Group__11024 = new BitSet(new long[]{0x0000000000000030L});
         public static final BitSet FOLLOW_rule__Menu__Group__2_in_rule__Menu__Group__11027 = new BitSet(new long[]{0x0000000000000002L});
         public static final BitSet FOLLOW_24_in_rule__Menu__Group__1__Impl1055 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Menu__Group__2__Impl_in_rule__Menu__Group__21086 = new BitSet(new long[]{0x0000000004000000L});
+        public static final BitSet FOLLOW_rule__Menu__Group__2__Impl_in_rule__Menu__Group__21086 = new BitSet(new long[]{0x0000000002000000L});
         public static final BitSet FOLLOW_rule__Menu__Group__3_in_rule__Menu__Group__21089 = new BitSet(new long[]{0x0000000000000002L});
         public static final BitSet FOLLOW_rule__Menu__NameAssignment_2_in_rule__Menu__Group__2__Impl1116 = new BitSet(new long[]{0x0000000000000002L});
         public static final BitSet FOLLOW_rule__Menu__Group__3__Impl_in_rule__Menu__Group__31146 = new BitSet(new long[]{0x0000000000000002L});
@@ -5303,110 +5209,106 @@ public class InternalMenuDslParser extends AbstractInternalContentAssistParser {
         public static final BitSet FOLLOW_rule__Menu__Group_3__1_in_rule__Menu__Group_3__01215 = new BitSet(new long[]{0x0000000000000002L});
         public static final BitSet FOLLOW_rule__Menu__GroupsAssignment_3_0_in_rule__Menu__Group_3__0__Impl1242 = new BitSet(new long[]{0x0000000000000002L});
         public static final BitSet FOLLOW_rule__Menu__Group_3__1__Impl_in_rule__Menu__Group_3__11272 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Menu__Group_3_1__0_in_rule__Menu__Group_3__1__Impl1299 = new BitSet(new long[]{0x0000000002000002L});
-        public static final BitSet FOLLOW_rule__Menu__Group_3_1__0__Impl_in_rule__Menu__Group_3_1__01334 = new BitSet(new long[]{0x0000000004000000L});
-        public static final BitSet FOLLOW_rule__Menu__Group_3_1__1_in_rule__Menu__Group_3_1__01337 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_25_in_rule__Menu__Group_3_1__0__Impl1365 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Menu__Group_3_1__1__Impl_in_rule__Menu__Group_3_1__11396 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Menu__GroupsAssignment_3_1_1_in_rule__Menu__Group_3_1__1__Impl1423 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Group__Group__0__Impl_in_rule__Group__Group__01457 = new BitSet(new long[]{0x0000000004000000L});
-        public static final BitSet FOLLOW_rule__Group__Group__1_in_rule__Group__Group__01460 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Group__Group__1__Impl_in_rule__Group__Group__11518 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_rule__Group__Group__2_in_rule__Group__Group__11521 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_26_in_rule__Group__Group__1__Impl1549 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Group__Group__2__Impl_in_rule__Group__Group__21580 = new BitSet(new long[]{0x000000000800F800L});
-        public static final BitSet FOLLOW_rule__Group__Group__3_in_rule__Group__Group__21583 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Group__NameAssignment_2_in_rule__Group__Group__2__Impl1610 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Group__Group__3__Impl_in_rule__Group__Group__31640 = new BitSet(new long[]{0x000000000800F800L});
-        public static final BitSet FOLLOW_rule__Group__Group__4_in_rule__Group__Group__31643 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Group__CategoryAssignment_3_in_rule__Group__Group__3__Impl1670 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Group__Group__4__Impl_in_rule__Group__Group__41701 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Group__Group_4__0_in_rule__Group__Group__4__Impl1728 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Group__Group_4__0__Impl_in_rule__Group__Group_4__01769 = new BitSet(new long[]{0x0000000002000000L});
-        public static final BitSet FOLLOW_rule__Group__Group_4__1_in_rule__Group__Group_4__01772 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Group__RecipesAssignment_4_0_in_rule__Group__Group_4__0__Impl1799 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Group__Group_4__1__Impl_in_rule__Group__Group_4__11829 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Group__Group_4_1__0_in_rule__Group__Group_4__1__Impl1856 = new BitSet(new long[]{0x0000000002000002L});
-        public static final BitSet FOLLOW_rule__Group__Group_4_1__0__Impl_in_rule__Group__Group_4_1__01891 = new BitSet(new long[]{0x0000000008000000L});
-        public static final BitSet FOLLOW_rule__Group__Group_4_1__1_in_rule__Group__Group_4_1__01894 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_25_in_rule__Group__Group_4_1__0__Impl1922 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Group__Group_4_1__1__Impl_in_rule__Group__Group_4_1__11953 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Group__RecipesAssignment_4_1_1_in_rule__Group__Group_4_1__1__Impl1980 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Recipe__Group__0__Impl_in_rule__Recipe__Group__02014 = new BitSet(new long[]{0x0000000008000000L});
-        public static final BitSet FOLLOW_rule__Recipe__Group__1_in_rule__Recipe__Group__02017 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Recipe__Group__1__Impl_in_rule__Recipe__Group__12075 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_rule__Recipe__Group__2_in_rule__Recipe__Group__12078 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_27_in_rule__Recipe__Group__1__Impl2106 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Recipe__Group__2__Impl_in_rule__Recipe__Group__22137 = new BitSet(new long[]{0x00000000B00F0040L});
-        public static final BitSet FOLLOW_rule__Recipe__Group__3_in_rule__Recipe__Group__22140 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Recipe__NameAssignment_2_in_rule__Recipe__Group__2__Impl2167 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Recipe__Group__3__Impl_in_rule__Recipe__Group__32197 = new BitSet(new long[]{0x00000000B00F0040L});
-        public static final BitSet FOLLOW_rule__Recipe__Group__4_in_rule__Recipe__Group__32200 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Recipe__Group_3__0_in_rule__Recipe__Group__3__Impl2227 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Recipe__Group__4__Impl_in_rule__Recipe__Group__42258 = new BitSet(new long[]{0x00000000B00F0040L});
-        public static final BitSet FOLLOW_rule__Recipe__Group__5_in_rule__Recipe__Group__42261 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Recipe__AmountAssignment_4_in_rule__Recipe__Group__4__Impl2288 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Recipe__Group__5__Impl_in_rule__Recipe__Group__52319 = new BitSet(new long[]{0x00000000B00F0040L});
-        public static final BitSet FOLLOW_rule__Recipe__Group__6_in_rule__Recipe__Group__52322 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Recipe__AmountTypeAssignment_5_in_rule__Recipe__Group__5__Impl2349 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Recipe__Group__6__Impl_in_rule__Recipe__Group__62380 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Recipe__Group_6__0_in_rule__Recipe__Group__6__Impl2407 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Recipe__Group_3__0__Impl_in_rule__Recipe__Group_3__02452 = new BitSet(new long[]{0x0000000040000040L});
-        public static final BitSet FOLLOW_rule__Recipe__Group_3__1_in_rule__Recipe__Group_3__02455 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_28_in_rule__Recipe__Group_3__0__Impl2483 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Recipe__Group_3__1__Impl_in_rule__Recipe__Group_3__12514 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Recipe__PriceAssignment_3_1_in_rule__Recipe__Group_3__1__Impl2541 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Recipe__Group_6__0__Impl_in_rule__Recipe__Group_6__02575 = new BitSet(new long[]{0x0000000100000000L});
-        public static final BitSet FOLLOW_rule__Recipe__Group_6__1_in_rule__Recipe__Group_6__02578 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_29_in_rule__Recipe__Group_6__0__Impl2606 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Recipe__Group_6__1__Impl_in_rule__Recipe__Group_6__12637 = new BitSet(new long[]{0x0000000002000000L});
-        public static final BitSet FOLLOW_rule__Recipe__Group_6__2_in_rule__Recipe__Group_6__12640 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Recipe__IngredientsAssignment_6_1_in_rule__Recipe__Group_6__1__Impl2667 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Recipe__Group_6__2__Impl_in_rule__Recipe__Group_6__22697 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Recipe__Group_6_2__0_in_rule__Recipe__Group_6__2__Impl2724 = new BitSet(new long[]{0x0000000002000002L});
-        public static final BitSet FOLLOW_rule__Recipe__Group_6_2__0__Impl_in_rule__Recipe__Group_6_2__02761 = new BitSet(new long[]{0x0000000100000000L});
-        public static final BitSet FOLLOW_rule__Recipe__Group_6_2__1_in_rule__Recipe__Group_6_2__02764 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_25_in_rule__Recipe__Group_6_2__0__Impl2792 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Recipe__Group_6_2__1__Impl_in_rule__Recipe__Group_6_2__12823 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Recipe__IngredientsAssignment_6_2_1_in_rule__Recipe__Group_6_2__1__Impl2850 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__EBigDecimal__Group__0__Impl_in_rule__EBigDecimal__Group__02884 = new BitSet(new long[]{0x0000000040000040L});
-        public static final BitSet FOLLOW_rule__EBigDecimal__Group__1_in_rule__EBigDecimal__Group__02887 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_RULE_INT_in_rule__EBigDecimal__Group__0__Impl2915 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__EBigDecimal__Group__1__Impl_in_rule__EBigDecimal__Group__12946 = new BitSet(new long[]{0x0000000000000040L});
-        public static final BitSet FOLLOW_rule__EBigDecimal__Group__2_in_rule__EBigDecimal__Group__12949 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_30_in_rule__EBigDecimal__Group__1__Impl2977 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__EBigDecimal__Group__2__Impl_in_rule__EBigDecimal__Group__23008 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_RULE_INT_in_rule__EBigDecimal__Group__2__Impl3035 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__EInt__Group__0__Impl_in_rule__EInt__Group__03070 = new BitSet(new long[]{0x0000000080000040L});
-        public static final BitSet FOLLOW_rule__EInt__Group__1_in_rule__EInt__Group__03073 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_31_in_rule__EInt__Group__0__Impl3102 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__EInt__Group__1__Impl_in_rule__EInt__Group__13135 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_RULE_INT_in_rule__EInt__Group__1__Impl3162 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Ingredient__Group__0__Impl_in_rule__Ingredient__Group__03195 = new BitSet(new long[]{0x0000000100000000L});
-        public static final BitSet FOLLOW_rule__Ingredient__Group__1_in_rule__Ingredient__Group__03198 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Ingredient__Group__1__Impl_in_rule__Ingredient__Group__13256 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_rule__Ingredient__Group__2_in_rule__Ingredient__Group__13259 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_32_in_rule__Ingredient__Group__1__Impl3287 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Ingredient__Group__2__Impl_in_rule__Ingredient__Group__23318 = new BitSet(new long[]{0x0000000000F00000L});
-        public static final BitSet FOLLOW_rule__Ingredient__Group__3_in_rule__Ingredient__Group__23321 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Ingredient__NameAssignment_2_in_rule__Ingredient__Group__2__Impl3348 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Ingredient__Group__3__Impl_in_rule__Ingredient__Group__33378 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Ingredient__SpicinessAssignment_3_in_rule__Ingredient__Group__3__Impl3405 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__Menu__NameAssignment_23449 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleGroup_in_rule__Menu__GroupsAssignment_3_03480 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleGroup_in_rule__Menu__GroupsAssignment_3_1_13511 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__Group__NameAssignment_23542 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleCategory_in_rule__Group__CategoryAssignment_33573 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleRecipe_in_rule__Group__RecipesAssignment_4_03604 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleRecipe_in_rule__Group__RecipesAssignment_4_1_13635 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__Recipe__NameAssignment_23666 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEBigDecimal_in_rule__Recipe__PriceAssignment_3_13697 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEInt_in_rule__Recipe__AmountAssignment_43728 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleAmountType_in_rule__Recipe__AmountTypeAssignment_53759 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleIngredient_in_rule__Recipe__IngredientsAssignment_6_13790 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleIngredient_in_rule__Recipe__IngredientsAssignment_6_2_13821 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__Ingredient__NameAssignment_23852 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleSpiciness_in_rule__Ingredient__SpicinessAssignment_33883 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Menu__GroupsAssignment_3_1_in_rule__Menu__Group_3__1__Impl1299 = new BitSet(new long[]{0x0000000002000002L});
+        public static final BitSet FOLLOW_rule__Group__Group__0__Impl_in_rule__Group__Group__01334 = new BitSet(new long[]{0x0000000002000000L});
+        public static final BitSet FOLLOW_rule__Group__Group__1_in_rule__Group__Group__01337 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Group__Group__1__Impl_in_rule__Group__Group__11395 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_rule__Group__Group__2_in_rule__Group__Group__11398 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_25_in_rule__Group__Group__1__Impl1426 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Group__Group__2__Impl_in_rule__Group__Group__21457 = new BitSet(new long[]{0x000000000800F800L});
+        public static final BitSet FOLLOW_rule__Group__Group__3_in_rule__Group__Group__21460 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Group__NameAssignment_2_in_rule__Group__Group__2__Impl1487 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Group__Group__3__Impl_in_rule__Group__Group__31517 = new BitSet(new long[]{0x000000000800F800L});
+        public static final BitSet FOLLOW_rule__Group__Group__4_in_rule__Group__Group__31520 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Group__CategoryAssignment_3_in_rule__Group__Group__3__Impl1547 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Group__Group__4__Impl_in_rule__Group__Group__41578 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Group__Group_4__0_in_rule__Group__Group__4__Impl1605 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Group__Group_4__0__Impl_in_rule__Group__Group_4__01646 = new BitSet(new long[]{0x0000000004000000L});
+        public static final BitSet FOLLOW_rule__Group__Group_4__1_in_rule__Group__Group_4__01649 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Group__RecipesAssignment_4_0_in_rule__Group__Group_4__0__Impl1676 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Group__Group_4__1__Impl_in_rule__Group__Group_4__11706 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Group__Group_4_1__0_in_rule__Group__Group_4__1__Impl1733 = new BitSet(new long[]{0x0000000004000002L});
+        public static final BitSet FOLLOW_rule__Group__Group_4_1__0__Impl_in_rule__Group__Group_4_1__01768 = new BitSet(new long[]{0x0000000008000000L});
+        public static final BitSet FOLLOW_rule__Group__Group_4_1__1_in_rule__Group__Group_4_1__01771 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_26_in_rule__Group__Group_4_1__0__Impl1799 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Group__Group_4_1__1__Impl_in_rule__Group__Group_4_1__11830 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Group__RecipesAssignment_4_1_1_in_rule__Group__Group_4_1__1__Impl1857 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Recipe__Group__0__Impl_in_rule__Recipe__Group__01891 = new BitSet(new long[]{0x0000000008000000L});
+        public static final BitSet FOLLOW_rule__Recipe__Group__1_in_rule__Recipe__Group__01894 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Recipe__Group__1__Impl_in_rule__Recipe__Group__11952 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_rule__Recipe__Group__2_in_rule__Recipe__Group__11955 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_27_in_rule__Recipe__Group__1__Impl1983 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Recipe__Group__2__Impl_in_rule__Recipe__Group__22014 = new BitSet(new long[]{0x00000000D0000040L});
+        public static final BitSet FOLLOW_rule__Recipe__Group__3_in_rule__Recipe__Group__22017 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Recipe__NameAssignment_2_in_rule__Recipe__Group__2__Impl2044 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Recipe__Group__3__Impl_in_rule__Recipe__Group__32074 = new BitSet(new long[]{0x00000000D0000040L});
+        public static final BitSet FOLLOW_rule__Recipe__Group__4_in_rule__Recipe__Group__32077 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Recipe__Group_3__0_in_rule__Recipe__Group__3__Impl2104 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Recipe__Group__4__Impl_in_rule__Recipe__Group__42135 = new BitSet(new long[]{0x00000000D0000040L});
+        public static final BitSet FOLLOW_rule__Recipe__Group__5_in_rule__Recipe__Group__42138 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Recipe__Group_4__0_in_rule__Recipe__Group__4__Impl2165 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Recipe__Group__5__Impl_in_rule__Recipe__Group__52196 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Recipe__Group_5__0_in_rule__Recipe__Group__5__Impl2223 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Recipe__Group_3__0__Impl_in_rule__Recipe__Group_3__02266 = new BitSet(new long[]{0x0000000000000040L});
+        public static final BitSet FOLLOW_rule__Recipe__Group_3__1_in_rule__Recipe__Group_3__02269 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_28_in_rule__Recipe__Group_3__0__Impl2297 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Recipe__Group_3__1__Impl_in_rule__Recipe__Group_3__12328 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Recipe__PriceAssignment_3_1_in_rule__Recipe__Group_3__1__Impl2355 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Recipe__Group_4__0__Impl_in_rule__Recipe__Group_4__02389 = new BitSet(new long[]{0x00000000000F0000L});
+        public static final BitSet FOLLOW_rule__Recipe__Group_4__1_in_rule__Recipe__Group_4__02392 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Recipe__AmountAssignment_4_0_in_rule__Recipe__Group_4__0__Impl2419 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Recipe__Group_4__1__Impl_in_rule__Recipe__Group_4__12449 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Recipe__AmountTypeAssignment_4_1_in_rule__Recipe__Group_4__1__Impl2476 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Recipe__Group_5__0__Impl_in_rule__Recipe__Group_5__02510 = new BitSet(new long[]{0x0000000004000000L});
+        public static final BitSet FOLLOW_rule__Recipe__Group_5__1_in_rule__Recipe__Group_5__02513 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Recipe__IngredientsAssignment_5_0_in_rule__Recipe__Group_5__0__Impl2540 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Recipe__Group_5__1__Impl_in_rule__Recipe__Group_5__12570 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Recipe__Group_5_1__0_in_rule__Recipe__Group_5__1__Impl2597 = new BitSet(new long[]{0x0000000004000002L});
+        public static final BitSet FOLLOW_rule__Recipe__Group_5_1__0__Impl_in_rule__Recipe__Group_5_1__02632 = new BitSet(new long[]{0x0000000080000000L});
+        public static final BitSet FOLLOW_rule__Recipe__Group_5_1__1_in_rule__Recipe__Group_5_1__02635 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_26_in_rule__Recipe__Group_5_1__0__Impl2663 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Recipe__Group_5_1__1__Impl_in_rule__Recipe__Group_5_1__12694 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Recipe__IngredientsAssignment_5_1_1_in_rule__Recipe__Group_5_1__1__Impl2721 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__EBigDecimal__Group__0__Impl_in_rule__EBigDecimal__Group__02755 = new BitSet(new long[]{0x0000000020000000L});
+        public static final BitSet FOLLOW_rule__EBigDecimal__Group__1_in_rule__EBigDecimal__Group__02758 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_RULE_INT_in_rule__EBigDecimal__Group__0__Impl2785 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__EBigDecimal__Group__1__Impl_in_rule__EBigDecimal__Group__12814 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__EBigDecimal__Group_1__0_in_rule__EBigDecimal__Group__1__Impl2841 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__EBigDecimal__Group_1__0__Impl_in_rule__EBigDecimal__Group_1__02876 = new BitSet(new long[]{0x0000000000000040L});
+        public static final BitSet FOLLOW_rule__EBigDecimal__Group_1__1_in_rule__EBigDecimal__Group_1__02879 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_29_in_rule__EBigDecimal__Group_1__0__Impl2907 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__EBigDecimal__Group_1__1__Impl_in_rule__EBigDecimal__Group_1__12938 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_RULE_INT_in_rule__EBigDecimal__Group_1__1__Impl2965 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__EInt__Group__0__Impl_in_rule__EInt__Group__02998 = new BitSet(new long[]{0x0000000040000040L});
+        public static final BitSet FOLLOW_rule__EInt__Group__1_in_rule__EInt__Group__03001 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_30_in_rule__EInt__Group__0__Impl3030 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__EInt__Group__1__Impl_in_rule__EInt__Group__13063 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_RULE_INT_in_rule__EInt__Group__1__Impl3090 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Ingredient__Group__0__Impl_in_rule__Ingredient__Group__03123 = new BitSet(new long[]{0x0000000080000000L});
+        public static final BitSet FOLLOW_rule__Ingredient__Group__1_in_rule__Ingredient__Group__03126 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Ingredient__Group__1__Impl_in_rule__Ingredient__Group__13184 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_rule__Ingredient__Group__2_in_rule__Ingredient__Group__13187 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_31_in_rule__Ingredient__Group__1__Impl3215 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Ingredient__Group__2__Impl_in_rule__Ingredient__Group__23246 = new BitSet(new long[]{0x0000000000F00000L});
+        public static final BitSet FOLLOW_rule__Ingredient__Group__3_in_rule__Ingredient__Group__23249 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Ingredient__NameAssignment_2_in_rule__Ingredient__Group__2__Impl3276 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Ingredient__Group__3__Impl_in_rule__Ingredient__Group__33306 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Ingredient__SpicinessAssignment_3_in_rule__Ingredient__Group__3__Impl3333 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__Menu__NameAssignment_23377 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleGroup_in_rule__Menu__GroupsAssignment_3_03408 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleGroup_in_rule__Menu__GroupsAssignment_3_13439 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__Group__NameAssignment_23470 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleCategory_in_rule__Group__CategoryAssignment_33501 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleRecipe_in_rule__Group__RecipesAssignment_4_03532 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleRecipe_in_rule__Group__RecipesAssignment_4_1_13563 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__Recipe__NameAssignment_23594 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEBigDecimal_in_rule__Recipe__PriceAssignment_3_13625 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEInt_in_rule__Recipe__AmountAssignment_4_03656 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleAmountType_in_rule__Recipe__AmountTypeAssignment_4_13687 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleIngredient_in_rule__Recipe__IngredientsAssignment_5_03718 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleIngredient_in_rule__Recipe__IngredientsAssignment_5_1_13749 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__Ingredient__NameAssignment_23780 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleSpiciness_in_rule__Ingredient__SpicinessAssignment_33811 = new BitSet(new long[]{0x0000000000000002L});
     }
 
 
