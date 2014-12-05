@@ -24,6 +24,6 @@ public class ApplicationWorkbenchWindowAdvisor extends WorkbenchWindowAdvisor {
     @Override
     public void postWindowOpen() {
     	super.postWindowOpen();
-    	getWindowConfigurer().getWindow().getShell().setFullScreen(true);
+    	//getWindowConfigurer().getWindow().getShell().setFullScreen(true);
     }
 }
