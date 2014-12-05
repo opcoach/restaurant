@@ -82,7 +82,7 @@ public abstract class AbstractMenuDslSemanticSequencer extends AbstractDelegatin
 	
 	/**
 	 * Constraint:
-	 *     (name=EString price=EBigDecimal? amount=EInt? amountType=AmountType? (ingredients+=Ingredient ingredients+=Ingredient*)?)
+	 *     (name=EString price=EBigDecimal? (amount=EInt amountType=AmountType)? (ingredients+=Ingredient ingredients+=Ingredient*)?)
 	 */
 	protected void sequence_Recipe(EObject context, MRecipe semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);

@@ -28,16 +28,14 @@ public class MenuDslGrammarAccess extends AbstractGrammarElementFinder {
 		private final Group cGroup_3 = (Group)cGroup.eContents().get(3);
 		private final Assignment cGroupsAssignment_3_0 = (Assignment)cGroup_3.eContents().get(0);
 		private final RuleCall cGroupsGroupParserRuleCall_3_0_0 = (RuleCall)cGroupsAssignment_3_0.eContents().get(0);
-		private final Group cGroup_3_1 = (Group)cGroup_3.eContents().get(1);
-		private final Keyword cCommaKeyword_3_1_0 = (Keyword)cGroup_3_1.eContents().get(0);
-		private final Assignment cGroupsAssignment_3_1_1 = (Assignment)cGroup_3_1.eContents().get(1);
-		private final RuleCall cGroupsGroupParserRuleCall_3_1_1_0 = (RuleCall)cGroupsAssignment_3_1_1.eContents().get(0);
+		private final Assignment cGroupsAssignment_3_1 = (Assignment)cGroup_3.eContents().get(1);
+		private final RuleCall cGroupsGroupParserRuleCall_3_1_0 = (RuleCall)cGroupsAssignment_3_1.eContents().get(0);
 		
 		//Menu:
-		//	{Menu} "Menu" name=EString (groups+=Group ("," groups+=Group)*)?;
+		//	{Menu} "Menu" name=EString (groups+=Group groups+=Group*)?;
 		public ParserRule getRule() { return rule; }
 
-		//{Menu} "Menu" name=EString (groups+=Group ("," groups+=Group)*)?
+		//{Menu} "Menu" name=EString (groups+=Group groups+=Group*)?
 		public Group getGroup() { return cGroup; }
 
 		//{Menu}
@@ -52,7 +50,7 @@ public class MenuDslGrammarAccess extends AbstractGrammarElementFinder {
 		//EString
 		public RuleCall getNameEStringParserRuleCall_2_0() { return cNameEStringParserRuleCall_2_0; }
 
-		//(groups+=Group ("," groups+=Group)*)?
+		//(groups+=Group groups+=Group*)?
 		public Group getGroup_3() { return cGroup_3; }
 
 		//groups+=Group
@@ -61,17 +59,11 @@ public class MenuDslGrammarAccess extends AbstractGrammarElementFinder {
 		//Group
 		public RuleCall getGroupsGroupParserRuleCall_3_0_0() { return cGroupsGroupParserRuleCall_3_0_0; }
 
-		//("," groups+=Group)*
-		public Group getGroup_3_1() { return cGroup_3_1; }
-
-		//","
-		public Keyword getCommaKeyword_3_1_0() { return cCommaKeyword_3_1_0; }
-
-		//groups+=Group
-		public Assignment getGroupsAssignment_3_1_1() { return cGroupsAssignment_3_1_1; }
+		//groups+=Group*
+		public Assignment getGroupsAssignment_3_1() { return cGroupsAssignment_3_1; }
 
 		//Group
-		public RuleCall getGroupsGroupParserRuleCall_3_1_1_0() { return cGroupsGroupParserRuleCall_3_1_1_0; }
+		public RuleCall getGroupsGroupParserRuleCall_3_1_0() { return cGroupsGroupParserRuleCall_3_1_0; }
 	}
 
 	public class EStringElements extends AbstractParserRuleElementFinder {
@@ -169,26 +161,26 @@ public class MenuDslGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cPriceKeyword_3_0 = (Keyword)cGroup_3.eContents().get(0);
 		private final Assignment cPriceAssignment_3_1 = (Assignment)cGroup_3.eContents().get(1);
 		private final RuleCall cPriceEBigDecimalParserRuleCall_3_1_0 = (RuleCall)cPriceAssignment_3_1.eContents().get(0);
-		private final Assignment cAmountAssignment_4 = (Assignment)cGroup.eContents().get(4);
-		private final RuleCall cAmountEIntParserRuleCall_4_0 = (RuleCall)cAmountAssignment_4.eContents().get(0);
-		private final Assignment cAmountTypeAssignment_5 = (Assignment)cGroup.eContents().get(5);
-		private final RuleCall cAmountTypeAmountTypeEnumRuleCall_5_0 = (RuleCall)cAmountTypeAssignment_5.eContents().get(0);
-		private final Group cGroup_6 = (Group)cGroup.eContents().get(6);
-		private final Keyword cIngredientsKeyword_6_0 = (Keyword)cGroup_6.eContents().get(0);
-		private final Assignment cIngredientsAssignment_6_1 = (Assignment)cGroup_6.eContents().get(1);
-		private final RuleCall cIngredientsIngredientParserRuleCall_6_1_0 = (RuleCall)cIngredientsAssignment_6_1.eContents().get(0);
-		private final Group cGroup_6_2 = (Group)cGroup_6.eContents().get(2);
-		private final Keyword cCommaKeyword_6_2_0 = (Keyword)cGroup_6_2.eContents().get(0);
-		private final Assignment cIngredientsAssignment_6_2_1 = (Assignment)cGroup_6_2.eContents().get(1);
-		private final RuleCall cIngredientsIngredientParserRuleCall_6_2_1_0 = (RuleCall)cIngredientsAssignment_6_2_1.eContents().get(0);
+		private final Group cGroup_4 = (Group)cGroup.eContents().get(4);
+		private final Assignment cAmountAssignment_4_0 = (Assignment)cGroup_4.eContents().get(0);
+		private final RuleCall cAmountEIntParserRuleCall_4_0_0 = (RuleCall)cAmountAssignment_4_0.eContents().get(0);
+		private final Assignment cAmountTypeAssignment_4_1 = (Assignment)cGroup_4.eContents().get(1);
+		private final RuleCall cAmountTypeAmountTypeEnumRuleCall_4_1_0 = (RuleCall)cAmountTypeAssignment_4_1.eContents().get(0);
+		private final Group cGroup_5 = (Group)cGroup.eContents().get(5);
+		private final Assignment cIngredientsAssignment_5_0 = (Assignment)cGroup_5.eContents().get(0);
+		private final RuleCall cIngredientsIngredientParserRuleCall_5_0_0 = (RuleCall)cIngredientsAssignment_5_0.eContents().get(0);
+		private final Group cGroup_5_1 = (Group)cGroup_5.eContents().get(1);
+		private final Keyword cCommaKeyword_5_1_0 = (Keyword)cGroup_5_1.eContents().get(0);
+		private final Assignment cIngredientsAssignment_5_1_1 = (Assignment)cGroup_5_1.eContents().get(1);
+		private final RuleCall cIngredientsIngredientParserRuleCall_5_1_1_0 = (RuleCall)cIngredientsAssignment_5_1_1.eContents().get(0);
 		
 		//Recipe:
-		//	{Recipe} "Recipe" name=EString ("price" price=EBigDecimal)? amount=EInt? amountType=AmountType? ("ingredients"
-		//	ingredients+=Ingredient ("," ingredients+=Ingredient)*)?;
+		//	{Recipe} "Recipe" name=EString ("Price" price=EBigDecimal)? (amount=EInt amountType=AmountType)?
+		//	(ingredients+=Ingredient ("," ingredients+=Ingredient)*)?;
 		public ParserRule getRule() { return rule; }
 
-		//{Recipe} "Recipe" name=EString ("price" price=EBigDecimal)? amount=EInt? amountType=AmountType? ("ingredients"
-		//ingredients+=Ingredient ("," ingredients+=Ingredient)*)?
+		//{Recipe} "Recipe" name=EString ("Price" price=EBigDecimal)? (amount=EInt amountType=AmountType)?
+		//(ingredients+=Ingredient ("," ingredients+=Ingredient)*)?
 		public Group getGroup() { return cGroup; }
 
 		//{Recipe}
@@ -203,10 +195,10 @@ public class MenuDslGrammarAccess extends AbstractGrammarElementFinder {
 		//EString
 		public RuleCall getNameEStringParserRuleCall_2_0() { return cNameEStringParserRuleCall_2_0; }
 
-		//("price" price=EBigDecimal)?
+		//("Price" price=EBigDecimal)?
 		public Group getGroup_3() { return cGroup_3; }
 
-		//"price"
+		//"Price"
 		public Keyword getPriceKeyword_3_0() { return cPriceKeyword_3_0; }
 
 		//price=EBigDecimal
@@ -215,65 +207,69 @@ public class MenuDslGrammarAccess extends AbstractGrammarElementFinder {
 		//EBigDecimal
 		public RuleCall getPriceEBigDecimalParserRuleCall_3_1_0() { return cPriceEBigDecimalParserRuleCall_3_1_0; }
 
-		//amount=EInt?
-		public Assignment getAmountAssignment_4() { return cAmountAssignment_4; }
+		//(amount=EInt amountType=AmountType)?
+		public Group getGroup_4() { return cGroup_4; }
+
+		//amount=EInt
+		public Assignment getAmountAssignment_4_0() { return cAmountAssignment_4_0; }
 
 		//EInt
-		public RuleCall getAmountEIntParserRuleCall_4_0() { return cAmountEIntParserRuleCall_4_0; }
+		public RuleCall getAmountEIntParserRuleCall_4_0_0() { return cAmountEIntParserRuleCall_4_0_0; }
 
-		//amountType=AmountType?
-		public Assignment getAmountTypeAssignment_5() { return cAmountTypeAssignment_5; }
+		//amountType=AmountType
+		public Assignment getAmountTypeAssignment_4_1() { return cAmountTypeAssignment_4_1; }
 
 		//AmountType
-		public RuleCall getAmountTypeAmountTypeEnumRuleCall_5_0() { return cAmountTypeAmountTypeEnumRuleCall_5_0; }
+		public RuleCall getAmountTypeAmountTypeEnumRuleCall_4_1_0() { return cAmountTypeAmountTypeEnumRuleCall_4_1_0; }
 
-		//("ingredients" ingredients+=Ingredient ("," ingredients+=Ingredient)*)?
-		public Group getGroup_6() { return cGroup_6; }
-
-		//"ingredients"
-		public Keyword getIngredientsKeyword_6_0() { return cIngredientsKeyword_6_0; }
+		//(ingredients+=Ingredient ("," ingredients+=Ingredient)*)?
+		public Group getGroup_5() { return cGroup_5; }
 
 		//ingredients+=Ingredient
-		public Assignment getIngredientsAssignment_6_1() { return cIngredientsAssignment_6_1; }
+		public Assignment getIngredientsAssignment_5_0() { return cIngredientsAssignment_5_0; }
 
 		//Ingredient
-		public RuleCall getIngredientsIngredientParserRuleCall_6_1_0() { return cIngredientsIngredientParserRuleCall_6_1_0; }
+		public RuleCall getIngredientsIngredientParserRuleCall_5_0_0() { return cIngredientsIngredientParserRuleCall_5_0_0; }
 
 		//("," ingredients+=Ingredient)*
-		public Group getGroup_6_2() { return cGroup_6_2; }
+		public Group getGroup_5_1() { return cGroup_5_1; }
 
 		//","
-		public Keyword getCommaKeyword_6_2_0() { return cCommaKeyword_6_2_0; }
+		public Keyword getCommaKeyword_5_1_0() { return cCommaKeyword_5_1_0; }
 
 		//ingredients+=Ingredient
-		public Assignment getIngredientsAssignment_6_2_1() { return cIngredientsAssignment_6_2_1; }
+		public Assignment getIngredientsAssignment_5_1_1() { return cIngredientsAssignment_5_1_1; }
 
 		//Ingredient
-		public RuleCall getIngredientsIngredientParserRuleCall_6_2_1_0() { return cIngredientsIngredientParserRuleCall_6_2_1_0; }
+		public RuleCall getIngredientsIngredientParserRuleCall_5_1_1_0() { return cIngredientsIngredientParserRuleCall_5_1_1_0; }
 	}
 
 	public class EBigDecimalElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "EBigDecimal");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final RuleCall cINTTerminalRuleCall_0 = (RuleCall)cGroup.eContents().get(0);
-		private final Keyword cFullStopKeyword_1 = (Keyword)cGroup.eContents().get(1);
-		private final RuleCall cINTTerminalRuleCall_2 = (RuleCall)cGroup.eContents().get(2);
+		private final Group cGroup_1 = (Group)cGroup.eContents().get(1);
+		private final Keyword cFullStopKeyword_1_0 = (Keyword)cGroup_1.eContents().get(0);
+		private final RuleCall cINTTerminalRuleCall_1_1 = (RuleCall)cGroup_1.eContents().get(1);
 		
 		//EBigDecimal returns ecore::EBigDecimal:
-		//	INT? "." INT;
+		//	INT ("." INT)?;
 		public ParserRule getRule() { return rule; }
 
-		//INT? "." INT
+		//INT ("." INT)?
 		public Group getGroup() { return cGroup; }
 
-		//INT?
+		//INT
 		public RuleCall getINTTerminalRuleCall_0() { return cINTTerminalRuleCall_0; }
 
+		//("." INT)?
+		public Group getGroup_1() { return cGroup_1; }
+
 		//"."
-		public Keyword getFullStopKeyword_1() { return cFullStopKeyword_1; }
+		public Keyword getFullStopKeyword_1_0() { return cFullStopKeyword_1_0; }
 
 		//INT
-		public RuleCall getINTTerminalRuleCall_2() { return cINTTerminalRuleCall_2; }
+		public RuleCall getINTTerminalRuleCall_1_1() { return cINTTerminalRuleCall_1_1; }
 	}
 
 	public class EIntElements extends AbstractParserRuleElementFinder {
@@ -533,7 +529,7 @@ public class MenuDslGrammarAccess extends AbstractGrammarElementFinder {
 
 	
 	//Menu:
-	//	{Menu} "Menu" name=EString (groups+=Group ("," groups+=Group)*)?;
+	//	{Menu} "Menu" name=EString (groups+=Group groups+=Group*)?;
 	public MenuElements getMenuAccess() {
 		return pMenu;
 	}
@@ -573,8 +569,8 @@ public class MenuDslGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//Recipe:
-	//	{Recipe} "Recipe" name=EString ("price" price=EBigDecimal)? amount=EInt? amountType=AmountType? ("ingredients"
-	//	ingredients+=Ingredient ("," ingredients+=Ingredient)*)?;
+	//	{Recipe} "Recipe" name=EString ("Price" price=EBigDecimal)? (amount=EInt amountType=AmountType)?
+	//	(ingredients+=Ingredient ("," ingredients+=Ingredient)*)?;
 	public RecipeElements getRecipeAccess() {
 		return pRecipe;
 	}
@@ -584,7 +580,7 @@ public class MenuDslGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//EBigDecimal returns ecore::EBigDecimal:
-	//	INT? "." INT;
+	//	INT ("." INT)?;
 	public EBigDecimalElements getEBigDecimalAccess() {
 		return pEBigDecimal;
 	}
