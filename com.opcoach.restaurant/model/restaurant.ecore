@@ -11,8 +11,35 @@
         eType="#//Waiter" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="bookings" upperBound="-1"
         eType="#//Booking" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="customers" upperBound="-1"
+        eType="#//Customer" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Table"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Waiter"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Booking"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Table">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="number" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="capacity" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="priority" eType="#//Priority"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Waiter">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="tables" upperBound="-1"
+        eType="#//Table"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Booking">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="customer" eType="#//Customer"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="table" lowerBound="1" eType="#//Table"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="timestamp" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="duration" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Customer">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="phone" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="mail" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="priority" eType="#//Priority"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="Priority">
+    <eLiterals name="low" literal="LOW"/>
+    <eLiterals name="default" value="1" literal="DEFAULT"/>
+    <eLiterals name="high" value="2" literal="HIGH"/>
+  </eClassifiers>
 </ecore:EPackage>
