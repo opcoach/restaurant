@@ -106,67 +106,47 @@ ruleMenu returns [EObject current=null]
 	    }
 
 )
-)	otherlv_3='{' 
-    {
-    	newLeafNode(otherlv_3, grammarAccess.getMenuAccess().getLeftCurlyBracketKeyword_3());
-    }
-(	otherlv_4='groups' 
-    {
-    	newLeafNode(otherlv_4, grammarAccess.getMenuAccess().getGroupsKeyword_4_0());
-    }
-	otherlv_5='{' 
-    {
-    	newLeafNode(otherlv_5, grammarAccess.getMenuAccess().getLeftCurlyBracketKeyword_4_1());
-    }
-(
+)((
 (
 		{ 
-	        newCompositeNode(grammarAccess.getMenuAccess().getGroupsGroupParserRuleCall_4_2_0()); 
+	        newCompositeNode(grammarAccess.getMenuAccess().getGroupsGroupParserRuleCall_3_0_0()); 
 	    }
-		lv_groups_6_0=ruleGroup		{
+		lv_groups_3_0=ruleGroup		{
 	        if ($current==null) {
 	            $current = createModelElementForParent(grammarAccess.getMenuRule());
 	        }
        		add(
        			$current, 
        			"groups",
-        		lv_groups_6_0, 
+        		lv_groups_3_0, 
         		"Group");
 	        afterParserOrEnumRuleCall();
 	    }
 
 )
-)(	otherlv_7=',' 
+)(	otherlv_4=',' 
     {
-    	newLeafNode(otherlv_7, grammarAccess.getMenuAccess().getCommaKeyword_4_3_0());
+    	newLeafNode(otherlv_4, grammarAccess.getMenuAccess().getCommaKeyword_3_1_0());
     }
 (
 (
 		{ 
-	        newCompositeNode(grammarAccess.getMenuAccess().getGroupsGroupParserRuleCall_4_3_1_0()); 
+	        newCompositeNode(grammarAccess.getMenuAccess().getGroupsGroupParserRuleCall_3_1_1_0()); 
 	    }
-		lv_groups_8_0=ruleGroup		{
+		lv_groups_5_0=ruleGroup		{
 	        if ($current==null) {
 	            $current = createModelElementForParent(grammarAccess.getMenuRule());
 	        }
        		add(
        			$current, 
        			"groups",
-        		lv_groups_8_0, 
+        		lv_groups_5_0, 
         		"Group");
 	        afterParserOrEnumRuleCall();
 	    }
 
 )
-))*	otherlv_9='}' 
-    {
-    	newLeafNode(otherlv_9, grammarAccess.getMenuAccess().getRightCurlyBracketKeyword_4_4());
-    }
-)?	otherlv_10='}' 
-    {
-    	newLeafNode(otherlv_10, grammarAccess.getMenuAccess().getRightCurlyBracketKeyword_5());
-    }
-)
+))*)?)
 ;
 
 
@@ -251,89 +231,65 @@ ruleGroup returns [EObject current=null]
 	    }
 
 )
-)	otherlv_3='{' 
-    {
-    	newLeafNode(otherlv_3, grammarAccess.getGroupAccess().getLeftCurlyBracketKeyword_3());
-    }
-(	otherlv_4='category' 
-    {
-    	newLeafNode(otherlv_4, grammarAccess.getGroupAccess().getCategoryKeyword_4_0());
-    }
-(
+)(
 (
 		{ 
-	        newCompositeNode(grammarAccess.getGroupAccess().getCategoryCategoryEnumRuleCall_4_1_0()); 
+	        newCompositeNode(grammarAccess.getGroupAccess().getCategoryCategoryEnumRuleCall_3_0()); 
 	    }
-		lv_category_5_0=ruleCategory		{
+		lv_category_3_0=ruleCategory		{
 	        if ($current==null) {
 	            $current = createModelElementForParent(grammarAccess.getGroupRule());
 	        }
        		set(
        			$current, 
        			"category",
-        		lv_category_5_0, 
+        		lv_category_3_0, 
         		"Category");
 	        afterParserOrEnumRuleCall();
 	    }
 
 )
-))?(	otherlv_6='recipes' 
-    {
-    	newLeafNode(otherlv_6, grammarAccess.getGroupAccess().getRecipesKeyword_5_0());
-    }
-	otherlv_7='{' 
-    {
-    	newLeafNode(otherlv_7, grammarAccess.getGroupAccess().getLeftCurlyBracketKeyword_5_1());
-    }
-(
+)?((
 (
 		{ 
-	        newCompositeNode(grammarAccess.getGroupAccess().getRecipesRecipeParserRuleCall_5_2_0()); 
+	        newCompositeNode(grammarAccess.getGroupAccess().getRecipesRecipeParserRuleCall_4_0_0()); 
 	    }
-		lv_recipes_8_0=ruleRecipe		{
+		lv_recipes_4_0=ruleRecipe		{
 	        if ($current==null) {
 	            $current = createModelElementForParent(grammarAccess.getGroupRule());
 	        }
        		add(
        			$current, 
        			"recipes",
-        		lv_recipes_8_0, 
+        		lv_recipes_4_0, 
         		"Recipe");
 	        afterParserOrEnumRuleCall();
 	    }
 
 )
-)(	otherlv_9=',' 
+)(	otherlv_5=',' 
     {
-    	newLeafNode(otherlv_9, grammarAccess.getGroupAccess().getCommaKeyword_5_3_0());
+    	newLeafNode(otherlv_5, grammarAccess.getGroupAccess().getCommaKeyword_4_1_0());
     }
 (
 (
 		{ 
-	        newCompositeNode(grammarAccess.getGroupAccess().getRecipesRecipeParserRuleCall_5_3_1_0()); 
+	        newCompositeNode(grammarAccess.getGroupAccess().getRecipesRecipeParserRuleCall_4_1_1_0()); 
 	    }
-		lv_recipes_10_0=ruleRecipe		{
+		lv_recipes_6_0=ruleRecipe		{
 	        if ($current==null) {
 	            $current = createModelElementForParent(grammarAccess.getGroupRule());
 	        }
        		add(
        			$current, 
        			"recipes",
-        		lv_recipes_10_0, 
+        		lv_recipes_6_0, 
         		"Recipe");
 	        afterParserOrEnumRuleCall();
 	    }
 
 )
-))*	otherlv_11='}' 
-    {
-    	newLeafNode(otherlv_11, grammarAccess.getGroupAccess().getRightCurlyBracketKeyword_5_4());
-    }
-)?	otherlv_12='}' 
-    {
-    	newLeafNode(otherlv_12, grammarAccess.getGroupAccess().getRightCurlyBracketKeyword_6());
-    }
-)
+))*)?)
 ;
 
 
@@ -382,133 +338,109 @@ ruleRecipe returns [EObject current=null]
 	    }
 
 )
-)	otherlv_3='{' 
+)(	otherlv_3='price' 
     {
-    	newLeafNode(otherlv_3, grammarAccess.getRecipeAccess().getLeftCurlyBracketKeyword_3());
-    }
-(	otherlv_4='price' 
-    {
-    	newLeafNode(otherlv_4, grammarAccess.getRecipeAccess().getPriceKeyword_4_0());
+    	newLeafNode(otherlv_3, grammarAccess.getRecipeAccess().getPriceKeyword_3_0());
     }
 (
 (
 		{ 
-	        newCompositeNode(grammarAccess.getRecipeAccess().getPriceEBigDecimalParserRuleCall_4_1_0()); 
+	        newCompositeNode(grammarAccess.getRecipeAccess().getPriceEBigDecimalParserRuleCall_3_1_0()); 
 	    }
-		lv_price_5_0=ruleEBigDecimal		{
+		lv_price_4_0=ruleEBigDecimal		{
 	        if ($current==null) {
 	            $current = createModelElementForParent(grammarAccess.getRecipeRule());
 	        }
        		set(
        			$current, 
        			"price",
-        		lv_price_5_0, 
+        		lv_price_4_0, 
         		"EBigDecimal");
 	        afterParserOrEnumRuleCall();
 	    }
 
 )
-))?(	otherlv_6='amount' 
-    {
-    	newLeafNode(otherlv_6, grammarAccess.getRecipeAccess().getAmountKeyword_5_0());
-    }
-(
+))?(
 (
 		{ 
-	        newCompositeNode(grammarAccess.getRecipeAccess().getAmountEIntParserRuleCall_5_1_0()); 
+	        newCompositeNode(grammarAccess.getRecipeAccess().getAmountEIntParserRuleCall_4_0()); 
 	    }
-		lv_amount_7_0=ruleEInt		{
+		lv_amount_5_0=ruleEInt		{
 	        if ($current==null) {
 	            $current = createModelElementForParent(grammarAccess.getRecipeRule());
 	        }
        		set(
        			$current, 
        			"amount",
-        		lv_amount_7_0, 
+        		lv_amount_5_0, 
         		"EInt");
 	        afterParserOrEnumRuleCall();
 	    }
 
 )
-))?(	otherlv_8='amountType' 
-    {
-    	newLeafNode(otherlv_8, grammarAccess.getRecipeAccess().getAmountTypeKeyword_6_0());
-    }
-(
+)?(
 (
 		{ 
-	        newCompositeNode(grammarAccess.getRecipeAccess().getAmountTypeAmountTypeEnumRuleCall_6_1_0()); 
+	        newCompositeNode(grammarAccess.getRecipeAccess().getAmountTypeAmountTypeEnumRuleCall_5_0()); 
 	    }
-		lv_amountType_9_0=ruleAmountType		{
+		lv_amountType_6_0=ruleAmountType		{
 	        if ($current==null) {
 	            $current = createModelElementForParent(grammarAccess.getRecipeRule());
 	        }
        		set(
        			$current, 
        			"amountType",
-        		lv_amountType_9_0, 
+        		lv_amountType_6_0, 
         		"AmountType");
 	        afterParserOrEnumRuleCall();
 	    }
 
 )
-))?(	otherlv_10='ingredients' 
+)?(	otherlv_7='ingredients' 
     {
-    	newLeafNode(otherlv_10, grammarAccess.getRecipeAccess().getIngredientsKeyword_7_0());
-    }
-	otherlv_11='{' 
-    {
-    	newLeafNode(otherlv_11, grammarAccess.getRecipeAccess().getLeftCurlyBracketKeyword_7_1());
+    	newLeafNode(otherlv_7, grammarAccess.getRecipeAccess().getIngredientsKeyword_6_0());
     }
 (
 (
 		{ 
-	        newCompositeNode(grammarAccess.getRecipeAccess().getIngredientsIngredientParserRuleCall_7_2_0()); 
+	        newCompositeNode(grammarAccess.getRecipeAccess().getIngredientsIngredientParserRuleCall_6_1_0()); 
 	    }
-		lv_ingredients_12_0=ruleIngredient		{
+		lv_ingredients_8_0=ruleIngredient		{
 	        if ($current==null) {
 	            $current = createModelElementForParent(grammarAccess.getRecipeRule());
 	        }
        		add(
        			$current, 
        			"ingredients",
-        		lv_ingredients_12_0, 
+        		lv_ingredients_8_0, 
         		"Ingredient");
 	        afterParserOrEnumRuleCall();
 	    }
 
 )
-)(	otherlv_13=',' 
+)(	otherlv_9=',' 
     {
-    	newLeafNode(otherlv_13, grammarAccess.getRecipeAccess().getCommaKeyword_7_3_0());
+    	newLeafNode(otherlv_9, grammarAccess.getRecipeAccess().getCommaKeyword_6_2_0());
     }
 (
 (
 		{ 
-	        newCompositeNode(grammarAccess.getRecipeAccess().getIngredientsIngredientParserRuleCall_7_3_1_0()); 
+	        newCompositeNode(grammarAccess.getRecipeAccess().getIngredientsIngredientParserRuleCall_6_2_1_0()); 
 	    }
-		lv_ingredients_14_0=ruleIngredient		{
+		lv_ingredients_10_0=ruleIngredient		{
 	        if ($current==null) {
 	            $current = createModelElementForParent(grammarAccess.getRecipeRule());
 	        }
        		add(
        			$current, 
        			"ingredients",
-        		lv_ingredients_14_0, 
+        		lv_ingredients_10_0, 
         		"Ingredient");
 	        afterParserOrEnumRuleCall();
 	    }
 
 )
-))*	otherlv_15='}' 
-    {
-    	newLeafNode(otherlv_15, grammarAccess.getRecipeAccess().getRightCurlyBracketKeyword_7_4());
-    }
-)?	otherlv_16='}' 
-    {
-    	newLeafNode(otherlv_16, grammarAccess.getRecipeAccess().getRightCurlyBracketKeyword_8());
-    }
-)
+))*)?)
 ;
 
 
@@ -632,37 +564,25 @@ ruleIngredient returns [EObject current=null]
 	    }
 
 )
-)	otherlv_3='{' 
-    {
-    	newLeafNode(otherlv_3, grammarAccess.getIngredientAccess().getLeftCurlyBracketKeyword_3());
-    }
-(	otherlv_4='spiciness' 
-    {
-    	newLeafNode(otherlv_4, grammarAccess.getIngredientAccess().getSpicinessKeyword_4_0());
-    }
-(
+)(
 (
 		{ 
-	        newCompositeNode(grammarAccess.getIngredientAccess().getSpicinessSpicinessEnumRuleCall_4_1_0()); 
+	        newCompositeNode(grammarAccess.getIngredientAccess().getSpicinessSpicinessEnumRuleCall_3_0()); 
 	    }
-		lv_spiciness_5_0=ruleSpiciness		{
+		lv_spiciness_3_0=ruleSpiciness		{
 	        if ($current==null) {
 	            $current = createModelElementForParent(grammarAccess.getIngredientRule());
 	        }
        		set(
        			$current, 
        			"spiciness",
-        		lv_spiciness_5_0, 
+        		lv_spiciness_3_0, 
         		"Spiciness");
 	        afterParserOrEnumRuleCall();
 	    }
 
 )
-))?	otherlv_6='}' 
-    {
-    	newLeafNode(otherlv_6, grammarAccess.getIngredientAccess().getRightCurlyBracketKeyword_5());
-    }
-)
+)?)
 ;
 
 

@@ -21,19 +21,40 @@ public class MenuDslFormatter extends AbstractDeclarativeFormatter {
 	@Inject extension MenuDslGrammarAccess
 	
 	override protected configureFormatting(FormattingConfig c) {
-		for(pair: findKeywordPairs('{', '}')) {
-			c.setIndentation(pair.first, pair.second)
-			c.setLinewrap(1).after(pair.first)
-			c.setLinewrap(1).before(pair.second)
-			c.setLinewrap(1).after(pair.second)
-		}
 		for(comma: findKeywords(',')) {
 			c.setNoLinewrap().before(comma)
 			c.setNoSpace().before(comma)
 			c.setLinewrap().after(comma)
 		}
-		c.setLinewrap(0, 1, 2).before(SL_COMMENTRule)
-		c.setLinewrap(0, 1, 2).before(ML_COMMENTRule)
-		c.setLinewrap(0, 1, 1).after(ML_COMMENTRule)
+		var firstRule = true
+		for(group:findRuleCalls(groupAccess.rule)){
+			if(firstRule==true) {
+				c.setIndentationIncrement.before(group)
+				c.setLinewrap(1).before(group)
+				firstRule = false
+			}
+			c.setLinewrap(1).after(group)
+			if(group==findRuleCalls(recipeAccess.rule).last) {
+				c.setIndentationDecrement.after(group)
+			}
+		}
+		
+		firstRule = true
+		for(group:findRuleCalls(recipeAccess.rule)){
+			if(firstRule==true) {
+				c.setIndentationIncrement.before(group)
+				c.setLinewrap(1).before(group)
+				firstRule = false
+			}
+			c.setLinewrap(1).after(group)
+			if(group==findRuleCalls(recipeAccess.rule).last) {
+				c.setIndentationDecrement.after(group)
+			}
+		}
+//		c.setIndentationIncrement.before(groupAccess.rule)
+//		c.setIndentationDecrement.after(groupAccess.)
+//		c.setLinewrap(0, 1, 2).before(SL_COMMENTRule)
+//		c.setLinewrap(0, 1, 2).before(ML_COMMENTRule)
+//		c.setLinewrap(0, 1, 1).after(ML_COMMENTRule)
 	}
 }
