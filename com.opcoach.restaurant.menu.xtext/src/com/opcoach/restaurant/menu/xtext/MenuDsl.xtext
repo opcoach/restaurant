@@ -8,7 +8,7 @@ Menu returns Menu:
 	{Menu}
 	'Menu'
 	name=EString
-		( groups+=Group ( "," groups+=Group)*  )?
+		( groups+=Group ( groups+=Group)*  )?
 ;
 
 
@@ -34,14 +34,14 @@ Recipe returns Recipe:
 	'Recipe'
 	name=EString
 	
-		('price' price=EBigDecimal)?
-		( amount=EInt)?
-		( amountType=AmountType)?
+		('Price' price=EBigDecimal)?
+		( amount=EInt
+		  amountType=AmountType)?
 		( ingredients+=Ingredient ( "," ingredients+=Ingredient)*  )?
 	;
 
 EBigDecimal returns ecore::EBigDecimal:
-	INT? '.' INT;
+	INT ('.' INT)?;
 
 EInt returns ecore::EInt:
 	'-'? INT;

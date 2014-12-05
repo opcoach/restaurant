@@ -124,29 +124,25 @@ ruleMenu returns [EObject current=null]
 	    }
 
 )
-)(	otherlv_4=',' 
-    {
-    	newLeafNode(otherlv_4, grammarAccess.getMenuAccess().getCommaKeyword_3_1_0());
-    }
-(
+)(
 (
 		{ 
-	        newCompositeNode(grammarAccess.getMenuAccess().getGroupsGroupParserRuleCall_3_1_1_0()); 
+	        newCompositeNode(grammarAccess.getMenuAccess().getGroupsGroupParserRuleCall_3_1_0()); 
 	    }
-		lv_groups_5_0=ruleGroup		{
+		lv_groups_4_0=ruleGroup		{
 	        if ($current==null) {
 	            $current = createModelElementForParent(grammarAccess.getMenuRule());
 	        }
        		add(
        			$current, 
        			"groups",
-        		lv_groups_5_0, 
+        		lv_groups_4_0, 
         		"Group");
 	        afterParserOrEnumRuleCall();
 	    }
 
 )
-))*)?)
+)*)?)
 ;
 
 
@@ -338,7 +334,7 @@ ruleRecipe returns [EObject current=null]
 	    }
 
 )
-)(	otherlv_3='price' 
+)(	otherlv_3='Price' 
     {
     	newLeafNode(otherlv_3, grammarAccess.getRecipeAccess().getPriceKeyword_3_0());
     }
@@ -360,10 +356,10 @@ ruleRecipe returns [EObject current=null]
 	    }
 
 )
-))?(
+))?((
 (
 		{ 
-	        newCompositeNode(grammarAccess.getRecipeAccess().getAmountEIntParserRuleCall_4_0()); 
+	        newCompositeNode(grammarAccess.getRecipeAccess().getAmountEIntParserRuleCall_4_0_0()); 
 	    }
 		lv_amount_5_0=ruleEInt		{
 	        if ($current==null) {
@@ -378,10 +374,10 @@ ruleRecipe returns [EObject current=null]
 	    }
 
 )
-)?(
+)(
 (
 		{ 
-	        newCompositeNode(grammarAccess.getRecipeAccess().getAmountTypeAmountTypeEnumRuleCall_5_0()); 
+	        newCompositeNode(grammarAccess.getRecipeAccess().getAmountTypeAmountTypeEnumRuleCall_4_1_0()); 
 	    }
 		lv_amountType_6_0=ruleAmountType		{
 	        if ($current==null) {
@@ -396,45 +392,41 @@ ruleRecipe returns [EObject current=null]
 	    }
 
 )
-)?(	otherlv_7='ingredients' 
-    {
-    	newLeafNode(otherlv_7, grammarAccess.getRecipeAccess().getIngredientsKeyword_6_0());
-    }
-(
+))?((
 (
 		{ 
-	        newCompositeNode(grammarAccess.getRecipeAccess().getIngredientsIngredientParserRuleCall_6_1_0()); 
+	        newCompositeNode(grammarAccess.getRecipeAccess().getIngredientsIngredientParserRuleCall_5_0_0()); 
 	    }
-		lv_ingredients_8_0=ruleIngredient		{
+		lv_ingredients_7_0=ruleIngredient		{
 	        if ($current==null) {
 	            $current = createModelElementForParent(grammarAccess.getRecipeRule());
 	        }
        		add(
        			$current, 
        			"ingredients",
-        		lv_ingredients_8_0, 
+        		lv_ingredients_7_0, 
         		"Ingredient");
 	        afterParserOrEnumRuleCall();
 	    }
 
 )
-)(	otherlv_9=',' 
+)(	otherlv_8=',' 
     {
-    	newLeafNode(otherlv_9, grammarAccess.getRecipeAccess().getCommaKeyword_6_2_0());
+    	newLeafNode(otherlv_8, grammarAccess.getRecipeAccess().getCommaKeyword_5_1_0());
     }
 (
 (
 		{ 
-	        newCompositeNode(grammarAccess.getRecipeAccess().getIngredientsIngredientParserRuleCall_6_2_1_0()); 
+	        newCompositeNode(grammarAccess.getRecipeAccess().getIngredientsIngredientParserRuleCall_5_1_1_0()); 
 	    }
-		lv_ingredients_10_0=ruleIngredient		{
+		lv_ingredients_9_0=ruleIngredient		{
 	        if ($current==null) {
 	            $current = createModelElementForParent(grammarAccess.getRecipeRule());
 	        }
        		add(
        			$current, 
        			"ingredients",
-        		lv_ingredients_10_0, 
+        		lv_ingredients_9_0, 
         		"Ingredient");
 	        afterParserOrEnumRuleCall();
 	    }
@@ -461,27 +453,27 @@ ruleEBigDecimal returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleTok
     @init { enterRule(); 
     }
     @after { leaveRule(); }:
-((    this_INT_0=RULE_INT    {
+(    this_INT_0=RULE_INT    {
 		$current.merge(this_INT_0);
     }
 
     { 
     newLeafNode(this_INT_0, grammarAccess.getEBigDecimalAccess().getINTTerminalRuleCall_0()); 
     }
-)?
+(
 	kw='.' 
     {
         $current.merge(kw);
-        newLeafNode(kw, grammarAccess.getEBigDecimalAccess().getFullStopKeyword_1()); 
+        newLeafNode(kw, grammarAccess.getEBigDecimalAccess().getFullStopKeyword_1_0()); 
     }
     this_INT_2=RULE_INT    {
 		$current.merge(this_INT_2);
     }
 
     { 
-    newLeafNode(this_INT_2, grammarAccess.getEBigDecimalAccess().getINTTerminalRuleCall_2()); 
+    newLeafNode(this_INT_2, grammarAccess.getEBigDecimalAccess().getINTTerminalRuleCall_1_1()); 
     }
-)
+)?)
     ;
 
 

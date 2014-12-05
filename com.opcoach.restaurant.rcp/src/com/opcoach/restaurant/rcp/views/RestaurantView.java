@@ -1,5 +1,6 @@
 package com.opcoach.restaurant.rcp.views;
 
+import java.io.File;
 import java.io.IOException;
 
 import org.eclipse.core.resources.IWorkspaceRoot;
@@ -38,9 +39,9 @@ public final class RestaurantView extends ViewPart {
 		final IWorkspaceRoot root = ResourcesPlugin.getWorkspace().getRoot();
 		final IPath path = root.getRawLocation();
 		final IPath fPath = path.append(FILE_NAME);
-		final URI uri = URI.createFileURI(path.append(FILE_NAME).toPortableString());
+		final URI uri = URI.createFileURI(fPath.toPortableString());
 		
-		if (!root.getFile(fPath).exists()) {
+		if (!new File(fPath.toOSString()).exists()) {
 			final Resource res = resSet.createResource(uri);
 			final MRestaurant restaurant = MRestaurantFactory.eINSTANCE.createRestaurant();
 			restaurant.setName("U Józefa");
