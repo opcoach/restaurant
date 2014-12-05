@@ -5,6 +5,7 @@
   <tables number="2" capacity="6"/>
   <tables number="3" capacity="10"/>
   <tables number="4" capacity="20" priority="HIGH"/>
+  <tables number="1000" capacity="10"/>
   <waiters name="Kamil"/>
   <bookings/>
   <customers name="Marcin" phone="112" mail="" priority="DEFAULT"/>
