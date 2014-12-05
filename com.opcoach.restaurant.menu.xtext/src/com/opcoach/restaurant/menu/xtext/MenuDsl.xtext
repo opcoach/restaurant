@@ -8,9 +8,8 @@ Menu returns Menu:
 	{Menu}
 	'Menu'
 	name=EString
-	'{'
-		('groups' '{' groups+=Group ( "," groups+=Group)* '}' )?
-	'}';
+		( groups+=Group ( "," groups+=Group)*  )?
+;
 
 
 
@@ -22,10 +21,10 @@ Group returns Group:
 	{Group}
 	'Group'
 	name=EString
-	'{'
-		('category' category=Category)?
-		('recipes' '{' recipes+=Recipe ( "," recipes+=Recipe)* '}' )?
-	'}';
+	
+		(category=Category)?
+		(recipes+=Recipe ( "," recipes+=Recipe)*  )?
+	;
 
 enum Category returns Category:
 				breakfast = 'breakfast' | dinner = 'dinner' | lunch = 'lunch' | supper = 'supper' | dessert = 'dessert';
@@ -34,12 +33,12 @@ Recipe returns Recipe:
 	{Recipe}
 	'Recipe'
 	name=EString
-	'{'
+	
 		('price' price=EBigDecimal)?
-		('amount' amount=EInt)?
-		('amountType' amountType=AmountType)?
-		('ingredients' '{' ingredients+=Ingredient ( "," ingredients+=Ingredient)* '}' )?
-	'}';
+		( amount=EInt)?
+		( amountType=AmountType)?
+		( ingredients+=Ingredient ( "," ingredients+=Ingredient)*  )?
+	;
 
 EBigDecimal returns ecore::EBigDecimal:
 	INT? '.' INT;
@@ -54,9 +53,9 @@ Ingredient returns Ingredient:
 	{Ingredient}
 	'Ingredient'
 	name=EString
-	'{'
-		('spiciness' spiciness=Spiciness)?
-	'}';
+	
+		(spiciness=Spiciness)?
+	;
 
 enum Spiciness returns Spiciness:
 				VeryHot = 'VeryHot' | Hot = 'Hot' | Normal = 'Normal' | Mild = 'Mild';
