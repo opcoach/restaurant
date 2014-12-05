@@ -34,4 +34,17 @@
       </defaultLayer>
     </ownedRepresentations>
   </ownedViewpoints>
+  <ownedViewpoints name="restaurantTablesBookingViewPort" modelFileExtension="restaurant">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="RestaurantTablesBookingDiagram" label="Restaurant Tables Booking Diagram" domainClass="Restaurant">
+      <defaultLayer name="DefaultLayerBookingDiagram">
+        <nodeMappings name="TablesNodeInBookingDiagram" label="Tables" semanticCandidatesExpression="feature:tables" domainClass="Table">
+          <style xsi:type="style:SquareDescription" labelExpression="feature:number" sizeComputationExpression="[capacity/]">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          </style>
+        </nodeMappings>
+      </defaultLayer>
+    </ownedRepresentations>
+  </ownedViewpoints>
 </description:Group>

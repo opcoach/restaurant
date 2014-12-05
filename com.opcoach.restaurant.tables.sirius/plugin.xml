@@ -7,4 +7,31 @@
 	       name="restaurantTables">
     </component>
   </extension>
+  <extension
+        point="org.eclipse.ui.menus">
+     <menuContribution
+           allPopups="false"
+           locationURI="popup:org.eclipse.ui.popup.any?after=additions">
+        <command
+              commandId="com.opcoach.restaurant.tables.sirius.commands.book"
+              label="Book this table"
+              style="push">
+           <visibleWhen
+                 checkEnabled="false">
+              <and>
+                 <count
+                       value="1">
+                 </count>
+              </and>
+           </visibleWhen>
+        </command>
+     </menuContribution>
+  </extension>
+  <extension
+        point="org.eclipse.ui.handlers">
+     <handler
+           class="com.opcoach.restaurant.tables.sirius.handlers.BookCommandHandler"
+           commandId="com.opcoach.restaurant.tables.sirius.commands.book">
+     </handler>
+  </extension>
 </plugin>
