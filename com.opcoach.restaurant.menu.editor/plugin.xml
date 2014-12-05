@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated menu -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="menu.presentation.MenuModelWizardID"
+            name="%_UI_MenuModelWizard_label"
+            class="menu.presentation.MenuModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/MenuModelFile.gif">
+         <description>%_UI_MenuModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated menu -->
+      <editor
+            id="menu.presentation.MenuEditorID"
+            name="%_UI_MenuEditor_label"
+            icon="icons/full/obj16/MenuModelFile.gif"
+            extensions="menu"
+            class="menu.presentation.MenuEditor"
+            contributorClass="menu.presentation.MenuActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

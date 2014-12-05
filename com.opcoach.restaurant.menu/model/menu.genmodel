@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/com.opcoach.restaurant.menu/src-gen" modelPluginID="com.opcoach.restaurant.menu"
+    modelName="Menu" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
+    interfaceNamePattern="M{0}" classNamePattern="M{0}Impl" operationReflection="true"
+    importOrganizing="true">
+  <foreignModel>menu.ecore</foreignModel>
+  <genPackages prefix="Menu" disposableProviderFactory="true" ecorePackage="menu.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="menu.ecore#//Spiciness">
+      <genEnumLiterals ecoreEnumLiteral="menu.ecore#//Spiciness/VeryHot"/>
+      <genEnumLiterals ecoreEnumLiteral="menu.ecore#//Spiciness/Hot"/>
+      <genEnumLiterals ecoreEnumLiteral="menu.ecore#//Spiciness/Normal"/>
+      <genEnumLiterals ecoreEnumLiteral="menu.ecore#//Spiciness/Mild"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="menu.ecore#//AmountType">
+      <genEnumLiterals ecoreEnumLiteral="menu.ecore#//AmountType/gram"/>
+      <genEnumLiterals ecoreEnumLiteral="menu.ecore#//AmountType/milliliters"/>
+      <genEnumLiterals ecoreEnumLiteral="menu.ecore#//AmountType/bottles"/>
+      <genEnumLiterals ecoreEnumLiteral="menu.ecore#//AmountType/items"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="menu.ecore#//Category">
+      <genEnumLiterals ecoreEnumLiteral="menu.ecore#//Category/breakfast"/>
+      <genEnumLiterals ecoreEnumLiteral="menu.ecore#//Category/dinner"/>
+      <genEnumLiterals ecoreEnumLiteral="menu.ecore#//Category/lunch"/>
+      <genEnumLiterals ecoreEnumLiteral="menu.ecore#//Category/supper"/>
+      <genEnumLiterals ecoreEnumLiteral="menu.ecore#//Category/dessert"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="menu.ecore#//DishType">
+      <genEnumLiterals ecoreEnumLiteral="menu.ecore#//DishType/pork"/>
+      <genEnumLiterals ecoreEnumLiteral="menu.ecore#//DishType/poultry"/>
+      <genEnumLiterals ecoreEnumLiteral="menu.ecore#//DishType/beef"/>
+      <genEnumLiterals ecoreEnumLiteral="menu.ecore#//DishType/fish"/>
+      <genEnumLiterals ecoreEnumLiteral="menu.ecore#//DishType/salad"/>
+    </genEnums>
+    <genClasses ecoreClass="menu.ecore#//Menu">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute menu.ecore#//Menu/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference menu.ecore#//Menu/groups"/>
+    </genClasses>
+    <genClasses ecoreClass="menu.ecore#//Group">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute menu.ecore#//Group/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute menu.ecore#//Group/category"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference menu.ecore#//Group/recipes"/>
+    </genClasses>
+    <genClasses ecoreClass="menu.ecore#//Recipe">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute menu.ecore#//Recipe/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute menu.ecore#//Recipe/price"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute menu.ecore#//Recipe/amount"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute menu.ecore#//Recipe/amountType"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference menu.ecore#//Recipe/ingredients"/>
+    </genClasses>
+    <genClasses ecoreClass="menu.ecore#//Ingredient">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute menu.ecore#//Ingredient/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute menu.ecore#//Ingredient/spiciness"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
