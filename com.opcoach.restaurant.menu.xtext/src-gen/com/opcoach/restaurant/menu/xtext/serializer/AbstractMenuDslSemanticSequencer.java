@@ -4,6 +4,7 @@ import com.google.inject.Inject;
 import com.google.inject.Provider;
 import com.opcoach.menu.MGroup;
 import com.opcoach.menu.MIngredient;
+import com.opcoach.menu.MMenu;
 import com.opcoach.menu.MMenuPackage;
 import com.opcoach.menu.MRecipe;
 import com.opcoach.restaurant.menu.xtext.services.MenuDslGrammarAccess;
@@ -36,6 +37,12 @@ public abstract class AbstractMenuDslSemanticSequencer extends AbstractDelegatin
 					return; 
 				}
 				else break;
+			case MMenuPackage.MENU:
+				if(context == grammarAccess.getMenuRule()) {
+					sequence_Menu(context, (MMenu) semanticObject); 
+					return; 
+				}
+				else break;
 			case MMenuPackage.RECIPE:
 				if(context == grammarAccess.getRecipeRule()) {
 					sequence_Recipe(context, (MRecipe) semanticObject); 
@@ -60,6 +67,15 @@ public abstract class AbstractMenuDslSemanticSequencer extends AbstractDelegatin
 	 *     (name=EString spiciness=Spiciness?)
 	 */
 	protected void sequence_Ingredient(EObject context, MIngredient semanticObject) {
+		genericSequencer.createSequence(context, semanticObject);
+	}
+	
+	
+	/**
+	 * Constraint:
+	 *     (name=EString (groups+=Group groups+=Group*)?)
+	 */
+	protected void sequence_Menu(EObject context, MMenu semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
 	}
 	
